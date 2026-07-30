@@ -1,0 +1,281 @@
+- generic [ref=f4e4]:
+  - generic [ref=f4e5]: КОНТАКТЫ — АДРЕСА И ТЕЛЕФОНЫ · DESKTOP · 1440px
+  - generic [ref=f4e6]:
+    - generic [ref=f4e7]:
+      - generic [ref=f4e8]:
+        - generic [ref=f4e9]: Т
+        - generic [ref=f4e11]: ТАСК
+      - generic [ref=f4e12]:
+        - generic [ref=f4e13] [cursor=pointer]: Частным лицам
+        - generic [ref=f4e14] [cursor=pointer]: Корпоративным клиентам
+        - generic [ref=f4e15] [cursor=pointer]: О компании
+        - generic [ref=f4e16] [cursor=pointer]: Контакты
+      - generic [ref=f4e17]:
+        - link "+375 17 363-24-02" [ref=f4e21] [cursor=pointer]:
+          - /url: tel:+375173632402
+        - button "Вход" [ref=f4e22] [cursor=pointer]
+    - generic [ref=f4e23]: Главная/Контактная информация/Адреса и телефоны
+    - generic [ref=f4e24]:
+      - heading "Адреса и телефоны" [level=1] [ref=f4e25]
+      - paragraph [ref=f4e26]: 11 представительств по всей Беларуси. Выберите город, чтобы найти ближайший офис.
+      - paragraph [ref=f4e27]: Адреса и телефоны офисов ниже (кроме центрального) — иллюстративные плейсхолдеры для концепта, заполняются реальными данными.
+    - generic [ref=f4e28]:
+      - button "Все" [ref=f4e29] [cursor=pointer]
+      - button "Минск" [ref=f4e30] [cursor=pointer]
+      - button "Брест" [ref=f4e31] [cursor=pointer]
+      - button "Барановичи" [ref=f4e32] [cursor=pointer]
+      - button "Витебск" [ref=f4e33] [cursor=pointer]
+      - button "Гомель" [ref=f4e34] [cursor=pointer]
+      - button "Гродно" [ref=f4e35] [cursor=pointer]
+      - button "Могилёв" [ref=f4e36] [cursor=pointer]
+    - generic [ref=f4e37]:
+      - generic [ref=f4e38]: карта — плейсхолдер, интеграция с реальным геосервисом
+      - generic [ref=f4e65]:
+        - generic [ref=f4e66]:
+          - generic [ref=f4e67]:
+            - generic [ref=f4e68]: Минск
+            - generic [ref=f4e69]: Центральный офис
+            - generic [ref=f4e70]: ул. Червякова, 46
+            - generic [ref=f4e71]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e72]:
+            - link "+375 17 363-24-02" [ref=f4e73] [cursor=pointer]:
+              - /url: tel:+375173632402
+            - link "info@task.by" [ref=f4e74] [cursor=pointer]:
+              - /url: mailto:info@task.by
+        - generic [ref=f4e75]:
+          - generic [ref=f4e76]:
+            - generic [ref=f4e77]: Минск
+            - generic [ref=f4e78]: Представительство «Восток»
+            - generic [ref=f4e79]: "[адрес уточняется]"
+            - generic [ref=f4e80]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e81]:
+            - link "+375 17 XXX-XX-XX" [ref=f4e82] [cursor=pointer]:
+              - /url: tel:+37517
+            - link "vostok@task.by" [ref=f4e83] [cursor=pointer]:
+              - /url: mailto:vostok@task.by
+        - generic [ref=f4e84]:
+          - generic [ref=f4e85]:
+            - generic [ref=f4e86]: Минск
+            - generic [ref=f4e87]: Представительство «Запад»
+            - generic [ref=f4e88]: "[адрес уточняется]"
+            - generic [ref=f4e89]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e90]:
+            - link "+375 17 XXX-XX-XX" [ref=f4e91] [cursor=pointer]:
+              - /url: tel:+37517
+            - link "zapad@task.by" [ref=f4e92] [cursor=pointer]:
+              - /url: mailto:zapad@task.by
+        - generic [ref=f4e93]:
+          - generic [ref=f4e94]:
+            - generic [ref=f4e95]: Минск
+            - generic [ref=f4e96]: Отдел урегулирования убытков
+            - generic [ref=f4e97]: "[адрес уточняется]"
+            - generic [ref=f4e98]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e99]:
+            - link "+375 17 XXX-XX-XX" [ref=f4e100] [cursor=pointer]:
+              - /url: tel:+37517
+            - link "claims@task.by" [ref=f4e101] [cursor=pointer]:
+              - /url: mailto:claims@task.by
+        - generic [ref=f4e102]:
+          - generic [ref=f4e103]:
+            - generic [ref=f4e104]: Брест
+            - generic [ref=f4e105]: Представительство в Бресте
+            - generic [ref=f4e106]: "[адрес уточняется]"
+            - generic [ref=f4e107]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e108]:
+            - link "+375 16 XXX-XX-XX" [ref=f4e109] [cursor=pointer]:
+              - /url: tel:+37516
+            - link "brest@task.by" [ref=f4e110] [cursor=pointer]:
+              - /url: mailto:brest@task.by
+        - generic [ref=f4e111]:
+          - generic [ref=f4e112]:
+            - generic [ref=f4e113]: Барановичи
+            - generic [ref=f4e114]: Представительство в Барановичах
+            - generic [ref=f4e115]: "[адрес уточняется]"
+            - generic [ref=f4e116]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e117]:
+            - link "+375 16 XXX-XX-XX" [ref=f4e118] [cursor=pointer]:
+              - /url: tel:+37516
+            - link "baranovichi@task.by" [ref=f4e119] [cursor=pointer]:
+              - /url: mailto:baranovichi@task.by
+        - generic [ref=f4e120]:
+          - generic [ref=f4e121]:
+            - generic [ref=f4e122]: Витебск
+            - generic [ref=f4e123]: Представительство в Витебске
+            - generic [ref=f4e124]: "[адрес уточняется]"
+            - generic [ref=f4e125]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e126]:
+            - link "+375 21 XXX-XX-XX" [ref=f4e127] [cursor=pointer]:
+              - /url: tel:+37521
+            - link "vitebsk@task.by" [ref=f4e128] [cursor=pointer]:
+              - /url: mailto:vitebsk@task.by
+        - generic [ref=f4e129]:
+          - generic [ref=f4e130]:
+            - generic [ref=f4e131]: Гомель
+            - generic [ref=f4e132]: Представительство в Гомеле
+            - generic [ref=f4e133]: "[адрес уточняется]"
+            - generic [ref=f4e134]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e135]:
+            - link "+375 23 XXX-XX-XX" [ref=f4e136] [cursor=pointer]:
+              - /url: tel:+37523
+            - link "gomel@task.by" [ref=f4e137] [cursor=pointer]:
+              - /url: mailto:gomel@task.by
+        - generic [ref=f4e138]:
+          - generic [ref=f4e139]:
+            - generic [ref=f4e140]: Гродно
+            - generic [ref=f4e141]: Представительство в Гродно
+            - generic [ref=f4e142]: "[адрес уточняется]"
+            - generic [ref=f4e143]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e144]:
+            - link "+375 15 XXX-XX-XX" [ref=f4e145] [cursor=pointer]:
+              - /url: tel:+37515
+            - link "grodno@task.by" [ref=f4e146] [cursor=pointer]:
+              - /url: mailto:grodno@task.by
+        - generic [ref=f4e147]:
+          - generic [ref=f4e148]:
+            - generic [ref=f4e149]: Могилёв
+            - generic [ref=f4e150]: Представительство в Могилёве
+            - generic [ref=f4e151]: "[адрес уточняется]"
+            - generic [ref=f4e152]: Пн–Пт 9:00–18:00
+          - generic [ref=f4e153]:
+            - link "+375 22 XXX-XX-XX" [ref=f4e154] [cursor=pointer]:
+              - /url: tel:+37522
+            - link "mogilev@task.by" [ref=f4e155] [cursor=pointer]:
+              - /url: mailto:mogilev@task.by
+    - generic [ref=f4e157]:
+      - generic [ref=f4e158]:
+        - generic [ref=f4e159]: Не хотите звонить сейчас?
+        - generic [ref=f4e160]: Оставьте номер — перезвоним в удобное время.
+      - generic [ref=f4e161]:
+        - textbox "Ваше имя" [ref=f4e162]
+        - textbox "+375" [ref=f4e163]
+        - button "Заказать звонок" [ref=f4e164] [cursor=pointer]
+    - generic [ref=f4e165]:
+      - generic [ref=f4e166]:
+        - generic [ref=f4e167]:
+          - generic [ref=f4e168]: О компании
+          - generic [ref=f4e169]: История
+          - generic [ref=f4e170]: Лицензии
+          - generic [ref=f4e171]: Реквизиты
+          - generic [ref=f4e172]: Раскрытие информации
+        - generic [ref=f4e173]:
+          - generic [ref=f4e174]: Страхование в «ТАСК»
+          - generic [ref=f4e175]: Все продукты
+          - generic [ref=f4e176]: Тарифы
+          - generic [ref=f4e177]: Правила страхования
+        - generic [ref=f4e178]:
+          - generic [ref=f4e179]: Частным лицам
+          - generic [ref=f4e180]: Автострахование
+          - generic [ref=f4e181]: Имущество
+          - generic [ref=f4e182]: Здоровье
+        - generic [ref=f4e183]:
+          - generic [ref=f4e184]: Корпоративным клиентам
+          - generic [ref=f4e185]: Транспорт
+          - generic [ref=f4e186]: Имущество
+          - generic [ref=f4e187]: Ответственность
+        - generic [ref=f4e188]:
+          - generic [ref=f4e189]: Пресс-центр
+          - generic [ref=f4e190]: Новости
+          - generic [ref=f4e191]: Публикации
+        - generic [ref=f4e192]:
+          - generic [ref=f4e193]: Сотрудничество
+          - generic [ref=f4e194]: Агентам
+          - generic [ref=f4e195]: Партнёрам
+        - generic [ref=f4e196]:
+          - generic [ref=f4e197]: Контактная информация
+          - generic [ref=f4e198]: Адреса и телефоны
+          - generic [ref=f4e199]: Заказать звонок
+      - generic [ref=f4e200]:
+        - generic [ref=f4e201]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691. г. Минск, ул. Червякова, 46.
+        - generic [ref=f4e202]:
+          - generic [ref=f4e203]: ЕРИП
+          - generic [ref=f4e204]: VISA
+          - generic [ref=f4e205]: Mastercard
+          - generic [ref=f4e206]: Настройки cookie
+  - generic [ref=f4e207]: КОНТАКТЫ · MOBILE · 390px
+  - generic [ref=f4e209]:
+    - generic [ref=f4e210]:
+      - button "Меню" [ref=f4e211]
+      - generic [ref=f4e213]: Контакты
+      - link "Позвонить" [ref=f4e214] [cursor=pointer]:
+        - /url: tel:+375173632402
+    - generic [ref=f4e217]:
+      - heading "Адреса и телефоны" [level=1] [ref=f4e218]
+      - paragraph [ref=f4e219]: 11 представительств по Беларуси.
+    - generic [ref=f4e220]:
+      - button "Все" [ref=f4e221]
+      - button "Минск" [ref=f4e222]
+      - button "Брест" [ref=f4e223]
+      - button "Барановичи" [ref=f4e224]
+      - button "Витебск" [ref=f4e225]
+      - button "Гомель" [ref=f4e226]
+      - button "Гродно" [ref=f4e227]
+      - button "Могилёв" [ref=f4e228]
+    - generic [ref=f4e229]: карта — плейсхолдер
+    - generic [ref=f4e232]:
+      - generic [ref=f4e233]:
+        - generic [ref=f4e234]: Минск
+        - generic [ref=f4e235]: Центральный офис
+        - generic [ref=f4e236]: ул. Червякова, 46
+        - link "+375 17 363-24-02" [ref=f4e237] [cursor=pointer]:
+          - /url: tel:+375173632402
+      - generic [ref=f4e239]:
+        - generic [ref=f4e240]: Минск
+        - generic [ref=f4e241]: Представительство «Восток»
+        - generic [ref=f4e242]: "[адрес уточняется]"
+        - link "+375 17 XXX-XX-XX" [ref=f4e243] [cursor=pointer]:
+          - /url: tel:+37517
+      - generic [ref=f4e245]:
+        - generic [ref=f4e246]: Минск
+        - generic [ref=f4e247]: Представительство «Запад»
+        - generic [ref=f4e248]: "[адрес уточняется]"
+        - link "+375 17 XXX-XX-XX" [ref=f4e249] [cursor=pointer]:
+          - /url: tel:+37517
+      - generic [ref=f4e251]:
+        - generic [ref=f4e252]: Минск
+        - generic [ref=f4e253]: Отдел урегулирования убытков
+        - generic [ref=f4e254]: "[адрес уточняется]"
+        - link "+375 17 XXX-XX-XX" [ref=f4e255] [cursor=pointer]:
+          - /url: tel:+37517
+      - generic [ref=f4e257]:
+        - generic [ref=f4e258]: Брест
+        - generic [ref=f4e259]: Представительство в Бресте
+        - generic [ref=f4e260]: "[адрес уточняется]"
+        - link "+375 16 XXX-XX-XX" [ref=f4e261] [cursor=pointer]:
+          - /url: tel:+37516
+      - generic [ref=f4e263]:
+        - generic [ref=f4e264]: Барановичи
+        - generic [ref=f4e265]: Представительство в Барановичах
+        - generic [ref=f4e266]: "[адрес уточняется]"
+        - link "+375 16 XXX-XX-XX" [ref=f4e267] [cursor=pointer]:
+          - /url: tel:+37516
+      - generic [ref=f4e269]:
+        - generic [ref=f4e270]: Витебск
+        - generic [ref=f4e271]: Представительство в Витебске
+        - generic [ref=f4e272]: "[адрес уточняется]"
+        - link "+375 21 XXX-XX-XX" [ref=f4e273] [cursor=pointer]:
+          - /url: tel:+37521
+      - generic [ref=f4e275]:
+        - generic [ref=f4e276]: Гомель
+        - generic [ref=f4e277]: Представительство в Гомеле
+        - generic [ref=f4e278]: "[адрес уточняется]"
+        - link "+375 23 XXX-XX-XX" [ref=f4e279] [cursor=pointer]:
+          - /url: tel:+37523
+      - generic [ref=f4e281]:
+        - generic [ref=f4e282]: Гродно
+        - generic [ref=f4e283]: Представительство в Гродно
+        - generic [ref=f4e284]: "[адрес уточняется]"
+        - link "+375 15 XXX-XX-XX" [ref=f4e285] [cursor=pointer]:
+          - /url: tel:+37515
+      - generic [ref=f4e287]:
+        - generic [ref=f4e288]: Могилёв
+        - generic [ref=f4e289]: Представительство в Могилёве
+        - generic [ref=f4e290]: "[адрес уточняется]"
+        - link "+375 22 XXX-XX-XX" [ref=f4e291] [cursor=pointer]:
+          - /url: tel:+37522
+    - generic [ref=f4e294]:
+      - generic [ref=f4e295]: Заказать звонок
+      - textbox "Ваше имя" [ref=f4e296]
+      - textbox "+375" [ref=f4e297]
+      - button "Заказать звонок" [ref=f4e298]
+    - link "Позвонить в центральный офис" [ref=f4e300] [cursor=pointer]:
+      - /url: tel:+375173632402

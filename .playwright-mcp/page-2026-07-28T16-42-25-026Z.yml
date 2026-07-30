@@ -1,0 +1,204 @@
+- generic [ref=f6e4]:
+  - generic [ref=f6e5]: PRODUCT — АВТОКАСКО · DESKTOP · 1440px
+  - generic [ref=f6e6]:
+    - generic [ref=f6e7]:
+      - generic [ref=f6e8]:
+        - generic [ref=f6e9]: Т
+        - generic [ref=f6e11]: ТАСК
+      - generic [ref=f6e12]:
+        - generic [ref=f6e13] [cursor=pointer]: Частным лицам
+        - generic [ref=f6e14] [cursor=pointer]: Корпоративным клиентам
+        - generic [ref=f6e15] [cursor=pointer]: О компании
+        - generic [ref=f6e16] [cursor=pointer]: Контакты
+      - generic [ref=f6e17]:
+        - link "+375 17 363-24-02" [ref=f6e21] [cursor=pointer]:
+          - /url: tel:+375173632402
+        - button "Вход" [ref=f6e22] [cursor=pointer]
+    - generic [ref=f6e23]: Главная/Частным лицам/Автострахование/АвтоКаско
+    - generic [ref=f6e24]:
+      - generic [ref=f6e25]: АвтоКаско — узнайте примерную стоимость за 30 секунд
+      - button "Рассчитать стоимость" [ref=f6e26] [cursor=pointer]
+    - generic [ref=f6e27]:
+      - generic [ref=f6e28]:
+        - heading "АвтоКаско" [level=1] [ref=f6e29]
+        - paragraph [ref=f6e30]: Добровольное страхование транспортного средства от ущерба, угона и других рисков. Гибкие тарифы для легковых, грузовых автомобилей и мотоциклов.
+        - heading "Что покрывает полис" [level=2] [ref=f6e31]
+        - generic [ref=f6e32]:
+          - generic [ref=f6e33]:
+            - generic [ref=f6e34]: Ущерб
+            - generic [ref=f6e35]: ДТП, стихийные бедствия, падение предметов
+          - generic [ref=f6e36]:
+            - generic [ref=f6e37]: Угон и хищение
+            - generic [ref=f6e38]: Полная компенсация при угоне ТС
+          - generic [ref=f6e39]:
+            - generic [ref=f6e40]: Стекло и оптика
+            - generic [ref=f6e41]: Ремонт без справок из ГАИ
+          - generic [ref=f6e42]:
+            - generic [ref=f6e43]: Действия третьих лиц
+            - generic [ref=f6e44]: Вандализм, поджог, противоправные действия
+        - generic [ref=f6e45]: Для электромобилей и гибридов действуют отдельные условия страхования — уточните у консультанта при расчёте.
+        - heading "Тарифы" [level=2] [ref=f6e46]
+        - table [ref=f6e47]:
+          - rowgroup [ref=f6e48]:
+            - row [ref=f6e49]:
+              - columnheader "Опция покрытия" [ref=f6e50]
+              - columnheader "Базовый" [ref=f6e51]
+              - columnheader "Стандарт" [ref=f6e52]
+              - columnheader "Премиум" [ref=f6e53]
+              - columnheader "Максимум" [ref=f6e54]
+          - rowgroup [ref=f6e55]:
+            - row [ref=f6e56]:
+              - cell "Ущерб" [ref=f6e57]
+              - cell "✓" [ref=f6e58]
+              - cell "✓" [ref=f6e59]
+              - cell "✓" [ref=f6e60]
+              - cell "✓" [ref=f6e61]
+            - row [ref=f6e62]:
+              - cell "Угон" [ref=f6e63]
+              - cell "—" [ref=f6e64]
+              - cell "✓" [ref=f6e65]
+              - cell "✓" [ref=f6e66]
+              - cell "✓" [ref=f6e67]
+            - row [ref=f6e68]:
+              - cell "Замена стекла без справок" [ref=f6e69]
+              - cell "—" [ref=f6e70]
+              - cell "—" [ref=f6e71]
+              - cell "✓" [ref=f6e72]
+              - cell "✓" [ref=f6e73]
+            - row [ref=f6e74]:
+              - cell "Эвакуация при ДТП" [ref=f6e75]
+              - cell "—" [ref=f6e76]
+              - cell "—" [ref=f6e77]
+              - cell "✓" [ref=f6e78]
+              - cell "✓" [ref=f6e79]
+            - row [ref=f6e80]:
+              - cell "Стоимость от" [ref=f6e81]
+              - cell "420 BYN" [ref=f6e82]
+              - cell "480 BYN" [ref=f6e83]
+              - cell "720 BYN" [ref=f6e84]
+              - cell "980 BYN" [ref=f6e85]
+        - generic [ref=f6e86]:
+          - heading "Рассчитать стоимость" [level=2] [ref=f6e87]
+          - paragraph [ref=f6e88]: Предварительная оценка — точная стоимость рассчитывается на следующем шаге.
+          - generic [ref=f6e89]:
+            - generic [ref=f6e90]:
+              - generic [ref=f6e91]: Возраст ТС
+              - combobox [ref=f6e92]:
+                - option "До 3 лет" [selected]
+                - option "3–7 лет"
+                - option "Старше 7 лет"
+            - generic [ref=f6e93]:
+              - generic [ref=f6e94]: Страховая сумма
+              - combobox [ref=f6e95]:
+                - option "До 20 000 BYN" [selected]
+                - option "20 000–50 000 BYN"
+                - option "Свыше 50 000 BYN"
+            - generic [ref=f6e96]:
+              - generic [ref=f6e97]: Регион
+              - combobox [ref=f6e98]:
+                - option "Минск" [selected]
+                - option "Брест"
+                - option "Гомель"
+            - button "Рассчитать" [ref=f6e99] [cursor=pointer]
+        - generic [ref=f6e100]:
+          - heading "Оформление полиса онлайн" [level=2] [ref=f6e101]
+          - generic [ref=f6e108]: Шаг 1 из 3 — Данные ТС
+          - generic [ref=f6e109]: Марка, модель, год выпуска, VIN — подтягивается автоматически по госномеру.
+          - generic [ref=f6e110]:
+            - button "Назад" [ref=f6e111] [cursor=pointer]
+            - button "Далее" [ref=f6e112] [cursor=pointer]
+        - heading "Другие виды автострахования" [level=2] [ref=f6e113]
+        - generic [ref=f6e114]:
+          - generic [ref=f6e115]: ОСАГО
+          - generic [ref=f6e116]: Страхование водителя и пассажиров
+          - generic [ref=f6e117]: Зелёная карта
+      - generic [ref=f6e118]:
+        - generic [ref=f6e119]: Онлайн-сервисы
+        - generic [ref=f6e120]:
+          - generic [ref=f6e121]: Не готовы рассчитать сейчас?
+          - generic [ref=f6e122]: Имя
+          - textbox "Иван" [ref=f6e123]
+          - generic [ref=f6e124]: Телефон
+          - textbox "+375" [ref=f6e125]
+          - button "Заказать звонок" [ref=f6e126] [cursor=pointer]
+    - generic [ref=f6e127]:
+      - generic [ref=f6e128]:
+        - generic [ref=f6e129]:
+          - generic [ref=f6e130]: О компании
+          - generic [ref=f6e131]: История
+          - generic [ref=f6e132]: Лицензии
+          - generic [ref=f6e133]: Реквизиты
+          - generic [ref=f6e134]: Раскрытие информации
+        - generic [ref=f6e135]:
+          - generic [ref=f6e136]: Страхование в «ТАСК»
+          - generic [ref=f6e137]: Все продукты
+          - generic [ref=f6e138]: Тарифы
+          - generic [ref=f6e139]: Правила страхования
+        - generic [ref=f6e140]:
+          - generic [ref=f6e141]: Частным лицам
+          - generic [ref=f6e142]: Автострахование
+          - generic [ref=f6e143]: Имущество
+          - generic [ref=f6e144]: Здоровье
+        - generic [ref=f6e145]:
+          - generic [ref=f6e146]: Корпоративным клиентам
+          - generic [ref=f6e147]: Транспорт
+          - generic [ref=f6e148]: Имущество
+          - generic [ref=f6e149]: Ответственность
+        - generic [ref=f6e150]:
+          - generic [ref=f6e151]: Пресс-центр
+          - generic [ref=f6e152]: Новости
+          - generic [ref=f6e153]: Публикации
+        - generic [ref=f6e154]:
+          - generic [ref=f6e155]: Сотрудничество
+          - generic [ref=f6e156]: Агентам
+          - generic [ref=f6e157]: Партнёрам
+        - generic [ref=f6e158]:
+          - generic [ref=f6e159]: Контактная информация
+          - generic [ref=f6e160]: Адреса и телефоны
+          - generic [ref=f6e161]: Заказать звонок
+      - generic [ref=f6e162]:
+        - generic [ref=f6e163]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691. г. Минск, ул. Червякова, 46.
+        - generic [ref=f6e164]:
+          - generic [ref=f6e165]: ЕРИП
+          - generic [ref=f6e166]: VISA
+          - generic [ref=f6e167]: Mastercard
+          - generic [ref=f6e168]: Настройки cookie
+  - generic [ref=f6e169]: PRODUCT — АВТОКАСКО · MOBILE · 390px
+  - generic [ref=f6e171]:
+    - generic [ref=f6e172]:
+      - button "Меню" [ref=f6e173]
+      - generic [ref=f6e175]: АвтоКаско
+      - link "Позвонить" [ref=f6e176] [cursor=pointer]:
+        - /url: tel:+375173632402
+    - generic [ref=f6e179]: Главная / Автострахование / АвтоКаско
+    - generic [ref=f6e180]:
+      - paragraph [ref=f6e181]: Добровольное страхование от ущерба, угона и других рисков.
+      - generic [ref=f6e182]: Для электромобилей и гибридов — отдельные условия.
+      - generic [ref=f6e183]: Тариф
+      - generic [ref=f6e184]:
+        - generic [ref=f6e185]:
+          - generic [ref=f6e186]: Стандарт
+          - generic [ref=f6e187]: 480 BYN
+        - generic [ref=f6e188]: ✓ Ущерб · ✓ Угон · ✓ Стекло
+      - generic [ref=f6e194]: ← свайп для сравнения тарифов →
+      - generic [ref=f6e195]: Рассчитать стоимость
+      - generic [ref=f6e196]:
+        - generic [ref=f6e197]: Возраст ТС
+        - combobox [ref=f6e198]:
+          - option "До 3 лет" [selected]
+          - option "3–7 лет"
+        - generic [ref=f6e199]: Страховая сумма
+        - combobox [ref=f6e200]:
+          - option "До 20 000 BYN" [selected]
+        - button "Рассчитать" [ref=f6e201]
+      - generic [ref=f6e202]: Оформление полиса
+      - generic [ref=f6e203]:
+        - generic [ref=f6e210]: Шаг 1 из 3 — Данные ТС
+        - generic [ref=f6e211]: Марка, модель, год выпуска, VIN — подтягивается автоматически по госномеру.
+        - generic [ref=f6e212]:
+          - button "Назад" [ref=f6e213]
+          - button "Далее" [ref=f6e214]
+    - generic [ref=f6e215]:
+      - link "Позвонить" [ref=f6e216] [cursor=pointer]:
+        - /url: tel:+375173632402
+      - button "Рассчитать" [ref=f6e217]

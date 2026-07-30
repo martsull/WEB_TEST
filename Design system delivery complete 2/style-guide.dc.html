@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#FAFAF9;}
+  * { box-sizing: border-box; }
+  ::selection{background:#C41230;color:#fff;}
+</style>
+</helmet>
+
+<div style="font-family:'IBM Plex Sans',sans-serif;color:#232019;background:#FAFAF9;min-height:100vh;">
+
+  <!-- HERO -->
+  <div style="background:#16140F;color:#FAFAF9;padding:80px 64px 64px;">
+    <div style="max-width:1120px;margin:0 auto;">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:#C41230;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <span style="font-family:'IBM Plex Sans',sans-serif;font-weight:700;font-size:24px;color:#fff;">Т</span>
+        </div>
+        <span style="font-size:15px;letter-spacing:0.06em;text-transform:uppercase;color:#9A968D;">ЗАСО «ТАСК» &middot; Redesign concept</span>
+      </div>
+      <h1 style="font-size:52px;font-weight:700;line-height:1.1;margin:0 0 16px;letter-spacing:-0.01em;">Design system</h1>
+      <p style="font-size:19px;line-height:1.6;color:#C7C3BA;max-width:640px;margin:0;">Reference sheet for the task.by concept. Every page in this deliverable draws exclusively from these tokens and components &mdash; no one-off colors, spacing, or patterns appear anywhere else.</p>
+    </div>
+  </div>
+
+  <div style="max-width:1120px;margin:0 auto;padding:64px;">
+
+    <!-- COLOR -->
+    <section style="margin-bottom:80px;" id="color">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Color</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Brand red carried forward from the existing mark, tuned to pass 4.5:1 on white for text use. A warm neutral ramp (not pure gray) keeps the palette institutional rather than clinical.</p>
+
+      <div style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:12px;">Brand</div>
+      <div style="display:flex;gap:16px;margin-bottom:40px;flex-wrap:wrap;">
+        <div style="width:180px;">
+          <div style="height:96px;border-radius:8px;background:#C41230;"></div>
+          <div style="padding:10px 2px 0;font-size:14px;font-weight:600;">Brand Red</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6B675F;">#C41230 &middot; 6.1:1 on white</div>
+        </div>
+        <div style="width:180px;">
+          <div style="height:96px;border-radius:8px;background:#9E0E26;"></div>
+          <div style="padding:10px 2px 0;font-size:14px;font-weight:600;">Red / hover-active</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6B675F;">#9E0E26</div>
+        </div>
+        <div style="width:180px;">
+          <div style="height:96px;border-radius:8px;background:#FBE9EC;border:1px solid #F3CDD3;"></div>
+          <div style="padding:10px 2px 0;font-size:14px;font-weight:600;">Red / tint (10%)</div>
+          <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6B675F;">#FBE9EC</div>
+        </div>
+      </div>
+
+      <div style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:12px;">Neutral ramp (warm)</div>
+      <div style="display:flex;gap:0;margin-bottom:40px;border-radius:8px;overflow:hidden;border:1px solid #E4E1DC;">
+        <sc-for list="{{ neutrals }}" as="n" hint-placeholder-count="6">
+          <div style="flex:1;">
+            <div style="{{ n.swatchStyle }}"></div>
+            <div style="padding:10px 12px;background:#fff;">
+              <div style="font-size:13px;font-weight:600;">{{ n.name }}</div>
+              <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6B675F;">{{ n.hex }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:12px;">Semantic</div>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
+        <sc-for list="{{ semantics }}" as="s" hint-placeholder-count="4">
+          <div style="width:180px;">
+            <div style="height:64px;border-radius:8px;{{ s.swatchStyle }}"></div>
+            <div style="padding:10px 2px 0;font-size:14px;font-weight:600;">{{ s.name }}</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#6B675F;">{{ s.hex }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- TYPE -->
+    <section style="margin-bottom:80px;" id="type">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Typography</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">IBM Plex Sans &mdash; full, well-hinted Cyrillic support, humanist grotesk warmth appropriate for long-form insurance copy. Body sets at 16px/1.6 minimum, replacing the audit's flagged 14px/1.29 system.</p>
+
+      <div style="border:1px solid #E4E1DC;border-radius:8px;background:#fff;overflow:hidden;">
+        <sc-for list="{{ typeScale }}" as="t" hint-placeholder-count="7">
+          <div style="display:flex;align-items:baseline;gap:24px;padding:20px 24px;border-bottom:1px solid #EEECE7;">
+            <div style="width:110px;flex-shrink:0;font-size:12px;font-family:'IBM Plex Mono',monospace;color:#9A968D;white-space:nowrap;">{{ t.label }}</div>
+            <div style="{{ t.sampleStyle }}flex:1;">Гарантия защиты Ваших интересов</div>
+            <div style="width:170px;flex-shrink:0;font-size:12px;font-family:'IBM Plex Mono',monospace;color:#9A968D;text-align:right;white-space:nowrap;">{{ t.spec }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:20px;padding:20px 24px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;display:flex;align-items:center;gap:20px;">
+        <div style="width:760px;max-width:100%;font-size:16px;line-height:1.6;color:#232019;">Максимальная ширина текстового блока ограничена 720&ndash;800px, чтобы длина строки оставалась в диапазоне 50&ndash;75 символов даже на широких десктопных экранах.</div>
+        <div style="font-size:12px;font-family:'IBM Plex Mono',monospace;color:#9A968D;white-space:nowrap;">max-width: 760px</div>
+      </div>
+    </section>
+
+    <!-- SPACING -->
+    <section style="margin-bottom:80px;" id="spacing">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Spacing</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">8px base unit, applied uniformly to padding, margin, and gap &mdash; replacing the sitewide inconsistent, template-driven spacing.</p>
+      <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;">
+        <sc-for list="{{ spacingScale }}" as="sp" hint-placeholder-count="9">
+          <div style="text-align:center;">
+            <div style="width:{{ sp.px }}px;height:{{ sp.px }}px;background:#C41230;border-radius:3px;margin:0 auto 8px;"></div>
+            <div style="font-size:12px;font-family:'IBM Plex Mono',monospace;color:#6B675F;">{{ sp.px }}px</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- BUTTONS -->
+    <section style="margin-bottom:80px;" id="buttons">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Buttons</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Minimum 44px touch target throughout. Visible focus ring on every state replaces the sitewide <span style="font-family:'IBM Plex Mono',monospace;background:#F3F1EC;padding:1px 6px;border-radius:4px;">outline: 0</span> removal.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;padding:32px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;">
+        <button style="height:48px;padding:0 28px;background:#C41230;color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;" style-hover="background:#9E0E26;" style-focus="outline:3px solid #F3CDD3;outline-offset:2px;">Рассчитать стоимость</button>
+        <button style="height:48px;padding:0 28px;background:#fff;color:#232019;border:1.5px solid #232019;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;" style-hover="background:#F3F1EC;" style-focus="outline:3px solid #C7C3BA;outline-offset:2px;">Заказать звонок</button>
+        <button style="height:48px;padding:0 12px;background:transparent;color:#C41230;border:none;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px;" style-hover="color:#9E0E26;">Подробнее об условиях</button>
+        <button disabled="{{ true }}" style="height:48px;padding:0 28px;background:#EEECE7;color:#B5B1A8;border:none;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;cursor:not-allowed;">Оформить полис</button>
+      </div>
+    </section>
+
+    <!-- INPUTS -->
+    <section style="margin-bottom:80px;" id="inputs">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Inputs</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Every field carries a programmatically associated visible &lt;label&gt; &mdash; fixing the audit's login-form label-association gap.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:32px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;">
+        <div>
+          <label for="sg-name" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px;">Ваше имя</label>
+          <input id="sg-name" type="text" placeholder="Иван Иванов" style="width:100%;height:48px;padding:0 16px;border:1.5px solid #D8D5CE;border-radius:8px;font-size:16px;font-family:inherit;" style-focus="border-color:#C41230;outline:3px solid #FBE9EC;outline-offset:0;"/>
+        </div>
+        <div>
+          <label for="sg-phone" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:#B3261E;">Телефон</label>
+          <input id="sg-phone" type="text" value="{{ 8017 }}" style="width:100%;height:48px;padding:0 16px;border:1.5px solid #B3261E;border-radius:8px;font-size:16px;font-family:inherit;background:#FDECEA;"/>
+          <div style="font-size:13px;color:#B3261E;margin-top:6px;">Укажите номер в формате +375 (17) XXX-XX-XX</div>
+        </div>
+        <div>
+          <label for="sg-region" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px;">Регион</label>
+          <select id="sg-region" style="width:100%;height:48px;padding:0 16px;border:1.5px solid #D8D5CE;border-radius:8px;font-size:16px;font-family:inherit;background:#fff;">
+            <option>Минск</option><option>Брест</option><option>Гомель</option>
+          </select>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;padding-top:28px;">
+          <input id="sg-agree" type="checkbox" style="width:20px;height:20px;"/>
+          <label for="sg-agree" style="font-size:14px;">Согласен с условиями обработки данных</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section style="margin-bottom:80px;" id="cards">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Cards</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">One card primitive &mdash; flat surface, 1px border, 8px radius, subtle shadow only on hover &mdash; reused for product tiers, offices, news, and trust tiles.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+        <div style="background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:28px;" style-hover="box-shadow:0 8px 24px rgba(22,20,15,0.08);border-color:#D8D5CE;">
+          <div style="width:40px;height:40px;border-radius:50%;background:#FBE9EC;display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+            <div style="width:16px;height:16px;border:1.75px solid #C41230;border-radius:50%;"></div>
+          </div>
+          <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:6px;">Продукт</div>
+          <div style="font-size:18px;font-weight:600;margin-bottom:8px;">АвтоКаско</div>
+          <div style="font-size:14px;color:#6B675F;line-height:1.5;">Добровольное страхование транспорта от ущерба и угона.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:28px;" style-hover="box-shadow:0 8px 24px rgba(22,20,15,0.08);border-color:#D8D5CE;">
+          <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:6px;">Офис</div>
+          <div style="font-size:18px;font-weight:600;margin-bottom:8px;">Минск, центральный</div>
+          <div style="font-size:14px;color:#6B675F;line-height:1.5;margin-bottom:12px;">ул. Червякова, 46</div>
+          <div style="font-size:15px;font-weight:600;color:#C41230;">+375 17 363-24-02</div>
+        </div>
+        <div style="background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:28px;" style-hover="box-shadow:0 8px 24px rgba(22,20,15,0.08);border-color:#D8D5CE;">
+          <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:6px;">Доверие</div>
+          <div style="font-size:32px;font-weight:700;margin-bottom:4px;">35 лет</div>
+          <div style="font-size:14px;color:#6B675F;line-height:1.5;">на страховом рынке Беларуси с 1991 года</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABLE -->
+    <section style="margin-bottom:80px;" id="table">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Tariff table</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Desktop: a standard table. Mobile (&le;600px): restacks into one card per tariff tier &mdash; direct fix for the audit's clipped, affordance-free mobile table.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#9A968D;margin-bottom:8px;">Desktop</div>
+          <table style="width:100%;border-collapse:collapse;background:#fff;border:1px solid #E4E1DC;border-radius:8px;overflow:hidden;font-size:14px;">
+            <thead><tr style="background:#F3F1EC;">
+              <th style="text-align:left;padding:12px 16px;font-weight:600;">Опция</th>
+              <th style="text-align:right;padding:12px 16px;font-weight:600;">Стандарт</th>
+              <th style="text-align:right;padding:12px 16px;font-weight:600;">Премиум</th>
+            </tr></thead>
+            <tbody>
+              <tr style="border-top:1px solid #EEECE7;"><td style="padding:12px 16px;">Ущерб</td><td style="padding:12px 16px;text-align:right;">&#10003;</td><td style="padding:12px 16px;text-align:right;">&#10003;</td></tr>
+              <tr style="border-top:1px solid #EEECE7;"><td style="padding:12px 16px;">Угон</td><td style="padding:12px 16px;text-align:right;">&#10003;</td><td style="padding:12px 16px;text-align:right;">&#10003;</td></tr>
+              <tr style="border-top:1px solid #EEECE7;"><td style="padding:12px 16px;">Стоимость</td><td style="padding:12px 16px;text-align:right;font-weight:600;">от 480 BYN</td><td style="padding:12px 16px;text-align:right;font-weight:600;">от 720 BYN</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#9A968D;margin-bottom:8px;">Mobile &mdash; stacked card</div>
+          <div style="background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:20px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+              <span style="font-size:16px;font-weight:600;">Премиум</span>
+              <span style="font-size:16px;font-weight:700;color:#C41230;">от 720 BYN</span>
+            </div>
+            <div style="font-size:14px;color:#6B675F;line-height:1.7;">&#10003; Ущерб &nbsp;&middot;&nbsp; &#10003; Угон &nbsp;&middot;&nbsp; &#10003; Стекло</div>
+            <div style="display:flex;gap:6px;justify-content:center;margin-top:16px;">
+              <div style="width:6px;height:6px;border-radius:50%;background:#C41230;"></div>
+              <div style="width:6px;height:6px;border-radius:50%;background:#E4E1DC;"></div>
+              <div style="width:6px;height:6px;border-radius:50%;background:#E4E1DC;"></div>
+            </div>
+            <div style="text-align:center;font-size:11px;color:#9A968D;margin-top:6px;font-family:'IBM Plex Mono',monospace;">&larr; свайп для сравнения тарифов &rarr;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ICONS -->
+    <section style="margin-bottom:80px;" id="icons">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Icons</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Single line weight (1.75px), 24px grid, rounded caps &mdash; replaces the current mismatched iconography sitewide.</p>
+      <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:16px;">
+        <sc-for list="{{ icons }}" as="ic" hint-placeholder-count="8">
+          <div style="background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:20px 8px;text-align:center;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#232019" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 10px;display:block;" dangerouslySetInnerHTML="{{ ic.svgInner }}"></svg>
+            <div style="font-size:11px;color:#6B675F;">{{ ic.name }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- BADGES -->
+    <section style="margin-bottom:80px;" id="badges">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Badges</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <span style="background:#C41230;color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px;letter-spacing:0.03em;">NEW</span>
+        <span style="background:#1E7D4B;color:#fff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:4px;letter-spacing:0.03em;">ONLINE</span>
+        <span style="background:#F3F1EC;color:#232019;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;border:1px solid #E4E1DC;">Автострахование</span>
+        <span style="background:#EEF3FB;color:#2B5FA8;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;">Имущество</span>
+      </div>
+    </section>
+
+    <!-- NAV -->
+    <section style="margin-bottom:80px;" id="nav">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Navigation</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Header search replaces the hidden footer field; breadcrumb contrast raised from 2.77:1 to AA.</p>
+      <div style="border:1px solid #E4E1DC;border-radius:8px;overflow:hidden;">
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 24px;background:#fff;border-bottom:1px solid #EEECE7;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:32px;height:32px;border-radius:50%;background:#C41230;display:flex;align-items:center;justify-content:center;"><span style="color:#fff;font-weight:700;font-size:16px;">Т</span></div>
+            <span style="font-weight:700;font-size:16px;">ТАСК</span>
+          </div>
+          <div style="display:flex;gap:28px;font-size:15px;font-weight:500;">
+            <span>Частным лицам</span><span>Корпоративным клиентам</span><span style="color:#6B675F;">О компании</span><span style="color:#6B675F;">Контакты</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:16px;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#232019" stroke-width="1.75"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <span style="font-size:15px;font-weight:600;color:#C41230;">+375 17 363-24-02</span>
+          </div>
+        </div>
+        <div style="padding:12px 24px;background:#F3F1EC;font-size:13px;color:#4A4740;">Главная <span style="color:#B5B1A8;margin:0 6px;">/</span> Частным лицам <span style="color:#B5B1A8;margin:0 6px;">/</span> <span style="font-weight:600;">АвтоКаско</span></div>
+      </div>
+    </section>
+
+    <!-- FORMS -->
+    <section style="margin-bottom:80px;" id="forms">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Forms &amp; alerts</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:#EEF3FB;border:1px solid #CBDCF0;border-radius:8px;padding:16px 20px;font-size:14px;color:#1E4A82;">Для электромобилей и гибридов действуют отдельные условия страхования.</div>
+        <div style="background:#FDF4E3;border:1px solid #F0DBA6;border-radius:8px;padding:16px 20px;font-size:14px;color:#8A5A08;">Заявка сохранена как черновик &mdash; заполните оставшиеся поля.</div>
+        <div style="background:#E9F5EE;border:1px solid #B9E0C8;border-radius:8px;padding:16px 20px;font-size:14px;color:#1E7D4B;">Заявка успешно отправлена. Мы свяжемся с вами в течение рабочего дня.</div>
+        <div style="background:#FDECEA;border:1px solid #F3B8B2;border-radius:8px;padding:16px 20px;font-size:14px;color:#B3261E;">Проверьте правильность введённого номера телефона.</div>
+      </div>
+    </section>
+
+    <!-- ACCORDION -->
+    <section style="margin-bottom:80px;" id="accordion">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Accordion (FAQ pattern)</h2>
+      <p style="font-size:16px;line-height:1.6;color:#6B675F;max-width:720px;margin:0 0 32px;">Replaces link-list FAQ with in-place expand/collapse &mdash; comparing answers no longer requires back-navigation.</p>
+      <div style="border:1px solid #E4E1DC;border-radius:8px;overflow:hidden;background:#fff;">
+        <sc-for list="{{ faqItems }}" as="f" hint-placeholder-count="3">
+          <div style="border-bottom:1px solid #EEECE7;">
+            <button onClick="{{ f.toggle }}" aria-expanded="{{ f.open }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:none;border:none;font-size:16px;font-weight:600;font-family:inherit;text-align:left;cursor:pointer;color:#232019;">
+              <span>{{ f.q }}</span>
+              <span style="{{ f.chevronStyle }}">&#8250;</span>
+            </button>
+            <sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}">
+              <div style="padding:0 24px 20px;font-size:15px;line-height:1.6;color:#6B675F;">{{ f.a }}</div>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <!-- EMPTY / LOADING -->
+    <section style="margin-bottom:40px;" id="states">
+      <h2 style="font-size:28px;font-weight:700;margin:0 0 8px;">Empty &amp; loading states</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+        <div style="background:#fff;border:1px dashed #D8D5CE;border-radius:8px;padding:40px;text-align:center;">
+          <div style="font-size:15px;font-weight:600;margin-bottom:4px;">Офисы не найдены</div>
+          <div style="font-size:14px;color:#6B675F;">Попробуйте выбрать другой город</div>
+        </div>
+        <div style="background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:24px;">
+          <div style="height:14px;width:70%;background:#EEECE7;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="height:14px;width:90%;background:#EEECE7;border-radius:4px;margin-bottom:12px;"></div>
+          <div style="height:14px;width:50%;background:#EEECE7;border-radius:4px;"></div>
+        </div>
+      </div>
+      <div style="margin-top:32px;padding:20px 24px;background:#16140F;color:#C7C3BA;border-radius:8px;font-size:14px;font-family:'IBM Plex Mono',monospace;">Breakpoints &mdash; desktop 1440px &middot; mobile 390px (secondary check 360px)</div>
+    </section>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { faqOpen: 0 };
+  renderVals() {
+    const neutralData = [
+      ['#16140F','900 / text'], ['#3A3730','800'], ['#6B675F','600 / secondary'],
+      ['#9A968D','400'], ['#D8D5CE','200 / border'], ['#F3F1EC','50 / surface']
+    ];
+    const neutrals = neutralData.map(([hex,name]) => ({ hex, name, swatchStyle: `height:64px;background:${hex};` }));
+
+    const semData = [
+      ['Success','#1E7D4B'], ['Warning','#B4740E'], ['Error','#B3261E'], ['Info','#2B5FA8']
+    ];
+    const semantics = semData.map(([name,hex]) => ({ name, hex, swatchStyle: `background:${hex};` }));
+
+    const typeData = [
+      ['Display', 'font-size:44px;font-weight:700;line-height:1.15;', '44 / 700 / 1.15'],
+      ['H1', 'font-size:36px;font-weight:700;line-height:1.2;', '36 / 700 / 1.2'],
+      ['H2', 'font-size:28px;font-weight:700;line-height:1.25;', '28 / 700 / 1.25'],
+      ['H3', 'font-size:22px;font-weight:600;line-height:1.3;', '22 / 600 / 1.3'],
+      ['Body large', 'font-size:18px;font-weight:400;line-height:1.6;', '18 / 400 / 1.6'],
+      ['Body', 'font-size:16px;font-weight:400;line-height:1.6;', '16 / 400 / 1.6'],
+      ['Caption', 'font-size:13px;font-weight:500;line-height:1.4;color:#6B675F;', '13 / 500 / 1.4'],
+    ];
+    const typeScale = typeData.map(([label,sampleStyle,spec]) => ({ label, sampleStyle, spec }));
+
+    const spacingScale = [4,8,12,16,24,32,48,64,96].map(px => ({ px }));
+
+    const iconPaths = {
+      phone: '<path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"/>',
+      search: '<circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>',
+      shield: '<path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3Z"/>',
+      pin: '<path d="M12 21s7-6.5 7-11.5A7 7 0 0 0 5 9.5C5 14.5 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.25"/>',
+      calc: '<rect x="5" y="3" width="14" height="18" rx="2"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="12" x2="8" y2="12"/><line x1="12" y1="12" x2="12" y2="12"/><line x1="16" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="12" y1="16" x2="12" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/>',
+      menu: '<line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>',
+      check: '<path d="M5 13l4 4L19 7"/>',
+      arrow: '<line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/>',
+      mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+    };
+    const iconNames = ['phone','search','shield','pin','calc','menu','check','mail'];
+    const icons = iconNames.map(name => ({ name, svgInner: { __html: iconPaths[name] } }));
+
+    const faqData = [
+      ['Как оформить полис онлайн?', 'Заполните калькулятор на странице продукта, затем перейдите к пошаговой заявке — оплата доступна через ЕРИП.'],
+      ['Что делать при страховом случае?', 'Свяжитесь по круглосуточному номеру или подайте уведомление через личный кабинет.'],
+      ['Можно ли изменить полис после оформления?', 'Да, через личный кабинет или в любом из 11 региональных представительств.'],
+    ];
+    const faqItems = faqData.map(([q,a], i) => ({
+      q, a, open: this.state.faqOpen === i,
+      toggle: () => this.setState(s => ({ faqOpen: s.faqOpen === i ? -1 : i })),
+      chevronStyle: `display:inline-block;transition:transform .15s;transform:rotate(${this.state.faqOpen === i ? 90 : 0}deg);color:#9A968D;`
+    }));
+
+    return { neutrals, semantics, typeScale, spacingScale, icons, faqItems };
+  }
+}
+</script>
+<div style="position:fixed;right:16px;bottom:16px;z-index:2147483647;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+  <details style="background:#16140F;color:#fff;border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.3);overflow:hidden;">
+    <summary style="list-style:none;cursor:pointer;padding:11px 16px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;user-select:none;">
+      <span style="font-size:15px;line-height:1;">☰</span> Макеты концепции
+    </summary>
+    <div style="padding:8px;border-top:1px solid rgba(255,255,255,.14);min-width:220px;">
+      <a href="index.html" style="display:block;padding:9px 12px;border-radius:6px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;">← Ко всем страницам</a>
+      <div style="height:1px;background:rgba(255,255,255,.14);margin:6px 4px;"></div>
+      <div style="padding:9px 12px;border-radius:6px;background:rgba(196,18,48,.18);color:#fff;font-size:13px;font-weight:600;">Style system</div>
+      <a href="home.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">01 · Главная</a>
+      <a href="product-kasko.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">02 · АвтоКаско</a>
+      <a href="person-hub.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">03 · Частным лицам</a>
+      <a href="about.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">04 · О компании</a>
+      <a href="contacts.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">05 · Контакты</a>
+    </div>
+  </details>
+</div>
+</body>
+</html>

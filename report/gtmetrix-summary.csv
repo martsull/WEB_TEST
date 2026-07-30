@@ -1,0 +1,6 @@
+url,grade,gtmetrix_score,performance_score,structure_score,lcp_ms,tbt_ms,cls,fcp_ms,tti_ms,speed_index_ms,ttfb_ms,onload_ms,fully_loaded_ms,page_bytes,page_requests,report_url,report_json
+https://task.by/,B,85,81,92,1809,0,0.120896,1503,1503,1719,610,2247,2575,1224686,46,https://gtmetrix.com/reports/task.by/GlLyhrOb/,gtmetrix-reports/0001_index.json
+https://task.by/person,B,84,80,90,2079,0,0.00185342,1842,1842,1906,976,2133,2307,525516,34,https://gtmetrix.com/reports/task.by/4OqAodFx/,gtmetrix-reports/0002_person.json
+https://task.by/person/auto,B,87,84,91,1853,0,0.0187846,1671,1671,1747,764,2096,2277,435597,33,https://gtmetrix.com/reports/task.by/pAlsUo0g/,gtmetrix-reports/0003_person_auto.json
+https://task.by/person/auto/osago,B,84,81,89,2055,0,0.01889,1770,1770,1854,813,2246,2425,744623,35,https://gtmetrix.com/reports/task.by/RLcKXY4Y/,gtmetrix-reports/0004_person_auto_osago.json
+https://task.by/person/auto/kasko,B,85,82,89,1985,0,0.0197119,1700,1700,1781,801,1982,2157,467586,34,https://gtmetrix.com/reports/task.by/xL5dEmwK/,gtmetrix-reports/0005_person_auto_kasko.json

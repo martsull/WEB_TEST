@@ -1,0 +1,205 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]: ЧАСТНЫМ ЛИЦАМ · DESKTOP · 1440px
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e8]:
+          - generic [ref=e9]: Т
+          - generic [ref=e11]: ТАСК
+        - generic [ref=e12]:
+          - generic [ref=e13] [cursor=pointer]: Частным лицам
+          - generic [ref=e14] [cursor=pointer]: Корпоративным клиентам
+          - generic [ref=e15] [cursor=pointer]: О компании
+          - generic [ref=e16] [cursor=pointer]: Контакты
+        - generic [ref=e17]:
+          - link "+375 17 363-24-02" [ref=e21] [cursor=pointer]:
+            - /url: tel:+375173632402
+          - button "Вход" [ref=e22] [cursor=pointer]
+      - generic [ref=e23]: Главная/Частным лицам
+      - generic [ref=e24]:
+        - heading "Частным лицам" [level=1] [ref=e25]
+        - paragraph [ref=e26]: Страхование автомобиля, жилья, здоровья и путешествий — всё, что защищает вас и вашу семью, в одном месте. Выберите направление ниже или оформите полис онлайн за несколько минут.
+      - generic [ref=e28]:
+        - generic [ref=e29] [cursor=pointer]: ОНЛАЙН страхование
+        - generic [ref=e34] [cursor=pointer]: Оплата через ЕРИП
+        - generic [ref=e38] [cursor=pointer]: Личный кабинет
+        - generic [ref=e43] [cursor=pointer]: Страховой случай
+        - generic [ref=e47] [cursor=pointer]: Заявка на медобслуживание
+        - generic [ref=e51] [cursor=pointer]: Точки продаж
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e65]: Автострахование
+            - generic [ref=e66]: КАСКО, ОСАГО и страхование водителя
+          - generic [ref=e67]:
+            - generic [ref=e68]: КАСКО
+            - generic [ref=e69]: ОСАГО
+            - generic [ref=e70]: Водитель и пассажиры
+          - button "Подробнее →" [ref=e71] [cursor=pointer]
+        - generic [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e78]: Имущество
+            - generic [ref=e79]: Квартиры, дома, дачи и хозпостройки
+          - generic [ref=e80]:
+            - generic [ref=e81]: Квартира
+            - generic [ref=e82]: Загородный дом
+            - generic [ref=e83]: Дача
+          - button "Подробнее →" [ref=e84] [cursor=pointer]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e90]: Здоровье и путешествия
+            - generic [ref=e91]: Медицинское страхование и выезд за рубеж
+          - generic [ref=e92]:
+            - generic [ref=e93]: ДМС
+            - generic [ref=e94]: Выезд за рубеж
+            - generic [ref=e95]: Спортивная страховка
+          - button "Подробнее →" [ref=e96] [cursor=pointer]
+      - generic [ref=e97]:
+        - generic [ref=e98]:
+          - generic [ref=e99]: 35 лет
+          - generic [ref=e100]: на рынке Беларуси
+        - generic [ref=e101]:
+          - generic [ref=e102]: "11"
+          - generic [ref=e103]: представительств
+        - generic [ref=e104]:
+          - generic [ref=e105]: ✓
+          - generic [ref=e106]: Лицензия Минфина РБ
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]:
+            - generic [ref=e110]: О компании
+            - generic [ref=e111] [cursor=pointer]: История
+            - generic [ref=e112] [cursor=pointer]: Лицензии
+            - generic [ref=e113] [cursor=pointer]: Реквизиты
+            - generic [ref=e114] [cursor=pointer]: Раскрытие информации
+          - generic [ref=e115]:
+            - generic [ref=e116]: Страхование в «ТАСК»
+            - generic [ref=e117] [cursor=pointer]: Все продукты
+            - generic [ref=e118] [cursor=pointer]: Тарифы
+            - generic [ref=e119] [cursor=pointer]: Правила страхования
+          - generic [ref=e120]:
+            - generic [ref=e121]: Частным лицам
+            - generic [ref=e122] [cursor=pointer]: Автострахование
+            - generic [ref=e123] [cursor=pointer]: Имущество
+            - generic [ref=e124] [cursor=pointer]: Здоровье
+          - generic [ref=e125]:
+            - generic [ref=e126]: Корпоративным клиентам
+            - generic [ref=e127] [cursor=pointer]: Транспорт
+            - generic [ref=e128] [cursor=pointer]: Имущество
+            - generic [ref=e129] [cursor=pointer]: Ответственность
+          - generic [ref=e130]:
+            - generic [ref=e131]: Пресс-центр
+            - generic [ref=e132] [cursor=pointer]: Новости
+            - generic [ref=e133] [cursor=pointer]: Публикации
+          - generic [ref=e134]:
+            - generic [ref=e135]: Сотрудничество
+            - generic [ref=e136] [cursor=pointer]: Агентам
+            - generic [ref=e137] [cursor=pointer]: Партнёрам
+          - generic [ref=e138]:
+            - generic [ref=e139]: Контактная информация
+            - generic [ref=e140] [cursor=pointer]: Адреса и телефоны
+            - generic [ref=e141] [cursor=pointer]: Заказать звонок
+        - generic [ref=e142]:
+          - generic [ref=e143]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691. г. Минск, ул. Червякова, 46.
+          - generic [ref=e144]:
+            - generic [ref=e145]: ЕРИП
+            - generic [ref=e146]: VISA
+            - generic [ref=e147]: Mastercard
+            - generic [ref=e148] [cursor=pointer]: Настройки cookie
+    - generic [ref=e149]: ЧАСТНЫМ ЛИЦАМ · MOBILE · 390px
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - button "Меню" [ref=e153]
+        - generic [ref=e155]: Частным лицам
+        - link "Позвонить" [ref=e156] [cursor=pointer]:
+          - /url: tel:+375173632402
+      - generic [ref=e159]:
+        - heading "Частным лицам" [level=1] [ref=e160]
+        - paragraph [ref=e161]: Автомобиль, жильё, здоровье и путешествия — выберите направление.
+      - generic [ref=e162]:
+        - generic [ref=e163]: ОНЛАЙН страхование
+        - generic [ref=e168]: Оплата через ЕРИП
+        - generic [ref=e172]: Личный кабинет
+        - generic [ref=e177]: Страховой случай
+        - generic [ref=e181]: Заявка на медобслуживание
+        - generic [ref=e185]: Точки продаж
+      - generic [ref=e190]:
+        - generic [ref=e191]:
+          - generic [ref=e192]: Автострахование
+          - generic [ref=e200]: КАСКО, ОСАГО и страхование водителя
+          - generic [ref=e201]:
+            - generic [ref=e202]: КАСКО
+            - generic [ref=e203]: ОСАГО
+            - generic [ref=e204]: Водитель и пассажиры
+          - button "Подробнее →" [ref=e205]
+        - generic [ref=e206]:
+          - generic [ref=e207]: Имущество
+          - generic [ref=e213]: Квартиры, дома, дачи и хозпостройки
+          - generic [ref=e214]:
+            - generic [ref=e215]: Квартира
+            - generic [ref=e216]: Загородный дом
+            - generic [ref=e217]: Дача
+          - button "Подробнее →" [ref=e218]
+        - generic [ref=e219]:
+          - generic [ref=e220]: Здоровье и путешествия
+          - generic [ref=e225]: Медицинское страхование и выезд за рубеж
+          - generic [ref=e226]:
+            - generic [ref=e227]: ДМС
+            - generic [ref=e228]: Выезд за рубеж
+            - generic [ref=e229]: Спортивная страховка
+          - button "Подробнее →" [ref=e230]
+      - generic [ref=e231]:
+        - generic [ref=e232]:
+          - generic [ref=e233]: 35 лет
+          - generic [ref=e234]: на рынке
+        - generic [ref=e235]:
+          - generic [ref=e236]: "11"
+          - generic [ref=e237]: офисов
+        - generic [ref=e238]:
+          - generic [ref=e239]: ✓
+          - generic [ref=e240]: лицензия
+      - generic [ref=e241]:
+        - generic [ref=e242]:
+          - generic [ref=e243]:
+            - generic [ref=e244]: О компании
+            - generic [ref=e245]: История
+            - generic [ref=e246]: Лицензии
+            - generic [ref=e247]: Реквизиты
+            - generic [ref=e248]: Раскрытие информации
+          - generic [ref=e249]:
+            - generic [ref=e250]: Страхование в «ТАСК»
+            - generic [ref=e251]: Все продукты
+            - generic [ref=e252]: Тарифы
+            - generic [ref=e253]: Правила страхования
+          - generic [ref=e254]:
+            - generic [ref=e255]: Частным лицам
+            - generic [ref=e256]: Автострахование
+            - generic [ref=e257]: Имущество
+            - generic [ref=e258]: Здоровье
+          - generic [ref=e259]:
+            - generic [ref=e260]: Корпоративным клиентам
+            - generic [ref=e261]: Транспорт
+            - generic [ref=e262]: Имущество
+            - generic [ref=e263]: Ответственность
+          - generic [ref=e264]:
+            - generic [ref=e265]: Пресс-центр
+            - generic [ref=e266]: Новости
+            - generic [ref=e267]: Публикации
+          - generic [ref=e268]:
+            - generic [ref=e269]: Сотрудничество
+            - generic [ref=e270]: Агентам
+            - generic [ref=e271]: Партнёрам
+          - generic [ref=e272]:
+            - generic [ref=e273]: Контактная информация
+            - generic [ref=e274]: Адреса и телефоны
+            - generic [ref=e275]: Заказать звонок
+        - generic [ref=e276]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691.
+      - generic [ref=e277]:
+        - link "Позвонить" [ref=e278] [cursor=pointer]:
+          - /url: tel:+375173632402
+        - button "Рассчитать полис" [ref=e279]
+  - text: <
+  - group [ref=e281]:
+    - generic "☰ Макеты концепции" [ref=e282] [cursor=pointer]:
+      - generic [ref=e283]: ☰
+      - text: Макеты концепции

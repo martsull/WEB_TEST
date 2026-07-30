@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>task.by — превью нового дизайна</title>
+<style>
+  :root{
+    --red:#C41230; --ink:#232019; --ink-soft:#4A4740; --muted:#6B675F;
+    --line:#E4E1DC; --bg:#FAFAF9; --panel:#16140F;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  header.hero{background:var(--panel);color:#fff;padding:60px 0 46px;}
+  .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9A968D;margin-bottom:14px;}
+  h1{font-size:34px;line-height:1.2;margin:0 0 14px;font-weight:700;}
+  .lead{font-size:17px;line-height:1.6;color:#C7C3BA;max-width:680px;margin:0;}
+  nav.pages{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px;}
+  nav.pages a{color:#fff;text-decoration:none;font-size:13px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:8px 14px;border-radius:20px;}
+  nav.pages a:hover{background:rgba(255,255,255,.16);}
+
+  section.page{padding:52px 0;border-bottom:1px solid var(--line);}
+  section.page:last-of-type{border-bottom:none;}
+  .page-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:10px;}
+  .page-head h2{font-size:24px;margin:0;}
+  .step{font-size:12px;font-weight:700;color:#9A968D;text-transform:uppercase;letter-spacing:.05em;}
+  .rationale{font-size:15.5px;line-height:1.6;color:var(--ink-soft);max-width:820px;margin:6px 0 14px;}
+  .findings{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px;}
+  .findings span{background:#F3F1EC;border:1px solid var(--line);border-radius:4px;padding:5px 11px;font-size:12px;color:var(--muted);}
+
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  @media (max-width:860px){ .compare{grid-template-columns:1fr;} }
+  .col{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff;}
+  .col .lbl{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;font-size:12.5px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;}
+  .col.before .lbl{background:#FCE8E8;color:#B3261E;}
+  .col.after .lbl{background:#E9F5EC;color:#1E7A3B;}
+  .frame{height:560px;overflow-y:auto;background:#f2f1ee;}
+  .frame img{display:block;width:100%;height:auto;}
+  .frame::-webkit-scrollbar{width:8px;}
+  .frame::-webkit-scrollbar-thumb{background:#c9c5bc;border-radius:4px;}
+  .hint{font-size:12px;color:var(--muted);padding:8px 14px;border-top:1px solid var(--line);background:#fafaf9;}
+
+  .closing{background:var(--panel);color:#fff;padding:56px 0;margin-top:0;}
+  .closing .wrap{max-width:820px;}
+  .closing h3{font-size:22px;margin:0 0 12px;}
+  .closing p{font-size:15px;line-height:1.7;color:#C7C3BA;margin:0 0 10px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">task.by · ЗАСО «ТАСК» · концепт нового дизайна</div>
+    <h1>Как может выглядеть task.by</h1>
+    <p class="lead">Пять ключевых страниц сайта в новом оформлении — структура и содержание сохранены полностью, изменилось то, что мешало сайту продавать: оформление, доверие и путь к покупке. Слева — как есть сейчас, справа — предложенный вариант (внутри рамок можно прокручивать, как настоящую страницу).</p>
+    <nav class="pages">
+      <a href="#home">1. Главная</a>
+      <a href="#kasko">2. КАСКО</a>
+      <a href="#hub">3. Частным лицам</a>
+      <a href="#about">4. О компании</a>
+      <a href="#contacts">5. Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="page" id="home">
+    <div class="page-head"><h2>1. Главная страница</h2><span class="step">Первое впечатление</span></div>
+    <p class="rationale">Убрана клипарт-иллюстрация без единой кнопки действия — вместо неё композиция с понятным заголовком и кнопкой сразу для двух аудиторий («Частным лицам» / «Корпоративным клиентам»). Для мобильной версии — отдельный, а не сжатый экран: заголовок, одна кнопка, компактный визуал и кнопка звонка.</p>
+    <div class="findings"><span>устаревшая иллюстрация без CTA</span><span>сломанный мобильный hero</span><span>нет телефона на мобильном</span><span>поиск спрятан в футере</span></div>
+    <div class="compare">
+      <div class="col before"><div class="lbl">Сейчас</div><div class="frame"><img src="screenshots/before-home.png" alt="Главная — сейчас"></div><div class="hint">↕ прокрутите, чтобы увидеть страницу целиком</div></div>
+      <div class="col after"><div class="lbl">Новый вариант</div><div class="frame"><img src="screenshots/new-home-desktop.png" alt="Главная — новый дизайн"></div><div class="hint">внизу — вариант для телефона (390px)</div></div>
+    </div>
+  </section>
+
+  <section class="page" id="kasko">
+    <div class="page-head"><h2>2. Продукт — АвтоКаско</h2><span class="step">Самая важная для продаж страница</span></div>
+    <p class="rationale">Добавлены калькулятор стоимости и кнопка оформления — по образцу страницы ОСАГО, где такая кнопка уже работает. На телефоне таблица тарифов больше не обрезается: она превращается в карточки, которые удобно листать.</p>
+    <div class="findings"><span>нет кнопки купить/рассчитать</span><span>таблица тарифов обрезана на телефоне</span><span>сплошной неразбитый текст</span><span>мелкий шрифт 14px</span></div>
+    <div class="compare">
+      <div class="col before"><div class="lbl">Сейчас</div><div class="frame"><img src="screenshots/before-kasko.png" alt="КАСКО — сейчас"></div><div class="hint">↕ прокрутите, чтобы увидеть страницу целиком</div></div>
+      <div class="col after"><div class="lbl">Новый вариант</div><div class="frame"><img src="screenshots/new-kasko-desktop.png" alt="КАСКО — новый дизайн"></div><div class="hint">внизу — вариант для телефона (390px)</div></div>
+    </div>
+  </section>
+
+  <section class="page" id="hub">
+    <div class="page-head"><h2>3. Раздел «Частным лицам»</h2><span class="step">Сейчас у раздела нет своей страницы</span></div>
+    <p class="rationale">Пункт меню «Частным лицам» сегодня незаметно ведёт на страницу «Имущество» — у самого популярного раздела меню нет собственной страницы. Ниже — как может выглядеть его настоящая landing-страница, без изменения самого дерева разделов.</p>
+    <div class="findings"><span>нет отдельной страницы у раздела</span><span>один и тот же список ссылок показан дважды</span><span>плохая читаемость каталога</span></div>
+    <div class="compare">
+      <div class="col before"><div class="lbl">Сейчас (редирект на «Имущество»)</div><div class="frame"><img src="screenshots/before-person-hub.png" alt="Частным лицам — сейчас"></div><div class="hint">↕ прокрутите, чтобы увидеть страницу целиком</div></div>
+      <div class="col after"><div class="lbl">Новый вариант</div><div class="frame"><img src="screenshots/new-person-hub-desktop.png" alt="Частным лицам — новый дизайн"></div><div class="hint">полноценная страница раздела</div></div>
+    </div>
+  </section>
+
+  <section class="page" id="about">
+    <div class="page-head"><h2>4. О компании</h2><span class="step">Страница доверия</span></div>
+    <p class="rationale">Вместо одного экрана юридических реквизитов — история компании (с 1991 года), цифры, фото руководства (уже существующее на сайте, но никак не показанное здесь), и лицензии — с сохранением всех обязательных документов.</p>
+    <div class="findings"><span>ноль контента про доверие</span><span>руководство не связано с этой страницей</span><span>нет истории, цифр, фото</span></div>
+    <div class="compare">
+      <div class="col before"><div class="lbl">Сейчас</div><div class="frame"><img src="screenshots/before-about.png" alt="О компании — сейчас"></div><div class="hint">↕ прокрутите, чтобы увидеть страницу целиком</div></div>
+      <div class="col after"><div class="lbl">Новый вариант</div><div class="frame"><img src="screenshots/new-about-desktop.png" alt="О компании — новый дизайн"></div><div class="hint">структура: цифры → история → руководство → лицензии</div></div>
+    </div>
+  </section>
+
+  <section class="page" id="contacts">
+    <div class="page-head"><h2>5. Контакты — адреса и телефоны</h2><span class="step">Страница с самым высоким намерением к действию</span></div>
+    <p class="rationale">11 представительств вместо сплошного текста — карточки с фильтром по городу и картой, все номера телефонов кликабельны (сейчас — ни одного кликабельного номера на всём сайте).</p>
+    <div class="findings"><span>11 офисов одним текстовым блоком</span><span>нет карты и фильтра</span><span>номера нельзя нажать</span><span>мелкие ссылки на телефоне</span></div>
+    <div class="compare">
+      <div class="col before"><div class="lbl">Сейчас</div><div class="frame"><img src="screenshots/before-contacts.png" alt="Контакты — сейчас"></div><div class="hint">↕ прокрутите — список тянется ~3850px</div></div>
+      <div class="col after"><div class="lbl">Новый вариант</div><div class="frame"><img src="screenshots/new-contacts-desktop.png" alt="Контакты — новый дизайн"></div><div class="hint">карточки офисов + карта + фильтр по городу</div></div>
+    </div>
+  </section>
+
+</div>
+
+<div class="closing">
+  <div class="wrap">
+    <h3>Что важно понимать про этот концепт</h3>
+    <p>Структура разделов, меню, юридическое содержание, тарифы и адреса офисов — всё осталось на месте, как и должно быть у страховой компании. Изменилось оформление, читаемость и то, что происходит после того, как посетитель дочитал условия страхования: раньше — ничего, теперь — понятная кнопка «рассчитать» или «позвонить».</p>
+    <p>Это демонстрационный концепт пяти страниц, а не готовый к запуску сайт — часть текста (например, цифры на странице «О компании») отмечена как пример и потребует реальных данных компании.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+[
+  {
+    "page": {
+      "url": "https://task.by/",
+      "path": "/",
+      "crawlDate": "2026-07-28T14:05:40.998Z",
+      "statusCode": 200,
+      "responseTime": 586
+    },
+    "gtmetrix": {
+      "grade": "B",
+      "gtmetrixScore": 85,
+      "performanceScore": 81,
+      "structureScore": 92,
+      "lcp": 1809,
+      "tbt": 0,
+      "cls": 0.120896,
+      "fcp": 1503,
+      "tti": 1503,
+      "speedIndex": 1719,
+      "ttfb": 610,
+      "onload": 2247,
+      "fullyLoaded": 2575,
+      "pageBytes": 1224686,
+      "pageRequests": 46,
+      "reportUrl": "https://gtmetrix.com/reports/task.by/GlLyhrOb/",
+      "reportPath": "/Users/aleksandr_martsul/others/web_test/report/gtmetrix-reports/0001_index.json"
+    }
+  },
+  {
+    "page": {
+      "url": "https://task.by/person",
+      "path": "/person",
+      "crawlDate": "2026-07-28T14:06:11.310Z",
+      "statusCode": 200,
+      "responseTime": 570
+    },
+    "gtmetrix": {
+      "grade": "B",
+      "gtmetrixScore": 84,
+      "performanceScore": 80,
+      "structureScore": 90,
+      "lcp": 2079,
+      "tbt": 0,
+      "cls": 0.00185342,
+      "fcp": 1842,
+      "tti": 1842,
+      "speedIndex": 1906,
+      "ttfb": 976,
+      "onload": 2133,
+      "fullyLoaded": 2307,
+      "pageBytes": 525516,
+      "pageRequests": 34,
+      "reportUrl": "https://gtmetrix.com/reports/task.by/4OqAodFx/",
+      "reportPath": "/Users/aleksandr_martsul/others/web_test/report/gtmetrix-reports/0002_person.json"
+    }
+  },
+  {
+    "page": {
+      "url": "https://task.by/person/auto",
+      "path": "/person/auto",
+      "crawlDate": "2026-07-28T14:06:39.853Z",
+      "statusCode": 200,
+      "responseTime": 408
+    },
+    "gtmetrix": {
+      "grade": "B",
+      "gtmetrixScore": 87,
+      "performanceScore": 84,
+      "structureScore": 91,
+      "lcp": 1853,
+      "tbt": 0,
+      "cls": 0.0187846,
+      "fcp": 1671,
+      "tti": 1671,
+      "speedIndex": 1747,
+      "ttfb": 764,
+      "onload": 2096,
+      "fullyLoaded": 2277,
+      "pageBytes": 435597,
+      "pageRequests": 33,
+      "reportUrl": "https://gtmetrix.com/reports/task.by/pAlsUo0g/",
+      "reportPath": "/Users/aleksandr_martsul/others/web_test/report/gtmetrix-reports/0003_person_auto.json"
+    }
+  },
+  {
+    "page": {
+      "url": "https://task.by/person/auto/osago",
+      "path": "/person/auto/osago",
+      "crawlDate": "2026-07-28T14:07:06.412Z",
+      "statusCode": 200,
+      "responseTime": 1321
+    },
+    "gtmetrix": {
+      "grade": "B",
+      "gtmetrixScore": 84,
+      "performanceScore": 81,
+      "structureScore": 89,
+      "lcp": 2055,
+      "tbt": 0,
+      "cls": 0.01889,
+      "fcp": 1770,
+      "tti": 1770,
+      "speedIndex": 1854,
+      "ttfb": 813,
+      "onload": 2246,
+      "fullyLoaded": 2425,
+      "pageBytes": 744623,
+      "pageRequests": 35,
+      "reportUrl": "https://gtmetrix.com/reports/task.by/RLcKXY4Y/",
+      "reportPath": "/Users/aleksandr_martsul/others/web_test/report/gtmetrix-reports/0004_person_auto_osago.json"
+    }
+  },
+  {
+    "page": {
+      "url": "https://task.by/person/auto/kasko",
+      "path": "/person/auto/kasko",
+      "crawlDate": "2026-07-28T14:07:28.901Z",
+      "statusCode": 200,
+      "responseTime": 448
+    },
+    "gtmetrix": {
+      "grade": "B",
+      "gtmetrixScore": 85,
+      "performanceScore": 82,
+      "structureScore": 89,
+      "lcp": 1985,
+      "tbt": 0,
+      "cls": 0.0197119,
+      "fcp": 1700,
+      "tti": 1700,
+      "speedIndex": 1781,
+      "ttfb": 801,
+      "onload": 1982,
+      "fullyLoaded": 2157,
+      "pageBytes": 467586,
+      "pageRequests": 34,
+      "reportUrl": "https://gtmetrix.com/reports/task.by/xL5dEmwK/",
+      "reportPath": "/Users/aleksandr_martsul/others/web_test/report/gtmetrix-reports/0005_person_auto_kasko.json"
+    }
+  },
+  {
+    "url": "https://task.by/person/property",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/person/property/house",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/person/health",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/person/health/abroad",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/transport",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/transport/strahovanie_kasko",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/health",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/property",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/property/strahovanie_imuschestva",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/responsibility",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/corporate/responsibility/cmr",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/about",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/contact",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/press_centr",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/press_centr/news",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/press_centr/news/2026/otpusk-zhivotnye-i-strakhovka",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/press_centr/faq",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/strahovoj_sluchaj",
+    "error": "Your plan has no Trial API credits remaining."
+  },
+  {
+    "url": "https://task.by/personal",
+    "error": "Your plan has no Trial API credits remaining."
+  }
+]

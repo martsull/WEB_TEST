@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#EEECE7;}
+  * { box-sizing: border-box; }
+  a { color:#C41230; }
+  a:hover { color:#9E0E26; }
+</style>
+</helmet>
+
+<div style="font-family:'IBM Plex Sans',sans-serif;color:#232019;background:#EEECE7;padding:48px 0;">
+
+  <!-- ============ DESKTOP FRAME ============ -->
+  <div style="text-align:center;font-size:12px;font-family:'IBM Plex Mono',monospace;color:#9A968D;margin-bottom:12px;letter-spacing:0.05em;">HOME — DESKTOP · 1440px</div>
+  <div style="width:1440px;margin:0 auto 64px;background:#fff;box-shadow:0 20px 60px rgba(22,20,15,0.12);overflow:hidden;">
+
+    <!-- header -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:18px 48px;border-bottom:1px solid #EEECE7;">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:#C41230;display:flex;align-items:center;justify-content:center;"><span style="color:#fff;font-weight:700;font-size:17px;">Т</span></div>
+        <span style="font-weight:700;font-size:17px;">ТАСК</span>
+      </div>
+      <div style="display:flex;gap:32px;font-size:14px;font-weight:500;">
+        <span style="color:#232019;cursor:pointer;transition:color .15s;" style-hover="color:#C41230;">Частным лицам</span>
+        <span style="color:#232019;cursor:pointer;transition:color .15s;" style-hover="color:#C41230;">Корпоративным клиентам</span>
+        <span style="color:#232019;cursor:pointer;transition:color .15s;" style-hover="color:#C41230;">О компании</span>
+        <span style="color:#232019;cursor:pointer;transition:color .15s;" style-hover="color:#C41230;">Контакты</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:20px;">
+        <div style="{{ desktopSearchWrapStyle }}">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#232019" stroke-width="1.75" style="cursor:pointer;flex-shrink:0;transition:stroke .15s;" style-hover="stroke:#C41230;" onClick="{{ toggleDesktopSearch }}"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <sc-if value="{{ desktopSearchOpen }}" hint-placeholder-val="{{ false }}">
+            <input type="text" placeholder="Поиск по продуктам и документам" style="border:none;outline:none;font-size:14px;font-family:inherit;width:220px;background:transparent;">
+          </sc-if>
+        </div>
+        <a href="tel:+375173632402" style="font-size:14px;font-weight:600;color:#C41230;text-decoration:none;transition:color .15s;" style-hover="color:#9E0E26;">+375 17 363-24-02</a>
+        <button style="height:40px;padding:0 20px;background:#fff;border:1.5px solid #232019;border-radius:8px;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .15s;" style-hover="background:#232019;color:#fff;">Вход</button>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;align-items:stretch;">
+      <div style="padding:96px 64px;display:flex;flex-direction:column;justify-content:center;">
+        <h1 style="font-size:48px;font-weight:700;line-height:1.15;margin:0 0 20px;max-width:520px;letter-spacing:-0.01em;">Гарантия защиты Ваших интересов</h1>
+        <p style="font-size:18px;line-height:1.6;color:#6B675F;max-width:480px;margin:0 0 32px;">Страховая компания «ТАСК» &mdash; на рынке Беларуси с 1991 года. Автострахование, имущество, здоровье и корпоративные риски.</p>
+        <div style="margin-bottom:32px;">
+          <div style="font-size:13px;font-weight:600;color:#9A968D;margin-bottom:10px;">Рассчитать стоимость для:</div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;">
+            <sc-for list="{{ heroChips }}" as="hc" hint-placeholder-count="4">
+              <button onClick="{{ hc.select }}" style="{{ hc.chipStyle }}">{{ hc.label }}</button>
+            </sc-for>
+          </div>
+          <button style="height:52px;padding:0 28px;background:#C41230;color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;transition:background .15s;" style-hover="background:#9E0E26;">Рассчитать стоимость</button>
+        </div>
+        <div style="display:flex;gap:16px;margin-bottom:48px;">
+          <button style="height:52px;padding:0 28px;background:#fff;color:#232019;border:1.5px solid #232019;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .15s;" style-hover="background:#232019;color:#fff;">Частным лицам</button>
+          <button style="height:52px;padding:0 28px;background:#fff;color:#232019;border:1.5px solid #232019;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .15s;" style-hover="background:#232019;color:#fff;">Корпоративным клиентам</button>
+        </div>
+        <div style="display:flex;gap:40px;padding-top:32px;border-top:1px solid #EEECE7;">
+          <div><div style="font-size:24px;font-weight:700;">35 лет</div><div style="font-size:13px;color:#6B675F;">на рынке с 1991 года</div></div>
+          <div><div style="font-size:24px;font-weight:700;">11</div><div style="font-size:13px;color:#6B675F;">представительств в Беларуси</div></div>
+          <div><div style="font-size:24px;font-weight:700;">✓</div><div style="font-size:13px;color:#6B675F;">Лицензия Минфина РБ</div></div>
+        </div>
+      </div>
+      <div style="background:#F8E9EB;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;">
+        <svg width="200" height="200" style="position:absolute;top:40px;left:40px;opacity:0.5;"><defs><pattern id="hdots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.6" fill="#C41230"></circle></pattern></defs><rect width="200" height="200" fill="url(#hdots)"></rect></svg>
+        <svg width="440" height="440" viewBox="0 0 440 440" fill="none" style="position:relative;z-index:1;">
+          <circle cx="220" cy="220" r="170" stroke="#C41230" stroke-width="1.5" opacity="0.35"></circle>
+          <circle cx="220" cy="220" r="130" stroke="#C41230" stroke-width="1.5" opacity="0.55"></circle>
+          <circle cx="220" cy="220" r="90" fill="#fff" stroke="#C41230" stroke-width="2"></circle>
+          <path d="M220 160l48 21v40c0 34-23 51-48 61-25-10-48-27-48-61v-40l48-21Z" stroke="#C41230" stroke-width="2.5" fill="none"></path>
+          <path d="M203 219l13 13 22-24" stroke="#C41230" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <div style="position:absolute;bottom:56px;left:56px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:16px 20px;box-shadow:0 12px 28px rgba(22,20,15,0.1);z-index:2;min-width:200px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+            <div style="font-size:12px;color:#9A968D;">Оформлено полисов сегодня</div>
+            
+          </div>
+          <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:10px;">
+            <span style="font-size:26px;font-weight:700;color:#C41230;">128</span>
+            <span style="font-size:12px;font-weight:600;color:#1E7D4B;">▲ 12%</span>
+          </div>
+          <svg width="160" height="28" viewBox="0 0 160 28" fill="none"><polyline points="0,22 24,18 48,20 72,12 96,14 120,6 144,8 160,2" stroke="#C41230" stroke-width="2" fill="none"></polyline></svg>
+        </div>
+        <div style="position:absolute;top:56px;right:56px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:14px 18px;box-shadow:0 12px 28px rgba(22,20,15,0.1);z-index:2;display:flex;align-items:center;gap:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1E7D4B" stroke-width="2"><path d="M5 13l4 4L19 7"></path></svg>
+          <span style="font-size:13px;font-weight:600;">Лицензия подтверждена</span>
+        </div>
+        <div style="position:absolute;top:56px;left:56px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:14px 18px;box-shadow:0 12px 28px rgba(22,20,15,0.1);z-index:2;">
+          <div style="font-size:12px;color:#9A968D;margin-bottom:4px;">Среднее время оформления</div>
+          <div style="font-size:22px;font-weight:700;">4 мин</div>
+        </div>
+        <div style="position:absolute;bottom:56px;right:56px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;padding:14px 18px;box-shadow:0 12px 28px rgba(22,20,15,0.1);z-index:2;display:flex;align-items:center;gap:10px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C41230" stroke-width="1.9"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"></path></svg>
+          <span style="font-size:13px;font-weight:600;">Поддержка 24/7</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- audience split -->
+    <div style="padding:80px 48px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div style="border:1px solid #E4E1DC;border-radius:8px;padding:40px;transition:all .2s;" style-hover="border-color:#D8D5CE;box-shadow:0 12px 28px rgba(22,20,15,0.08);transform:translateY(-2px);">
+          <div style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:12px;">Частным лицам</div>
+          <div style="font-size:24px;font-weight:700;margin-bottom:16px;">Страхование для вас и вашей семьи</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;">
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Автострахование</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Имущество</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Здоровье и путешествия</span>
+          </div>
+          <button style="height:48px;padding:0 24px;background:#C41230;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;transition:background .15s;" style-hover="background:#9E0E26;">Перейти к продуктам →</button>
+        </div>
+        <div style="border:1px solid #E4E1DC;border-radius:8px;padding:40px;transition:all .2s;" style-hover="border-color:#D8D5CE;box-shadow:0 12px 28px rgba(22,20,15,0.08);transform:translateY(-2px);">
+          <div style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:12px;">Корпоративным клиентам</div>
+          <div style="font-size:24px;font-weight:700;margin-bottom:16px;">Управление рисками для бизнеса</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;">
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Транспорт</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Имущество</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Ответственность</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Финансы</span>
+          </div>
+          <button style="height:48px;padding:0 24px;background:#fff;color:#232019;border:1.5px solid #232019;border-radius:8px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .15s;" style-hover="background:#232019;color:#fff;">Перейти к продуктам →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- news -->
+    <div style="padding:0 48px 80px;">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:24px;">
+        <div style="font-size:24px;font-weight:700;">Пресс-центр</div>
+        <span style="font-size:14px;color:#C41230;cursor:pointer;">Все новости →</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+        <sc-for list="{{ news }}" as="n" hint-placeholder-count="3">
+          <div style="border:1px solid #E4E1DC;border-radius:8px;padding:24px;transition:all .2s;cursor:pointer;" style-hover="border-color:#D8D5CE;box-shadow:0 12px 28px rgba(22,20,15,0.08);transform:translateY(-2px);">
+            <div style="font-size:12px;color:#9A968D;margin-bottom:10px;font-family:'IBM Plex Mono',monospace;">{{ n.date }}</div>
+            <div style="font-size:16px;font-weight:600;line-height:1.4;">{{ n.title }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div style="background:#F3F1EC;padding:56px 48px 32px;">
+      <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:24px;margin-bottom:40px;">
+        <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="7">
+          <div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:14px;">{{ col.title }}</div>
+            <sc-for list="{{ col.items }}" as="it" hint-placeholder-count="3">
+              <div style="font-size:13px;color:#6B675F;margin-bottom:10px;cursor:pointer;transition:color .15s;" style-hover="color:#C41230;" data-hoverlink="1">{{ it }}</div>
+            </sc-for>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #E4E1DC;padding-top:24px;font-size:12px;color:#9A968D;">
+        <span>© 1991–2026 ЗАСО «ТАСК». УНП 100039691. г. Минск, ул. Червякова, 46.</span>
+        <div style="display:flex;gap:12px;">
+          <div style="height:24px;padding:0 10px;background:#F3F1EC;border:1px solid #E4E1DC;border-radius:3px;display:flex;align-items:center;font-size:11px;font-weight:600;color:#6B675F;">ЕРИП</div>
+          <div style="height:24px;padding:0 10px;background:#F3F1EC;border:1px solid #E4E1DC;border-radius:3px;display:flex;align-items:center;font-size:11px;font-weight:600;color:#6B675F;">VISA</div>
+          <div style="height:24px;padding:0 10px;background:#F3F1EC;border:1px solid #E4E1DC;border-radius:3px;display:flex;align-items:center;font-size:11px;font-weight:600;color:#6B675F;">Mastercard</div>
+          <span style="text-decoration:underline;cursor:pointer;transition:color .15s;" style-hover="color:#C41230;">Настройки cookie</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ MOBILE FRAME ============ -->
+  <div style="text-align:center;font-size:12px;font-family:'IBM Plex Mono',monospace;color:#9A968D;margin-bottom:12px;letter-spacing:0.05em;">HOME — MOBILE · 390px</div>
+  <div style="width:390px;height:844px;margin:0 auto;background:#fff;border-radius:28px;box-shadow:0 20px 60px rgba(22,20,15,0.12);position:relative;overflow:hidden;border:6px solid #16140F;">
+    <div style="height:100%;overflow-y:auto;position:relative;">
+
+      <!-- mobile header -->
+      <div style="display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid #EEECE7;position:sticky;top:0;background:#fff;z-index:5;">
+        <button aria-label="Открыть меню" onClick="{{ toggleMobileMenu }}" style="width:44px;height:44px;border:none;background:none;display:flex;align-items:center;justify-content:center;cursor:pointer;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#232019" stroke-width="1.75"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+        </button>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:28px;height:28px;border-radius:50%;background:#C41230;display:flex;align-items:center;justify-content:center;"><span style="color:#fff;font-weight:700;font-size:13px;">Т</span></div>
+          <span style="font-weight:700;font-size:15px;">ТАСК</span>
+        </div>
+        <a href="tel:+375173632402" aria-label="Позвонить" style="width:44px;height:44px;display:flex;align-items:center;justify-content:center;text-decoration:none;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41230" stroke-width="1.9"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"></path></svg>
+        </a>
+      </div>
+
+      <!-- mobile hero -->
+      <div style="padding:36px 20px 28px;background:#F8E9EB;color:#232019;text-align:center;position:relative;overflow:hidden;">
+        <svg width="90" height="90" style="position:absolute;top:10px;left:10px;opacity:0.5;"><defs><pattern id="mdots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="1.5" cy="1.5" r="1.2" fill="#C41230"></circle></pattern></defs><rect width="90" height="90" fill="url(#mdots)"></rect></svg>
+        <svg width="120" height="120" viewBox="0 0 120 120" fill="none" style="margin:0 auto 20px;position:relative;z-index:1;">
+          <circle cx="60" cy="60" r="46" stroke="#C41230" stroke-width="1.5" opacity="0.4"></circle>
+          <circle cx="60" cy="60" r="30" fill="#fff" stroke="#C41230" stroke-width="2"></circle>
+          <path d="M60 42l13 6v11c0 9-6 14-13 17-7-3-13-8-13-17V48l13-6Z" stroke="#C41230" stroke-width="2" fill="none"></path>
+          <path d="M55 60l4 4 7-7" stroke="#C41230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <h1 style="font-size:26px;font-weight:700;line-height:1.25;margin:0 0 12px;position:relative;z-index:1;">Гарантия защиты Ваших интересов</h1>
+        <p style="font-size:15px;line-height:1.5;color:#6B675F;margin:0 0 20px;position:relative;z-index:1;">На рынке Беларуси с 1991 года</p>
+        <div style="position:relative;z-index:1;margin-bottom:16px;">
+          <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
+            <sc-for list="{{ heroChips }}" as="hc" hint-placeholder-count="4">
+              <button onClick="{{ hc.select }}" style="{{ hc.chipStyleMobile }}">{{ hc.label }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <button style="width:100%;height:52px;background:#C41230;color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:600;font-family:inherit;position:relative;z-index:1;transition:background .15s;" style-hover="background:#9E0E26;">Рассчитать стоимость</button>
+      </div>
+
+      <!-- trust strip -->
+      <div style="display:flex;justify-content:space-around;padding:20px;border-bottom:1px solid #EEECE7;">
+        <div style="text-align:center;"><div style="font-size:18px;font-weight:700;">35 лет</div><div style="font-size:11px;color:#6B675F;">на рынке</div></div>
+        <div style="text-align:center;"><div style="font-size:18px;font-weight:700;">11</div><div style="font-size:11px;color:#6B675F;">офисов</div></div>
+        <div style="text-align:center;"><div style="font-size:18px;font-weight:700;">✓</div><div style="font-size:11px;color:#6B675F;">лицензия РБ</div></div>
+      </div>
+
+      <!-- audience split (mobile equivalent of desktop's audience split section) -->
+      <div style="padding:24px 20px;display:flex;flex-direction:column;gap:16px;">
+        <div style="border:1px solid #E4E1DC;border-radius:8px;padding:24px 20px;">
+          <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:10px;">Частным лицам</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:16px;">Страхование для вас и вашей семьи</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Автострахование</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Имущество</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Здоровье и путешествия</span>
+          </div>
+          <button style="width:100%;height:48px;padding:0 24px;background:#C41230;color:#fff;border:none;border-radius:8px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;transition:background .15s;" style-hover="background:#9E0E26;">Перейти к продуктам →</button>
+        </div>
+
+        <div style="border:1px solid #E4E1DC;border-radius:8px;padding:24px 20px;">
+          <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;color:#9A968D;margin-bottom:10px;">Корпоративным клиентам</div>
+          <div style="font-size:19px;font-weight:700;margin-bottom:16px;">Управление рисками для бизнеса</div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px;">
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Транспорт</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Имущество</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Ответственность</span>
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:13px;">Финансы</span>
+          </div>
+          <button style="width:100%;height:48px;padding:0 24px;background:#fff;color:#232019;border:1.5px solid #232019;border-radius:8px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer;transition:all .15s;" style-hover="background:#232019;color:#fff;">Перейти к продуктам →</button>
+        </div>
+      </div>
+
+      <!-- news -->
+      <div style="padding:8px 20px 24px;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:16px;">
+          <div style="font-size:19px;font-weight:700;">Пресс-центр</div>
+          <span style="font-size:13px;color:#C41230;cursor:pointer;">Все новости →</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <sc-for list="{{ news }}" as="n" hint-placeholder-count="3">
+            <div style="border:1px solid #E4E1DC;border-radius:8px;padding:16px 18px;transition:all .15s;cursor:pointer;" style-hover="border-color:#D8D5CE;box-shadow:0 12px 28px rgba(22,20,15,0.08);">
+              <div style="font-size:11px;color:#9A968D;margin-bottom:8px;font-family:'IBM Plex Mono',monospace;">{{ n.date }}</div>
+              <div style="font-size:14px;font-weight:600;line-height:1.4;">{{ n.title }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div style="padding:8px 20px 24px;background:#F3F1EC;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px 16px;padding-top:16px;">
+          <sc-for list="{{ footerCols }}" as="col" hint-placeholder-count="7">
+            <div>
+              <div style="font-size:14px;font-weight:700;margin-bottom:10px;">{{ col.title }}</div>
+              <sc-for list="{{ col.items }}" as="it" hint-placeholder-count="3">
+                <div style="font-size:13px;color:#6B675F;margin-bottom:8px;">{{ it }}</div>
+              </sc-for>
+            </div>
+          </sc-for>
+        </div>
+        <div style="font-size:11px;color:#9A968D;margin-top:16px;padding-top:16px;border-top:1px solid #E4E1DC;">© 1991–2026 ЗАСО «ТАСК». УНП 100039691.</div>
+      </div>
+
+      <!-- sticky bottom bar -->
+      <div style="position:sticky;bottom:0;left:0;right:0;display:flex;gap:10px;padding:12px 16px;background:#fff;border-top:1px solid #E4E1DC;z-index:6;">
+        <a href="tel:+375173632402" style="flex:1;height:48px;display:flex;align-items:center;justify-content:center;gap:8px;background:#fff;border:1.5px solid #232019;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;color:#232019;transition:all .15s;" style-hover="background:#232019;color:#fff;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#232019" stroke-width="2"><path d="M4 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v4a2 2 0 0 1-2 2C9.5 21 3 14.5 3 6a2 2 0 0 1 1-2Z"></path></svg>
+          Позвонить
+        </a>
+        <button style="flex:1;height:48px;background:#C41230;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;font-family:inherit;transition:background .15s;" style-hover="background:#9E0E26;">Рассчитать полис</button>
+      </div>
+
+      <!-- off-canvas menu overlay -->
+      <sc-if value="{{ mobileMenuOpen }}" hint-placeholder-val="{{ false }}">
+        <div style="position:absolute;inset:0;background:rgba(22,20,15,0.4);z-index:10;" onClick="{{ toggleMobileMenu }}"></div>
+        <div style="position:absolute;top:0;left:0;bottom:0;width:82%;background:#fff;z-index:11;padding:20px;overflow-y:auto;box-shadow:8px 0 24px rgba(0,0,0,0.15);">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+            <span style="font-weight:700;font-size:16px;">Меню</span>
+            <button onClick="{{ toggleMobileMenu }}" aria-label="Закрыть меню" style="width:44px;height:44px;border:none;background:none;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#232019" stroke-width="1.75"><line x1="5" y1="5" x2="19" y2="19"></line><line x1="19" y1="5" x2="5" y2="19"></line></svg>
+            </button>
+          </div>
+          <div style="border:1px solid #E4E1DC;border-radius:8px;display:flex;align-items:center;gap:8px;padding:10px 14px;margin-bottom:20px;">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9A968D" stroke-width="1.75"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" placeholder="Поиск" style="border:none;outline:none;font-size:14px;font-family:inherit;width:100%;">
+          </div>
+          <div style="display:flex;flex-direction:column;">
+            <sc-for list="{{ mobileMenuItems }}" as="mi" hint-placeholder-count="6">
+              <div style="padding:14px 0;border-bottom:1px solid #EEECE7;font-size:15px;font-weight:500;min-height:44px;display:flex;align-items:center;">{{ mi }}</div>
+            </sc-for>
+          </div>
+          <a href="tel:+375173632402" style="display:block;margin-top:20px;font-size:16px;font-weight:700;color:#C41230;text-decoration:none;">+375 17 363-24-02</a>
+          <button style="width:100%;height:48px;margin-top:16px;background:#F3F1EC;border:1px solid #E4E1DC;border-radius:8px;font-size:14px;font-weight:600;font-family:inherit;transition:background .15s;" style-hover="background:#E4E1DC;">Вход в личный кабинет</button>
+        </div>
+      </sc-if>
+
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { mobileMenuOpen: false, desktopSearchOpen: false, faOpen: -1, heroCat: 'auto' };
+  renderVals() {
+    const heroCatsData = [
+      ['auto','Авто'], ['property','Имущество'], ['health','Здоровье'], ['corporate','Для бизнеса'],
+    ];
+    const activeCat = this.state.heroCat;
+    const heroChips = heroCatsData.map(([key,label]) => {
+      const active = key === activeCat;
+      return {
+        label, select: () => this.setState({ heroCat: key }),
+        chipStyle: `height:44px;padding:0 18px;border-radius:8px;font-size:14px;font-weight:600;font-family:inherit;cursor:pointer;border:1.5px solid ${active?'#C41230':'#E4E1DC'};background:${active?'#C41230':'#fff'};color:${active?'#fff':'#232019'};`,
+        chipStyleMobile: `height:44px;padding:0 14px;border-radius:8px;font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;border:1.5px solid ${active?'#C41230':'#E4E1DC'};background:${active?'#C41230':'#fff'};color:${active?'#fff':'#232019'};`,
+      };
+    });
+    const news = [
+      { date: '14.07.2026', title: 'Обновлены тарифы по АвтоКаско на 2026 год' },
+      { date: '02.07.2026', title: 'Запущено онлайн-оформление ОСАГО через личный кабинет' },
+      { date: '19.06.2026', title: 'ТАСК расширяет сеть представительств в регионах' },
+    ];
+    const footerColsData = [
+      ['О компании', ['История', 'Лицензии', 'Реквизиты', 'Раскрытие информации']],
+      ['Страхование в «ТАСК»', ['Все продукты', 'Тарифы', 'Правила страхования']],
+      ['Частным лицам', ['Автострахование', 'Имущество', 'Здоровье']],
+      ['Корпоративным клиентам', ['Транспорт', 'Имущество', 'Ответственность']],
+      ['Пресс-центр', ['Новости', 'Публикации']],
+      ['Сотрудничество', ['Агентам', 'Партнёрам']],
+      ['Контактная информация', ['Адреса и телефоны', 'Заказать звонок']],
+    ];
+    const footerCols = footerColsData.map(([title, items]) => ({ title, items }));
+
+    const mobileCats = [
+      { title: 'Автострахование', sub: 'КАСКО, ОСАГО' },
+      { title: 'Имущество', sub: 'Квартиры, дома, дачи' },
+      { title: 'Здоровье и путешествия', sub: 'ДМС, медстраховка для выезда' },
+    ];
+
+    const footerAccData = [
+      ['О компании', 'История · Лицензии · Реквизиты · Раскрытие информации'],
+      ['Страхование в «ТАСК»', 'Все продукты · Тарифы · Правила страхования'],
+      ['Частным лицам', 'Автострахование · Имущество · Здоровье'],
+      ['Корпоративным клиентам', 'Транспорт · Имущество · Ответственность'],
+      ['Пресс-центр', 'Новости · Публикации'],
+      ['Сотрудничество', 'Агентам · Партнёрам'],
+      ['Контактная информация', 'Адреса и телефоны · Заказать звонок'],
+    ];
+    const footerAcc = footerAccData.map(([title, body], i) => ({
+      title, body, open: this.state.faOpen === i, icon: this.state.faOpen === i ? '−' : '+',
+      toggle: () => this.setState(s => ({ faOpen: s.faOpen === i ? -1 : i }))
+    }));
+
+    const mobileMenuItems = ['Частным лицам', 'Корпоративным клиентам', 'О компании', 'Страхование в «ТАСК»', 'Пресс-центр', 'Контакты'];
+
+    return {
+      heroChips,
+      news, footerCols, mobileCats, footerAcc, mobileMenuItems,
+      mobileMenuOpen: this.state.mobileMenuOpen,
+      toggleMobileMenu: () => this.setState(s => ({ mobileMenuOpen: !s.mobileMenuOpen })),
+      desktopSearchOpen: this.state.desktopSearchOpen,
+      toggleDesktopSearch: () => this.setState(s => ({ desktopSearchOpen: !s.desktopSearchOpen })),
+      desktopSearchWrapStyle: `display:flex;align-items:center;gap:8px;border:${this.state.desktopSearchOpen ? '1px solid #E4E1DC' : 'none'};border-radius:8px;padding:${this.state.desktopSearchOpen ? '8px 12px' : '0'};transition:all .15s;`,
+    };
+  }
+}
+</script>
+<<div style="position:fixed;right:16px;bottom:16px;z-index:2147483647;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+  <details style="background:#16140F;color:#fff;border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.3);overflow:hidden;">
+    <summary style="list-style:none;cursor:pointer;padding:11px 16px;font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px;user-select:none;">
+      <span style="font-size:15px;line-height:1;">☰</span> Макеты концепции
+    </summary>
+    <div style="padding:8px;border-top:1px solid rgba(255,255,255,.14);min-width:220px;">
+      <a href="index.html" style="display:block;padding:9px 12px;border-radius:6px;color:#fff;text-decoration:none;font-size:13px;font-weight:600;">← Ко всем страницам</a>
+      <div style="height:1px;background:rgba(255,255,255,.14);margin:6px 4px;"></div>
+      <a href="style-guide.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">Style system</a>
+      <div style="padding:9px 12px;border-radius:6px;background:rgba(196,18,48,.18);color:#fff;font-size:13px;font-weight:600;">01 · Главная</div>
+      <a href="product-kasko.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">02 · АвтоКаско</a>
+      <a href="person-hub.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">03 · Частным лицам</a>
+      <a href="about.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">04 · О компании</a>
+      <a href="contacts.dc.html" style="display:block;padding:9px 12px;border-radius:6px;color:#D9D6CF;text-decoration:none;font-size:13px;">05 · Контакты</a>
+    </div>
+  </details>
+</div>
+</body>
+</html>

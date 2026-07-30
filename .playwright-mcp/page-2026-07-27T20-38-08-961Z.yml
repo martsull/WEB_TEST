@@ -1,0 +1,436 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e4]:
+    - banner [ref=f3e5]:
+      - generic [ref=f3e7]:
+        - generic [ref=f3e8]:
+          - generic [ref=f3e9]:
+            - link "Задать вопрос" [ref=f3e11] [cursor=pointer]:
+              - /url: "#"
+            - link "Карта сайта" [ref=f3e12] [cursor=pointer]:
+              - /url: /sitemap/
+          - list [ref=f3e14]:
+            - listitem [ref=f3e15]:
+              - link "Вход" [ref=f3e16] [cursor=pointer]:
+                - /url: /personal/
+        - generic [ref=f3e18]:
+          - link [ref=f3e20] [cursor=pointer]:
+            - /url: https://task.by/
+            - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f3e21]
+          - generic [ref=f3e22]:
+            - generic [ref=f3e23]: — Гарантия защиты
+            - text: Ваших интересов!
+        - generic [ref=f3e26]:
+          - generic [ref=f3e27]: (+375 17) 363-24-02
+          - link "Все контакты" [ref=f3e29] [cursor=pointer]:
+            - /url: https://task.by/contact/adresa_i_telefoni/
+    - generic [ref=f3e33]:
+      - complementary [ref=f3e34]:
+        - generic [ref=f3e35]:
+          - list [ref=f3e37]:
+            - listitem [ref=f3e38]:
+              - generic [ref=f3e39]: Частным лицам
+            - listitem [ref=f3e40]:
+              - link "Корпоративным клиентам" [ref=f3e41] [cursor=pointer]:
+                - /url: /corporate/
+          - list [ref=f3e43]:
+            - listitem [ref=f3e44]:
+              - link "O компании" [ref=f3e45] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=f3e46]:
+              - link "Страхование в «ТАСК»" [ref=f3e47] [cursor=pointer]:
+                - /url: /strahovanie/
+            - listitem [ref=f3e48]:
+              - link "Пресс-центр" [ref=f3e49] [cursor=pointer]:
+                - /url: /press_centr/
+            - listitem [ref=f3e50]:
+              - link "Сотрудничество" [ref=f3e51] [cursor=pointer]:
+                - /url: /sotrudnichestvo/
+            - listitem [ref=f3e52]:
+              - link "Контактная информация" [ref=f3e53] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/
+        - list [ref=f3e55]:
+          - listitem [ref=f3e56]:
+            - link "ОНЛАЙН страхование" [ref=f3e57] [cursor=pointer]:
+              - /url: /electronic_services/
+          - listitem [ref=f3e58]:
+            - link "Оплата через ЕРИП" [ref=f3e59] [cursor=pointer]:
+              - /url: /online_payment/
+          - listitem [ref=f3e60]:
+            - link "Личный кабинет" [ref=f3e61] [cursor=pointer]:
+              - /url: /personal/
+          - listitem [ref=f3e62]:
+            - link "Страховой случай" [ref=f3e63] [cursor=pointer]:
+              - /url: /strahovoj_sluchaj/
+          - listitem [ref=f3e64]:
+            - link "Заявка на медобслуживание" [ref=f3e65] [cursor=pointer]:
+              - /url: /health_insurance/
+          - listitem [ref=f3e66]:
+            - link "Точки продаж" [ref=f3e67] [cursor=pointer]:
+              - /url: /contact/offices/
+      - article [ref=f3e68]:
+        - generic [ref=f3e69]:
+          - table [ref=f3e71]:
+            - rowgroup [ref=f3e72]:
+              - row [ref=f3e73]:
+                - cell [ref=f3e74]:
+                  - link "Имущество Имущество" [ref=f3e76] [cursor=pointer]:
+                    - /url: /person/property/
+                    - img "Имущество" [ref=f3e77]
+                    - generic [ref=f3e78]: Имущество
+                - cell [ref=f3e79]:
+                  - link "Автострахование Автострахование" [ref=f3e81] [cursor=pointer]:
+                    - /url: /person/auto/
+                    - img "Автострахование" [ref=f3e82]
+                    - generic [ref=f3e83]: Автострахование
+                - cell [ref=f3e84]:
+                  - link "Здоровье Здоровье" [ref=f3e86] [cursor=pointer]:
+                    - /url: /person/health/
+                    - img "Здоровье" [ref=f3e87]
+                    - generic [ref=f3e88]: Здоровье
+          - generic [ref=f3e89]:
+            - list [ref=f3e90]:
+              - listitem [ref=f3e91]: АвтоКаско
+              - listitem [ref=f3e92]:
+                - link "Внутреннее страхование ОСГО" [ref=f3e93] [cursor=pointer]:
+                  - /url: /person/auto/osago/
+              - listitem [ref=f3e94]:
+                - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=f3e95] [cursor=pointer]:
+                  - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+            - list [ref=f3e96]:
+              - listitem [ref=f3e97]:
+                - link "Союзное страхование ОСГО" [ref=f3e98] [cursor=pointer]:
+                  - /url: /person/auto/union/
+              - listitem [ref=f3e99]:
+                - link "Комплексное ОСГО" [ref=f3e100] [cursor=pointer]:
+                  - /url: /person/auto/komplex/
+              - listitem [ref=f3e101]:
+                - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=f3e102] [cursor=pointer]:
+                  - /url: /person/auto/greencard/
+        - list [ref=f3e104]:
+          - listitem [ref=f3e105]:
+            - link "Главная" [ref=f3e106] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f3e107]:
+            - link "Частным лицам" [ref=f3e108] [cursor=pointer]:
+              - /url: /person/
+          - listitem [ref=f3e109]:
+            - link "Автострахование" [ref=f3e110] [cursor=pointer]:
+              - /url: /person/auto/
+          - listitem [ref=f3e111]: АвтоКаско
+        - heading "АвтоКаско" [level=1] [ref=f3e112]
+        - generic [ref=f3e113]:
+          - generic [ref=f3e114]:
+            - generic [ref=f3e115]:
+              - generic [ref=f3e116]: КАСКО
+              - paragraph [ref=f3e117]: КАСКО — это полис добровольного страхования, который обеспечивает финансовую защиту при повреждении автомобиля и помогает избежать непредвиденных затрат на ремонт.
+            - heading "Что покрывает:" [level=3] [ref=f3e118]
+            - list [ref=f3e120]:
+              - listitem [ref=f3e121]: — ДТП, в том числе в результате столкновения с животными;
+              - listitem [ref=f3e122]: — наезд на неподвижные предметы;
+              - listitem [ref=f3e123]: — противоправные действия третьих лиц;
+              - listitem [ref=f3e124]: — пожар, взрыв, возгорание, в том числе электропроводки;
+              - listitem [ref=f3e125]: — повреждения в результате стихийных бедствий и природных сил;
+              - listitem [ref=f3e126]: — повреждения посторонними предметами, в том числе камнями из-под колес других автомобилей;
+              - listitem [ref=f3e127]: — хищение или угон транспортного средства и другие риски.
+            - heading "Варианты страхования:" [level=3] [ref=f3e128]
+            - generic [ref=f3e129]:
+              - generic [ref=f3e130]:
+                - generic [ref=f3e131]: Без учета износа
+                - paragraph [ref=f3e132]: Возмещение ущерба осуществляется без учета износа деталей, подлежащих замене.
+              - generic [ref=f3e133]:
+                - generic [ref=f3e134]: Без учета износа по калькуляции
+                - paragraph [ref=f3e135]: Возмещение ущерба осуществляется без учета износа деталей, подлежащих замене.
+                - paragraph [ref=f3e136]: Расчет ущерба производится на основании калькуляции и заключения специалиста по оценке транспортных средств.
+              - generic [ref=f3e137]:
+                - generic [ref=f3e138]: С учетом износа
+                - paragraph [ref=f3e139]: Расчет ущерба производится на основании калькуляции стоимости ремонта транспортного средства и заключения о размере вреда.
+            - heading "Программа «Оптимальное КАСКО»" [level=3] [ref=f3e140]
+            - generic [ref=f3e141]:
+              - generic [ref=f3e142]: Специальные условия для автомобилей до 5 лет
+              - paragraph [ref=f3e143]: Договор страхования для легковых автомобилей возрастом до 5 лет включительно может быть заключен по программе «Оптимальное КАСКО», в том числе для транспортных средств, приобретенных по договору лизинга либо за счет привлечения банковских средств.
+              - generic [ref=f3e144]: Тарифы действуют при наличии и (или) одновременном заключении в ЗАСО «ТАСК» договора добровольного страхования гражданской ответственности владельцев транспортных средств сроком на 1 год.
+            - table [ref=f3e146]:
+              - rowgroup [ref=f3e147]:
+                - row [ref=f3e148]:
+                  - columnheader "Страховая сумма" [ref=f3e149]
+                  - columnheader "10 000–15 000 USD" [ref=f3e150]
+                  - columnheader "15 000–20 000 USD" [ref=f3e151]
+                  - columnheader "20 000–40 000 USD" [ref=f3e152]
+                  - columnheader "40 000–60 000 USD" [ref=f3e153]
+                  - columnheader "60 000–100 000 USD" [ref=f3e154]
+              - rowgroup [ref=f3e155]:
+                - row [ref=f3e156]:
+                  - cell "Автомобили до 3 лет" [ref=f3e157]
+                  - cell "3,5%" [ref=f3e158]
+                  - cell "2,9%" [ref=f3e159]
+                  - cell "2,5%" [ref=f3e160]
+                  - cell "2,3%" [ref=f3e161]
+                  - cell "2,1%" [ref=f3e162]
+                - row [ref=f3e163]:
+                  - cell "Автомобили от 4 до 5 лет" [ref=f3e164]
+                  - cell "3,5%" [ref=f3e165]
+                  - cell "3,2%" [ref=f3e166]
+                  - cell "3,2%" [ref=f3e167]
+                  - cell "2,8%" [ref=f3e168]
+                  - cell "2,8%" [ref=f3e169]
+            - generic [ref=f3e170]:
+              - paragraph [ref=f3e171]: Для электромобилей и гибридных автомобилей страховой взнос не может быть менее 700 USD либо страховой тариф не может быть менее 3%.
+              - paragraph [ref=f3e172]: Условия не распространяются на транспортные средства, используемые в качестве такси, по договорам проката или аренды, а также зарегистрированные за пределами Республики Беларусь.
+            - heading "Преимущества полиса КАСКО от ЗАСО «ТАСК»" [level=3] [ref=f3e173]
+            - generic [ref=f3e174]:
+              - generic [ref=f3e175]:
+                - generic [ref=f3e176]: Гибкие условия
+                - list [ref=f3e177]:
+                  - listitem [ref=f3e178]: — гибкие тарифы;
+                  - listitem [ref=f3e179]: — бесплатная рассрочка платежа.
+              - generic [ref=f3e180]:
+                - generic [ref=f3e181]: Мультидрайв
+                - paragraph [ref=f3e182]: Специальная опция, позволяющая управлять застрахованным автомобилем любому водителю.
+              - generic [ref=f3e183]:
+                - generic [ref=f3e184]: Скидки при страховании
+                - list [ref=f3e185]:
+                  - listitem [ref=f3e186]: — скидки при наличии договоров по другим видам страхования;
+                  - listitem [ref=f3e187]: — скидки при проведении рекламных акций;
+                  - listitem [ref=f3e188]: — скидки за безубыточное страхование.
+            - heading "Когда можно не обращаться в компетентные органы" [level=3] [ref=f3e189]
+            - generic [ref=f3e190]:
+              - list [ref=f3e191]:
+                - listitem [ref=f3e192]: — при повреждении только деталей остекления кузова, зеркал и приборов внешнего освещения;
+                - listitem [ref=f3e193]: — при повреждении транспортного средства и (или) дополнительного оборудования, если размер ущерба не превышает 5% от страховой суммы.
+              - generic [ref=f3e194]: Возможность применяется не более двух раз за срок действия договора страхования.
+            - heading "Перечень необходимых документов" [level=3] [ref=f3e195]
+            - list [ref=f3e197]:
+              - listitem [ref=f3e198]: — письменное заявление на заключение договора страхования АвтоКАСКО;
+              - listitem [ref=f3e199]: — паспорт или иное удостоверение личности;
+              - listitem [ref=f3e200]: — регистрационные документы на транспортное средство;
+              - listitem [ref=f3e201]: — предъявление транспортного средства представителю страховщика для осмотра.
+            - heading "Страховой случай" [level=3] [ref=f3e202]
+            - generic [ref=f3e203]:
+              - paragraph [ref=f3e204]: "Подробнее ознакомиться с рекомендациями при наступлении ДТП можно по ссылке:"
+              - link "Страховой случай" [ref=f3e206] [cursor=pointer]:
+                - /url: /strahovoj_sluchaj/ss_avtokasko/
+          - heading "Прикрепленные документы" [level=3] [ref=f3e207]
+          - generic [ref=f3e210]:
+            - list:
+              - listitem [ref=f3e211]:
+                - link ". Базовые страховые тарифы" [ref=f3e212] [cursor=pointer]:
+                  - /url: /upload/iblock/fcc/Базовые страховые тарифы.pdf
+                  - generic [ref=f3e213]: .
+                  - generic [ref=f3e214]: Базовые страховые тарифы
+                - generic [ref=f3e215]: (pdf, 121 Кб)
+              - listitem [ref=f3e216]:
+                - link ". Заявление на страхование" [ref=f3e217] [cursor=pointer]:
+                  - /url: /upload/iblock/99d/9kn8g1sjb5hhqqf7ah67ymetixk682mj/Zayavlenie-na-strakhovanie-15.pdf
+                  - generic [ref=f3e218]: .
+                  - generic [ref=f3e219]: Заявление на страхование
+                - generic [ref=f3e220]: (pdf, 769 Кб)
+              - listitem [ref=f3e221]:
+                - link ". Правила страхования" [ref=f3e222] [cursor=pointer]:
+                  - /url: /upload/iblock/cee/s372iiw9qylj229n1ift8k4stnka5c1m/Pravila-strakhovaniya-15.pdf
+                  - generic [ref=f3e223]: .
+                  - generic [ref=f3e224]: Правила страхования
+                - generic [ref=f3e225]: (pdf, 766 Кб)
+          - navigation [ref=f3e226]:
+            - list [ref=f3e227]:
+              - listitem [ref=f3e228]: АвтоКаско
+              - listitem [ref=f3e229]:
+                - link "Внутреннее страхование ОСГО" [ref=f3e230] [cursor=pointer]:
+                  - /url: /person/auto/osago/
+              - listitem [ref=f3e231]:
+                - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=f3e232] [cursor=pointer]:
+                  - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+              - listitem [ref=f3e233]:
+                - link "Союзное страхование ОСГО" [ref=f3e234] [cursor=pointer]:
+                  - /url: /person/auto/union/
+              - listitem [ref=f3e235]:
+                - link "Комплексное ОСГО" [ref=f3e236] [cursor=pointer]:
+                  - /url: /person/auto/komplex/
+              - listitem [ref=f3e237]:
+                - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=f3e238] [cursor=pointer]:
+                  - /url: /person/auto/greencard/
+          - generic [ref=f3e239]:
+            - link "Задать вопрос" [ref=f3e240] [cursor=pointer]:
+              - /url: /press_centr/faq/strahovanie_avtokasko/
+            - link "Словарь терминов" [ref=f3e241] [cursor=pointer]:
+              - /url: /press_centr/strahovie_termini/
+  - contentinfo [ref=f3e242]:
+    - generic [ref=f3e244]:
+      - generic [ref=f3e245]:
+        - list [ref=f3e247]:
+          - listitem [ref=f3e248]:
+            - link "О компании" [ref=f3e249] [cursor=pointer]:
+              - /url: /about/
+            - list [ref=f3e250]:
+              - listitem [ref=f3e251]:
+                - link "Наша история" [ref=f3e252] [cursor=pointer]:
+                  - /url: /about/nasha_istorija/
+              - listitem [ref=f3e253]:
+                - link "Первые лица" [ref=f3e254] [cursor=pointer]:
+                  - /url: /about/pervie_lica/
+              - listitem [ref=f3e255]:
+                - link "Свидетельство о гос. регистрации" [ref=f3e256] [cursor=pointer]:
+                  - /url: /about/svidetel_stvo_o_gos_registracii/
+              - listitem [ref=f3e257]:
+                - link "Лицензия" [ref=f3e258] [cursor=pointer]:
+                  - /url: /about/licence/
+              - listitem [ref=f3e259]:
+                - link "Подразделения компании" [ref=f3e260] [cursor=pointer]:
+                  - /url: /contact/adresa_i_telefoni/
+              - listitem [ref=f3e261]:
+                - link "Банковские реквизиты" [ref=f3e262] [cursor=pointer]:
+                  - /url: /about/bankovskie_rekviziti/
+              - listitem [ref=f3e263]:
+                - link "Финансовые показатели" [ref=f3e264] [cursor=pointer]:
+                  - /url: /about/finance/
+              - listitem [ref=f3e265]:
+                - link "График приема граждан" [ref=f3e266] [cursor=pointer]:
+                  - /url: /about/grafik-priema-grazhdan
+              - listitem [ref=f3e267]:
+                - link "Перечень административных процедур" [ref=f3e268] [cursor=pointer]:
+                  - /url: /about/perechen-administrativnykh-protsedur
+              - listitem [ref=f3e269]:
+                - link "Положение по закупкам" [ref=f3e270] [cursor=pointer]:
+                  - /url: /about/polozhenie-po-zakupkam
+          - listitem [ref=f3e271]:
+            - link "Страхование в «ТАСК»" [ref=f3e272] [cursor=pointer]:
+              - /url: /strahovanie/
+          - listitem [ref=f3e273]:
+            - link "Частным лицам" [ref=f3e274] [cursor=pointer]:
+              - /url: /person/
+            - list [ref=f3e275]:
+              - listitem [ref=f3e276]:
+                - link "Имущество" [ref=f3e277] [cursor=pointer]:
+                  - /url: /person/property/
+              - listitem [ref=f3e278]:
+                - link "Автострахование" [ref=f3e279] [cursor=pointer]:
+                  - /url: /person/auto/
+              - listitem [ref=f3e280]:
+                - link "Здоровье" [ref=f3e281] [cursor=pointer]:
+                  - /url: /person/health/
+          - listitem [ref=f3e282]:
+            - link "Корпоративным клиентам" [ref=f3e283] [cursor=pointer]:
+              - /url: /corporate/
+            - list [ref=f3e284]:
+              - listitem [ref=f3e285]:
+                - link "Транспорт" [ref=f3e286] [cursor=pointer]:
+                  - /url: /corporate/transport/
+              - listitem [ref=f3e287]:
+                - link "Здоровье" [ref=f3e288] [cursor=pointer]:
+                  - /url: /corporate/health/
+              - listitem [ref=f3e289]:
+                - link "Финансы" [ref=f3e290] [cursor=pointer]:
+                  - /url: /corporate/finance/
+              - listitem [ref=f3e291]:
+                - link "Имущество" [ref=f3e292] [cursor=pointer]:
+                  - /url: /corporate/property/
+              - listitem [ref=f3e293]:
+                - link "Ответственность" [ref=f3e294] [cursor=pointer]:
+                  - /url: /corporate/responsibility/
+          - listitem [ref=f3e295]:
+            - link "Пресс-центр" [ref=f3e296] [cursor=pointer]:
+              - /url: /press_centr/
+            - list [ref=f3e297]:
+              - listitem [ref=f3e298]:
+                - link "Новости" [ref=f3e299] [cursor=pointer]:
+                  - /url: /press_centr/news/
+              - listitem [ref=f3e300]:
+                - link "Страховые термины" [ref=f3e301] [cursor=pointer]:
+                  - /url: /press_centr/strahovie_termini/
+              - listitem [ref=f3e302]:
+                - link "Вопрос-ответ" [ref=f3e303] [cursor=pointer]:
+                  - /url: /press_centr/faq/
+              - listitem [ref=f3e304]:
+                - link "Пресс-кит" [ref=f3e305] [cursor=pointer]:
+                  - /url: /press_centr/press_kit/
+              - listitem [ref=f3e306]:
+                - link "Финансовая и цифровая грамотность" [ref=f3e307] [cursor=pointer]:
+                  - /url: /press_centr/finansovaja_gramotnost/
+              - listitem [ref=f3e308]:
+                - link "Раскрытие информации" [ref=f3e309] [cursor=pointer]:
+                  - /url: /press_centr/disclosure-of-information
+              - listitem [ref=f3e310]:
+                - link "Информация об утраченных БСО 1-СУ" [ref=f3e311] [cursor=pointer]:
+                  - /url: /press_centr/information-about-the-lost-forms-of-receipts-1-su
+              - listitem [ref=f3e312]:
+                - link "О порядке обработки персональных данных" [ref=f3e313] [cursor=pointer]:
+                  - /url: /press_centr/o-poryadke-obrabotki-personalnykh-dannykh
+          - listitem [ref=f3e314]:
+            - link "Сотрудничество" [ref=f3e315] [cursor=pointer]:
+              - /url: /sotrudnichestvo/
+            - list [ref=f3e316]:
+              - listitem [ref=f3e317]:
+                - link "Вакансии" [ref=f3e318] [cursor=pointer]:
+                  - /url: /sotrudnichestvo/vakansii/
+              - listitem [ref=f3e319]:
+                - link "АРМ агента" [ref=f3e320] [cursor=pointer]:
+                  - /url: https://arm.task.by:8443
+              - listitem [ref=f3e321]:
+                - link "Удаленное администрирование" [ref=f3e322] [cursor=pointer]:
+                  - /url: https://lk2.мойассистент.рф/WebApi/Platforms/Download/1371
+              - listitem [ref=f3e323]:
+                - link "ДМС приложение" [ref=f3e324] [cursor=pointer]:
+                  - /url: https://arm.task.by:8443/mobile
+          - listitem [ref=f3e325]:
+            - link "Контактная информация" [ref=f3e326] [cursor=pointer]:
+              - /url: /contact/
+            - list [ref=f3e327]:
+              - listitem [ref=f3e328]:
+                - link "Адреса и телефоны" [ref=f3e329] [cursor=pointer]:
+                  - /url: /contact/adresa_i_telefoni/
+              - listitem [ref=f3e330]:
+                - link "Точки продаж" [ref=f3e331] [cursor=pointer]:
+                  - /url: /contact/offices/
+              - listitem [ref=f3e332]:
+                - link "Отзывы о работе" [ref=f3e333] [cursor=pointer]:
+                  - /url: /contact/otzyvy/
+              - listitem [ref=f3e334]:
+                - link "Вопрос-ответ" [ref=f3e335] [cursor=pointer]:
+                  - /url: /press_centr/faq/
+              - listitem [ref=f3e336]:
+                - link "Госорганы" [ref=f3e337] [cursor=pointer]:
+                  - /url: /contact/gosorgani/
+              - listitem [ref=f3e338]:
+                - link "Официальное обращение" [ref=f3e339] [cursor=pointer]:
+                  - /url: /contact/official_appeal/
+              - listitem [ref=f3e340]:
+                - link "Справка об отсутствии страховых случаев" [ref=f3e341] [cursor=pointer]:
+                  - /url: /press_centr/faq/
+        - generic [ref=f3e343]:
+          - link [ref=f3e345] [cursor=pointer]:
+            - /url: https://www.visa.com.ru/
+            - img "visa" [ref=f3e346]
+          - link [ref=f3e348] [cursor=pointer]:
+            - /url: https://www.visa.com.ru/
+            - img "assist" [ref=f3e349]
+          - link [ref=f3e351] [cursor=pointer]:
+            - /url: https://www.mastercard.ru/
+            - img "mastercard" [ref=f3e352]
+          - link [ref=f3e354] [cursor=pointer]:
+            - /url: https://www.mastercard.ru/
+            - img "assist" [ref=f3e355]
+          - link [ref=f3e357] [cursor=pointer]:
+            - /url: https://belkart.by/
+            - img "belcart" [ref=f3e358]
+          - link [ref=f3e360] [cursor=pointer]:
+            - /url: https://belkart.by/
+            - img "assist" [ref=f3e361]
+          - link [ref=f3e363] [cursor=pointer]:
+            - /url: https://www.raschet.by/
+            - img "raschet" [ref=f3e364]
+          - link [ref=f3e366] [cursor=pointer]:
+            - /url: https://www.belassist.by/
+            - img "assist" [ref=f3e367]
+      - generic [ref=f3e369]:
+        - generic [ref=f3e370]: © 2002 — 2026
+        - generic [ref=f3e371]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f3e372]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f3e373]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f3e374] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f3e378]:
+        - textbox "Поиск по сайту" [ref=f3e379]
+        - button "Submit" [ref=f3e380] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f3e384] [cursor=pointer]:
+        - /url: "#"

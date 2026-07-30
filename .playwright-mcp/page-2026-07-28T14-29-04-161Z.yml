@@ -1,0 +1,151 @@
+- generic [ref=f19e2]:
+  - generic [ref=f19e3]:
+    - navigation [ref=f19e4]:
+      - list [ref=f19e6]:
+        - listitem [ref=f19e7]:
+          - link "Вход" [ref=f19e8] [cursor=pointer]:
+            - /url: /personal/
+      - list [ref=f19e10]:
+        - listitem [ref=f19e11]:
+          - link "Частным лицам" [ref=f19e12] [cursor=pointer]:
+            - /url: /person/
+          - link "+" [ref=f19e13] [cursor=pointer]:
+            - /url: "#accordion-0"
+        - listitem [ref=f19e15]:
+          - link "Корпоративным клиентам" [ref=f19e16] [cursor=pointer]:
+            - /url: /corporate/
+          - link "+" [ref=f19e17] [cursor=pointer]:
+            - /url: "#accordion-22"
+        - listitem [ref=f19e19]:
+          - link "O компании" [ref=f19e20] [cursor=pointer]:
+            - /url: /about/
+          - link "+" [ref=f19e21] [cursor=pointer]:
+            - /url: "#accordion-59"
+        - listitem [ref=f19e23]:
+          - link "Страхование в «ТАСК»" [ref=f19e24] [cursor=pointer]:
+            - /url: /strahovanie/
+        - listitem [ref=f19e25]:
+          - link "Онлайн страхование ОСГО" [ref=f19e26] [cursor=pointer]:
+            - /url: https://e-insurance.btib.org/task?from=02mobile
+        - listitem [ref=f19e27]:
+          - link "Пресс-центр" [ref=f19e28] [cursor=pointer]:
+            - /url: /press_centr/
+          - link "+" [ref=f19e29] [cursor=pointer]:
+            - /url: "#accordion-72"
+        - listitem [ref=f19e31]:
+          - link "Сотрудничество" [ref=f19e32] [cursor=pointer]:
+            - /url: /sotrudnichestvo/
+          - link "+" [ref=f19e33] [cursor=pointer]:
+            - /url: "#accordion-81"
+        - listitem [ref=f19e35]:
+          - link "Контактная информация" [ref=f19e36] [cursor=pointer]:
+            - /url: /contact/
+          - link "+" [ref=f19e37] [cursor=pointer]:
+            - /url: "#accordion-86"
+        - listitem [ref=f19e39]:
+          - link "Страховой случай" [ref=f19e40] [cursor=pointer]:
+            - /url: /strahovoj_sluchaj/
+          - link "+" [ref=f19e41] [cursor=pointer]:
+            - /url: "#accordion-94"
+        - listitem [ref=f19e43]:
+          - link "Заявка на медобслуживание" [ref=f19e44] [cursor=pointer]:
+            - /url: /health_insurance/
+        - listitem [ref=f19e45]:
+          - link "Точки продаж" [ref=f19e46] [cursor=pointer]:
+            - /url: /contact/offices/
+        - listitem [ref=f19e47]:
+          - link "Заказать полис" [ref=f19e48] [cursor=pointer]:
+            - /url: /policy/
+        - listitem [ref=f19e49]:
+          - link "Способы оплаты" [ref=f19e50] [cursor=pointer]:
+            - /url: /online_payment/
+      - generic [ref=f19e51]:
+        - link "Задать вопрос" [ref=f19e52] [cursor=pointer]:
+          - /url: /press_centr/faq/
+        - link "Карта сайта" [ref=f19e53] [cursor=pointer]:
+          - /url: /sitemap/
+    - generic [ref=f19e54]:
+      - banner [ref=f19e55]:
+        - link [ref=f19e65] [cursor=pointer]:
+          - /url: https://task.by/
+          - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f19e66]
+      - generic [ref=f19e71]:
+        - complementary [ref=f19e72]
+        - article [ref=f19e73]:
+          - list [ref=f19e75]:
+            - listitem [ref=f19e76]:
+              - link "Главная" [ref=f19e77] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f19e78]: Личный кабинет
+          - heading "Авторизация" [level=1] [ref=f19e79]
+          - generic [ref=f19e84]:
+            - group [ref=f19e86]:
+              - generic [ref=f19e87]:
+                - generic [ref=f19e88]: Логин
+                - textbox [active] [ref=f19e90]
+              - generic [ref=f19e92]:
+                - generic [ref=f19e93]: Пароль
+                - textbox [ref=f19e95]
+              - generic [ref=f19e99]:
+                - checkbox "Запомнить меня на этом компьютере" [ref=f19e100]
+                - generic [ref=f19e101] [cursor=pointer]: Запомнить меня на этом компьютере
+              - generic [ref=f19e103]:
+                - button "Войти" [ref=f19e104] [cursor=pointer]
+                - generic [ref=f19e105]:
+                  - link "Регистрация" [ref=f19e107] [cursor=pointer]:
+                    - /url: /auth/
+                  - link "Забыли пароль" [ref=f19e109] [cursor=pointer]:
+                    - /url: /personal/?forgot_password=yes
+            - generic [ref=f19e110]:
+              - paragraph [ref=f19e111]: Уважаемые клиенты! Обращаем внимание, что регистрация в личном кабинете необходима только для заключения добровольных видов страхования. Договора ОСГО, оформленные с помощью on-line сервиса, в личном кабинете отражаться не будут.
+              - paragraph [ref=f19e112]:
+                - link "Описание процедуры заказа полиса на сайте on-line" [ref=f19e113] [cursor=pointer]:
+                  - /url: /upload/procedure_policy_ordering.docx
+              - paragraph [ref=f19e114]:
+                - link "Описание процедуры приема оплат банковской картой" [ref=f19e115] [cursor=pointer]:
+                  - /url: /upload/procedure_card_payment.docx
+              - paragraph [ref=f19e116]:
+                - text: "С вопросами и пожеланиями по функционированию личного кабинета обращайтесь по адресу:"
+                - link "lk@task.by" [ref=f19e117] [cursor=pointer]:
+                  - /url: mailto:lk@task.by
+  - contentinfo [ref=f19e118]:
+    - generic [ref=f19e120]:
+      - generic [ref=f19e124]:
+        - link [ref=f19e126] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "visa" [ref=f19e127]
+        - link [ref=f19e129] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "assist" [ref=f19e130]
+        - link [ref=f19e132] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "mastercard" [ref=f19e133]
+        - link [ref=f19e135] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "assist" [ref=f19e136]
+        - link [ref=f19e138] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "belcart" [ref=f19e139]
+        - link [ref=f19e141] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "assist" [ref=f19e142]
+        - link [ref=f19e144] [cursor=pointer]:
+          - /url: https://www.raschet.by/
+          - img "raschet" [ref=f19e145]
+        - link [ref=f19e147] [cursor=pointer]:
+          - /url: https://www.belassist.by/
+          - img "assist" [ref=f19e148]
+      - generic [ref=f19e150]:
+        - generic [ref=f19e151]: © 2002 — 2026
+        - generic [ref=f19e152]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f19e153]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f19e154]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f19e155] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f19e159]:
+        - textbox "Поиск по сайту" [ref=f19e160]
+        - button "Submit" [ref=f19e161] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f19e164] [cursor=pointer]:
+        - /url: "#"

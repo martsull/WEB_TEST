@@ -1,0 +1,170 @@
+- generic [ref=f20e2]:
+  - generic [ref=f20e3]:
+    - navigation [ref=f20e4]:
+      - list [ref=f20e6]:
+        - listitem [ref=f20e7]:
+          - link "Вход" [ref=f20e8] [cursor=pointer]:
+            - /url: /personal/
+      - list [ref=f20e10]:
+        - listitem [ref=f20e11]:
+          - link "Частным лицам" [ref=f20e12] [cursor=pointer]:
+            - /url: /person/
+          - link "+" [ref=f20e13] [cursor=pointer]:
+            - /url: "#accordion-0"
+        - listitem [ref=f20e15]:
+          - link "Корпоративным клиентам" [ref=f20e16] [cursor=pointer]:
+            - /url: /corporate/
+          - link "+" [ref=f20e17] [cursor=pointer]:
+            - /url: "#accordion-22"
+        - listitem [ref=f20e19]:
+          - link "O компании" [ref=f20e20] [cursor=pointer]:
+            - /url: /about/
+          - link "+" [ref=f20e21] [cursor=pointer]:
+            - /url: "#accordion-59"
+        - listitem [ref=f20e23]:
+          - link "Страхование в «ТАСК»" [ref=f20e24] [cursor=pointer]:
+            - /url: /strahovanie/
+        - listitem [ref=f20e25]:
+          - link "Онлайн страхование ОСГО" [ref=f20e26] [cursor=pointer]:
+            - /url: https://e-insurance.btib.org/task?from=02mobile
+        - listitem [ref=f20e27]:
+          - link "Пресс-центр" [ref=f20e28] [cursor=pointer]:
+            - /url: /press_centr/
+          - link "+" [ref=f20e29] [cursor=pointer]:
+            - /url: "#accordion-72"
+        - listitem [ref=f20e31]:
+          - link "Сотрудничество" [ref=f20e32] [cursor=pointer]:
+            - /url: /sotrudnichestvo/
+          - link "+" [ref=f20e33] [cursor=pointer]:
+            - /url: "#accordion-81"
+        - listitem [ref=f20e35]:
+          - link "Контактная информация" [ref=f20e36] [cursor=pointer]:
+            - /url: /contact/
+          - link "+" [ref=f20e37] [cursor=pointer]:
+            - /url: "#accordion-86"
+        - listitem [ref=f20e39]:
+          - link "Страховой случай" [ref=f20e40] [cursor=pointer]:
+            - /url: /strahovoj_sluchaj/
+          - link "+" [ref=f20e41] [cursor=pointer]:
+            - /url: "#accordion-94"
+        - listitem [ref=f20e43]:
+          - link "Заявка на медобслуживание" [ref=f20e44] [cursor=pointer]:
+            - /url: /health_insurance/
+        - listitem [ref=f20e45]:
+          - link "Точки продаж" [ref=f20e46] [cursor=pointer]:
+            - /url: /contact/offices/
+        - listitem [ref=f20e47]:
+          - link "Заказать полис" [ref=f20e48] [cursor=pointer]:
+            - /url: /policy/
+        - listitem [ref=f20e49]:
+          - link "Способы оплаты" [ref=f20e50] [cursor=pointer]:
+            - /url: /online_payment/
+      - generic [ref=f20e51]:
+        - link "Задать вопрос" [ref=f20e52] [cursor=pointer]:
+          - /url: /press_centr/faq/
+        - link "Карта сайта" [ref=f20e53] [cursor=pointer]:
+          - /url: /sitemap/
+    - generic [ref=f20e54]:
+      - banner [ref=f20e55]:
+        - link [ref=f20e65] [cursor=pointer]:
+          - /url: https://task.by/
+          - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f20e66]
+      - generic [ref=f20e71]:
+        - complementary [ref=f20e72]
+        - article [ref=f20e73]:
+          - generic [ref=f20e74]:
+            - text: "2026"
+            - link "2025" [ref=f20e75] [cursor=pointer]:
+              - /url: /press_centr/news/2025/
+            - link "2024" [ref=f20e76] [cursor=pointer]:
+              - /url: /press_centr/news/2024/
+            - link "2023" [ref=f20e77] [cursor=pointer]:
+              - /url: /press_centr/news/2023/
+            - link "2022" [ref=f20e78] [cursor=pointer]:
+              - /url: /press_centr/news/2022/
+            - link "RSS-лента" [ref=f20e79] [cursor=pointer]:
+              - /url: /rss/
+          - list [ref=f20e81]:
+            - listitem [ref=f20e82]:
+              - link "Главная" [ref=f20e83] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f20e84]:
+              - link "Пресс-центр" [ref=f20e85] [cursor=pointer]:
+                - /url: /press_centr/
+            - listitem [ref=f20e86]:
+              - link "Новости" [ref=f20e87] [cursor=pointer]:
+                - /url: /press_centr/news/
+            - listitem [ref=f20e88]: Новости компании за 2026 год
+          - heading "Новости компании за 2026 год" [level=1] [ref=f20e89]
+          - generic [ref=f20e92]:
+            - generic [ref=f20e94]:
+              - time [ref=f20e96]: 26 июня 2026
+              - link "Отпуск, животные и страховка" [ref=f20e98] [cursor=pointer]:
+                - /url: /press_centr/news/2026/otpusk-zhivotnye-i-strakhovka/
+              - paragraph [ref=f20e100]: Укус животного за границей может обойтись очень дорого
+            - generic [ref=f20e102]:
+              - time [ref=f20e104]: 25 июня 2026
+              - link "Добавьте безопасности к вашему билету!" [ref=f20e106] [cursor=pointer]:
+                - /url: /press_centr/news/2026/predyavite-bilet-i-polis/
+              - paragraph [ref=f20e108]: Планируете летнюю поездку на юг, к морю или в санаторий? Добавьте страхование пассажиров при покупке билета на pass.rw.by и путешествуйте спокойнее.
+            - generic [ref=f20e110]:
+              - time [ref=f20e112]: 8 июня 2026
+              - 'link "Страховка для выезжающих за рубеж: чтобы сохранить жизнь, здоровье и деньги" [ref=f20e114] [cursor=pointer]':
+                - /url: /press_centr/news/2026/strakhovka-dlya-vyezzhayushchikh-za-rubezh-chtoby-sokhranit-zhizn-zdorove-i-dengi/
+              - paragraph [ref=f20e116]: История, которая сохранит вам жизнь
+            - generic [ref=f20e118]:
+              - time [ref=f20e120]: 1 июня 2026
+              - link "Важная информация! Изменение адреса работы!" [ref=f20e122] [cursor=pointer]:
+                - /url: /press_centr/news/2026/vazhnaya-informatsiya-otdel-uregulirovaniya-ubytkov-pereezzhaet/
+              - paragraph [ref=f20e124]: С 27 апреля ОТДЕЛ УРЕГУЛИРОВАНИЯ УБЫТКОВ по г. Минску работает по новому адресу
+            - generic [ref=f20e126]:
+              - time [ref=f20e128]: 25 мая 2026
+              - link "Ждем на выставке \"Транспорт и логистика\"" [ref=f20e130] [cursor=pointer]:
+                - /url: /press_centr/news/2026/zhdem-na-vystavke-transport-i-logistika-/
+              - paragraph [ref=f20e132]: Приглашаем на стенд нашей компании
+            - generic [ref=f20e134]:
+              - time [ref=f20e136]: 21 апреля 2026
+              - link "#ДзеньРоднагаСвайго" [ref=f20e138] [cursor=pointer]:
+                - /url: /press_centr/news/2026/kozhnaya-pyatnitsa-rodnae-svaye/
+              - paragraph [ref=f20e140]: Присоединяйтесь к акции!
+  - contentinfo [ref=f20e141]:
+    - generic [ref=f20e143]:
+      - generic [ref=f20e147]:
+        - link [ref=f20e149] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "visa" [ref=f20e150]
+        - link [ref=f20e152] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "assist" [ref=f20e153]
+        - link [ref=f20e155] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "mastercard" [ref=f20e156]
+        - link [ref=f20e158] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "assist" [ref=f20e159]
+        - link [ref=f20e161] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "belcart" [ref=f20e162]
+        - link [ref=f20e164] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "assist" [ref=f20e165]
+        - link [ref=f20e167] [cursor=pointer]:
+          - /url: https://www.raschet.by/
+          - img "raschet" [ref=f20e168]
+        - link [ref=f20e170] [cursor=pointer]:
+          - /url: https://www.belassist.by/
+          - img "assist" [ref=f20e171]
+      - generic [ref=f20e173]:
+        - generic [ref=f20e174]: © 2002 — 2026
+        - generic [ref=f20e175]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f20e176]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f20e177]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f20e178] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f20e182]:
+        - textbox "Поиск по сайту" [ref=f20e183]
+        - button "Submit" [ref=f20e184] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f20e187] [cursor=pointer]:
+        - /url: "#"

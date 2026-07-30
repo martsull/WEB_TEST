@@ -1,0 +1,262 @@
+- generic [ref=f12e2]:
+  - generic [ref=f12e3]:
+    - navigation [ref=f12e4]:
+      - list [ref=f12e6]:
+        - listitem [ref=f12e7]:
+          - link "Вход" [ref=f12e8] [cursor=pointer]:
+            - /url: /personal/
+      - list [ref=f12e10]:
+        - listitem [ref=f12e11]:
+          - link "Частным лицам" [ref=f12e12] [cursor=pointer]:
+            - /url: /person/
+          - link "+" [ref=f12e13] [cursor=pointer]:
+            - /url: "#accordion-0"
+        - listitem [ref=f12e15]:
+          - link "Корпоративным клиентам" [ref=f12e16] [cursor=pointer]:
+            - /url: /corporate/
+          - link "+" [ref=f12e17] [cursor=pointer]:
+            - /url: "#accordion-22"
+        - listitem [ref=f12e19]:
+          - link "O компании" [ref=f12e20] [cursor=pointer]:
+            - /url: /about/
+          - link "+" [ref=f12e21] [cursor=pointer]:
+            - /url: "#accordion-59"
+        - listitem [ref=f12e23]:
+          - link "Страхование в «ТАСК»" [ref=f12e24] [cursor=pointer]:
+            - /url: /strahovanie/
+        - listitem [ref=f12e25]:
+          - link "Онлайн страхование ОСГО" [ref=f12e26] [cursor=pointer]:
+            - /url: https://e-insurance.btib.org/task?from=02mobile
+        - listitem [ref=f12e27]:
+          - link "Пресс-центр" [ref=f12e28] [cursor=pointer]:
+            - /url: /press_centr/
+          - link "+" [ref=f12e29] [cursor=pointer]:
+            - /url: "#accordion-72"
+        - listitem [ref=f12e31]:
+          - link "Сотрудничество" [ref=f12e32] [cursor=pointer]:
+            - /url: /sotrudnichestvo/
+          - link "+" [ref=f12e33] [cursor=pointer]:
+            - /url: "#accordion-81"
+        - listitem [ref=f12e35]:
+          - link "Контактная информация" [ref=f12e36] [cursor=pointer]:
+            - /url: /contact/
+          - link "+" [ref=f12e37] [cursor=pointer]:
+            - /url: "#accordion-86"
+        - listitem [ref=f12e39]:
+          - link "Страховой случай" [ref=f12e40] [cursor=pointer]:
+            - /url: /strahovoj_sluchaj/
+          - link "+" [ref=f12e41] [cursor=pointer]:
+            - /url: "#accordion-94"
+        - listitem [ref=f12e43]:
+          - link "Заявка на медобслуживание" [ref=f12e44] [cursor=pointer]:
+            - /url: /health_insurance/
+        - listitem [ref=f12e45]:
+          - link "Точки продаж" [ref=f12e46] [cursor=pointer]:
+            - /url: /contact/offices/
+        - listitem [ref=f12e47]:
+          - link "Заказать полис" [ref=f12e48] [cursor=pointer]:
+            - /url: /policy/
+        - listitem [ref=f12e49]:
+          - link "Способы оплаты" [ref=f12e50] [cursor=pointer]:
+            - /url: /online_payment/
+      - generic [ref=f12e51]:
+        - link "Задать вопрос" [ref=f12e52] [cursor=pointer]:
+          - /url: /press_centr/faq/
+        - link "Карта сайта" [ref=f12e53] [cursor=pointer]:
+          - /url: /sitemap/
+    - generic [ref=f12e54]:
+      - banner [ref=f12e55]:
+        - link [ref=f12e65] [cursor=pointer]:
+          - /url: https://task.by/
+          - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f12e66]
+      - generic [ref=f12e71]:
+        - complementary [ref=f12e72]
+        - article [ref=f12e73]:
+          - list [ref=f12e75]:
+            - listitem [ref=f12e76]:
+              - link "Главная" [ref=f12e77] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f12e78]:
+              - link "Частным лицам" [ref=f12e79] [cursor=pointer]:
+                - /url: /person/
+            - listitem [ref=f12e80]:
+              - link "Автострахование" [ref=f12e81] [cursor=pointer]:
+                - /url: /person/auto/
+            - listitem [ref=f12e82]: АвтоКаско
+          - heading "АвтоКаско" [level=1] [ref=f12e83]
+          - generic [ref=f12e84]:
+            - generic [ref=f12e85]:
+              - generic [ref=f12e86]:
+                - generic [ref=f12e87]: КАСКО
+                - paragraph [ref=f12e88]: КАСКО — это полис добровольного страхования, который обеспечивает финансовую защиту при повреждении автомобиля и помогает избежать непредвиденных затрат на ремонт.
+              - heading "Что покрывает:" [level=3] [ref=f12e89]
+              - list [ref=f12e91]:
+                - listitem [ref=f12e92]: — ДТП, в том числе в результате столкновения с животными;
+                - listitem [ref=f12e93]: — наезд на неподвижные предметы;
+                - listitem [ref=f12e94]: — противоправные действия третьих лиц;
+                - listitem [ref=f12e95]: — пожар, взрыв, возгорание, в том числе электропроводки;
+                - listitem [ref=f12e96]: — повреждения в результате стихийных бедствий и природных сил;
+                - listitem [ref=f12e97]: — повреждения посторонними предметами, в том числе камнями из-под колес других автомобилей;
+                - listitem [ref=f12e98]: — хищение или угон транспортного средства и другие риски.
+              - heading "Варианты страхования:" [level=3] [ref=f12e99]
+              - generic [ref=f12e100]:
+                - generic [ref=f12e101]:
+                  - generic [ref=f12e102]: Без учета износа
+                  - paragraph [ref=f12e103]: Возмещение ущерба осуществляется без учета износа деталей, подлежащих замене.
+                - generic [ref=f12e104]:
+                  - generic [ref=f12e105]: Без учета износа по калькуляции
+                  - paragraph [ref=f12e106]: Возмещение ущерба осуществляется без учета износа деталей, подлежащих замене.
+                  - paragraph [ref=f12e107]: Расчет ущерба производится на основании калькуляции и заключения специалиста по оценке транспортных средств.
+                - generic [ref=f12e108]:
+                  - generic [ref=f12e109]: С учетом износа
+                  - paragraph [ref=f12e110]: Расчет ущерба производится на основании калькуляции стоимости ремонта транспортного средства и заключения о размере вреда.
+              - heading "Программа «Оптимальное КАСКО»" [level=3] [ref=f12e111]
+              - generic [ref=f12e112]:
+                - generic [ref=f12e113]: Специальные условия для автомобилей до 5 лет
+                - paragraph [ref=f12e114]: Договор страхования для легковых автомобилей возрастом до 5 лет включительно может быть заключен по программе «Оптимальное КАСКО», в том числе для транспортных средств, приобретенных по договору лизинга либо за счет привлечения банковских средств.
+                - generic [ref=f12e115]: Тарифы действуют при наличии и (или) одновременном заключении в ЗАСО «ТАСК» договора добровольного страхования гражданской ответственности владельцев транспортных средств сроком на 1 год.
+              - table [ref=f12e117]:
+                - rowgroup [ref=f12e118]:
+                  - row [ref=f12e119]:
+                    - columnheader "Страховая сумма" [ref=f12e120]
+                    - columnheader "10 000–15 000 USD" [ref=f12e121]
+                    - columnheader "15 000–20 000 USD" [ref=f12e122]
+                    - columnheader "20 000–40 000 USD" [ref=f12e123]
+                    - columnheader "40 000–60 000 USD" [ref=f12e124]
+                    - columnheader "60 000–100 000 USD" [ref=f12e125]
+                - rowgroup [ref=f12e126]:
+                  - row [ref=f12e127]:
+                    - cell "Автомобили до 3 лет" [ref=f12e128]
+                    - cell "3,5%" [ref=f12e129]
+                    - cell "2,9%" [ref=f12e130]
+                    - cell "2,5%" [ref=f12e131]
+                    - cell "2,3%" [ref=f12e132]
+                    - cell "2,1%" [ref=f12e133]
+                  - row [ref=f12e134]:
+                    - cell "Автомобили от 4 до 5 лет" [ref=f12e135]
+                    - cell "3,5%" [ref=f12e136]
+                    - cell "3,2%" [ref=f12e137]
+                    - cell "3,2%" [ref=f12e138]
+                    - cell "2,8%" [ref=f12e139]
+                    - cell "2,8%" [ref=f12e140]
+              - generic [ref=f12e141]:
+                - paragraph [ref=f12e142]: Для электромобилей и гибридных автомобилей страховой взнос не может быть менее 700 USD либо страховой тариф не может быть менее 3%.
+                - paragraph [ref=f12e143]: Условия не распространяются на транспортные средства, используемые в качестве такси, по договорам проката или аренды, а также зарегистрированные за пределами Республики Беларусь.
+              - heading "Преимущества полиса КАСКО от ЗАСО «ТАСК»" [level=3] [ref=f12e144]
+              - generic [ref=f12e145]:
+                - generic [ref=f12e146]:
+                  - generic [ref=f12e147]: Гибкие условия
+                  - list [ref=f12e148]:
+                    - listitem [ref=f12e149]: — гибкие тарифы;
+                    - listitem [ref=f12e150]: — бесплатная рассрочка платежа.
+                - generic [ref=f12e151]:
+                  - generic [ref=f12e152]: Мультидрайв
+                  - paragraph [ref=f12e153]: Специальная опция, позволяющая управлять застрахованным автомобилем любому водителю.
+                - generic [ref=f12e154]:
+                  - generic [ref=f12e155]: Скидки при страховании
+                  - list [ref=f12e156]:
+                    - listitem [ref=f12e157]: — скидки при наличии договоров по другим видам страхования;
+                    - listitem [ref=f12e158]: — скидки при проведении рекламных акций;
+                    - listitem [ref=f12e159]: — скидки за безубыточное страхование.
+              - heading "Когда можно не обращаться в компетентные органы" [level=3] [ref=f12e160]
+              - generic [ref=f12e161]:
+                - list [ref=f12e162]:
+                  - listitem [ref=f12e163]: — при повреждении только деталей остекления кузова, зеркал и приборов внешнего освещения;
+                  - listitem [ref=f12e164]: — при повреждении транспортного средства и (или) дополнительного оборудования, если размер ущерба не превышает 5% от страховой суммы.
+                - generic [ref=f12e165]: Возможность применяется не более двух раз за срок действия договора страхования.
+              - heading "Перечень необходимых документов" [level=3] [ref=f12e166]
+              - list [ref=f12e168]:
+                - listitem [ref=f12e169]: — письменное заявление на заключение договора страхования АвтоКАСКО;
+                - listitem [ref=f12e170]: — паспорт или иное удостоверение личности;
+                - listitem [ref=f12e171]: — регистрационные документы на транспортное средство;
+                - listitem [ref=f12e172]: — предъявление транспортного средства представителю страховщика для осмотра.
+              - heading "Страховой случай" [level=3] [ref=f12e173]
+              - generic [ref=f12e174]:
+                - paragraph [ref=f12e175]: "Подробнее ознакомиться с рекомендациями при наступлении ДТП можно по ссылке:"
+                - link "Страховой случай" [ref=f12e177] [cursor=pointer]:
+                  - /url: /strahovoj_sluchaj/ss_avtokasko/
+            - heading "Прикрепленные документы" [level=3] [ref=f12e178]
+            - generic [ref=f12e181]:
+              - list:
+                - listitem [ref=f12e182]:
+                  - link ". Базовые страховые тарифы" [ref=f12e183] [cursor=pointer]:
+                    - /url: /upload/iblock/fcc/Базовые страховые тарифы.pdf
+                    - generic [ref=f12e184]: .
+                    - generic [ref=f12e185]: Базовые страховые тарифы
+                  - generic [ref=f12e186]: (pdf, 121 Кб)
+                - listitem [ref=f12e187]:
+                  - link ". Заявление на страхование" [ref=f12e188] [cursor=pointer]:
+                    - /url: /upload/iblock/99d/9kn8g1sjb5hhqqf7ah67ymetixk682mj/Zayavlenie-na-strakhovanie-15.pdf
+                    - generic [ref=f12e189]: .
+                    - generic [ref=f12e190]: Заявление на страхование
+                  - generic [ref=f12e191]: (pdf, 769 Кб)
+                - listitem [ref=f12e192]:
+                  - link ". Правила страхования" [ref=f12e193] [cursor=pointer]:
+                    - /url: /upload/iblock/cee/s372iiw9qylj229n1ift8k4stnka5c1m/Pravila-strakhovaniya-15.pdf
+                    - generic [ref=f12e194]: .
+                    - generic [ref=f12e195]: Правила страхования
+                  - generic [ref=f12e196]: (pdf, 766 Кб)
+            - navigation [ref=f12e197]:
+              - list [ref=f12e198]:
+                - listitem [ref=f12e199]: АвтоКаско
+                - listitem [ref=f12e200]:
+                  - link "Внутреннее страхование ОСГО" [ref=f12e201] [cursor=pointer]:
+                    - /url: /person/auto/osago/
+                - listitem [ref=f12e202]:
+                  - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=f12e203] [cursor=pointer]:
+                    - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+                - listitem [ref=f12e204]:
+                  - link "Союзное страхование ОСГО" [ref=f12e205] [cursor=pointer]:
+                    - /url: /person/auto/union/
+                - listitem [ref=f12e206]:
+                  - link "Комплексное ОСГО" [ref=f12e207] [cursor=pointer]:
+                    - /url: /person/auto/komplex/
+                - listitem [ref=f12e208]:
+                  - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=f12e209] [cursor=pointer]:
+                    - /url: /person/auto/greencard/
+            - generic [ref=f12e210]:
+              - link "Задать вопрос" [ref=f12e211] [cursor=pointer]:
+                - /url: /press_centr/faq/strahovanie_avtokasko/
+              - link "Словарь терминов" [ref=f12e212] [cursor=pointer]:
+                - /url: /press_centr/strahovie_termini/
+  - contentinfo [ref=f12e213]:
+    - generic [ref=f12e215]:
+      - generic [ref=f12e219]:
+        - link [ref=f12e221] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "visa" [ref=f12e222]
+        - link [ref=f12e224] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "assist" [ref=f12e225]
+        - link [ref=f12e227] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "mastercard" [ref=f12e228]
+        - link [ref=f12e230] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "assist" [ref=f12e231]
+        - link [ref=f12e233] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "belcart" [ref=f12e234]
+        - link [ref=f12e236] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "assist" [ref=f12e237]
+        - link [ref=f12e239] [cursor=pointer]:
+          - /url: https://www.raschet.by/
+          - img "raschet" [ref=f12e240]
+        - link [ref=f12e242] [cursor=pointer]:
+          - /url: https://www.belassist.by/
+          - img "assist" [ref=f12e243]
+      - generic [ref=f12e245]:
+        - generic [ref=f12e246]: © 2002 — 2026
+        - generic [ref=f12e247]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f12e248]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f12e249]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f12e250] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f12e254]:
+        - textbox "Поиск по сайту" [ref=f12e255]
+        - button "Submit" [ref=f12e256] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f12e259] [cursor=pointer]:
+        - /url: "#"

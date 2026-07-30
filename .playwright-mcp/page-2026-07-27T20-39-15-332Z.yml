@@ -1,0 +1,312 @@
+- generic [ref=f8e2]:
+  - generic [ref=f8e4]:
+    - banner [ref=f8e5]:
+      - generic [ref=f8e7]:
+        - generic [ref=f8e8]:
+          - generic [ref=f8e9]:
+            - link "На главную" [ref=f8e10] [cursor=pointer]:
+              - /url: /
+            - link "Карта сайта" [ref=f8e12] [cursor=pointer]:
+              - /url: /sitemap/
+          - list [ref=f8e14]:
+            - listitem [ref=f8e15]:
+              - link "Вход" [ref=f8e16] [cursor=pointer]:
+                - /url: /personal/
+        - generic [ref=f8e18]:
+          - link [ref=f8e20] [cursor=pointer]:
+            - /url: https://task.by/
+            - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f8e21]
+          - generic [ref=f8e22]:
+            - generic [ref=f8e23]: — Гарантия защиты
+            - text: Ваших интересов!
+        - generic [ref=f8e26]:
+          - generic [ref=f8e27]: (+375 17) 363-24-02
+          - link "Все контакты" [ref=f8e29] [cursor=pointer]:
+            - /url: https://task.by/contact/adresa_i_telefoni/
+    - generic [ref=f8e33]:
+      - complementary [ref=f8e34]:
+        - generic [ref=f8e35]:
+          - list [ref=f8e37]:
+            - listitem [ref=f8e38]:
+              - link "Частным лицам" [ref=f8e39] [cursor=pointer]:
+                - /url: /person/
+            - listitem [ref=f8e40]:
+              - link "Корпоративным клиентам" [ref=f8e41] [cursor=pointer]:
+                - /url: /corporate/
+          - list [ref=f8e43]:
+            - listitem [ref=f8e44]:
+              - link "O компании" [ref=f8e45] [cursor=pointer]:
+                - /url: /about/
+            - listitem [ref=f8e46]:
+              - link "Страхование в «ТАСК»" [ref=f8e47] [cursor=pointer]:
+                - /url: /strahovanie/
+            - listitem [ref=f8e48]: Пресс-центр
+            - listitem [ref=f8e49]:
+              - link "Сотрудничество" [ref=f8e50] [cursor=pointer]:
+                - /url: /sotrudnichestvo/
+            - listitem [ref=f8e51]:
+              - link "Контактная информация" [ref=f8e52] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/
+        - list [ref=f8e54]:
+          - listitem [ref=f8e55]:
+            - link "ОНЛАЙН страхование" [ref=f8e56] [cursor=pointer]:
+              - /url: /electronic_services/
+          - listitem [ref=f8e57]:
+            - link "Оплата через ЕРИП" [ref=f8e58] [cursor=pointer]:
+              - /url: /online_payment/
+          - listitem [ref=f8e59]:
+            - link "Личный кабинет" [ref=f8e60] [cursor=pointer]:
+              - /url: /personal/
+          - listitem [ref=f8e61]:
+            - link "Страховой случай" [ref=f8e62] [cursor=pointer]:
+              - /url: /strahovoj_sluchaj/
+          - listitem [ref=f8e63]:
+            - link "Заявка на медобслуживание" [ref=f8e64] [cursor=pointer]:
+              - /url: /health_insurance/
+          - listitem [ref=f8e65]:
+            - link "Точки продаж" [ref=f8e66] [cursor=pointer]:
+              - /url: /contact/offices/
+      - article [ref=f8e67]:
+        - list [ref=f8e70]:
+          - listitem [ref=f8e71]:
+            - link "Новости" [ref=f8e72] [cursor=pointer]:
+              - /url: /press_centr/news/
+          - listitem [ref=f8e73]:
+            - link "Страховые термины" [ref=f8e74] [cursor=pointer]:
+              - /url: /press_centr/strahovie_termini/
+          - listitem [ref=f8e75]: Вопрос-ответ
+          - listitem [ref=f8e76]:
+            - link "Пресс-кит" [ref=f8e77] [cursor=pointer]:
+              - /url: /press_centr/press_kit/
+          - listitem [ref=f8e78]:
+            - link "Финансовая и цифровая грамотность" [ref=f8e79] [cursor=pointer]:
+              - /url: /press_centr/finansovaja_gramotnost/
+          - listitem [ref=f8e80]:
+            - link "Раскрытие информации" [ref=f8e81] [cursor=pointer]:
+              - /url: /press_centr/disclosure-of-information
+          - listitem [ref=f8e82]:
+            - link "Информация об утраченных БСО 1-СУ" [ref=f8e83] [cursor=pointer]:
+              - /url: /press_centr/information-about-the-lost-forms-of-receipts-1-su
+          - listitem [ref=f8e84]:
+            - link "О порядке обработки персональных данных" [ref=f8e85] [cursor=pointer]:
+              - /url: /press_centr/o-poryadke-obrabotki-personalnykh-dannykh
+        - generic [ref=f8e86]:
+          - text: Обязательное страхование ГО
+          - link "Автокаско" [ref=f8e87] [cursor=pointer]:
+            - /url: /press_centr/faq/strahovanie_avtokasko/
+        - list [ref=f8e89]:
+          - listitem [ref=f8e90]:
+            - link "Главная" [ref=f8e91] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f8e92]:
+            - link "Пресс-центр" [ref=f8e93] [cursor=pointer]:
+              - /url: /press_centr/
+          - listitem [ref=f8e94]:
+            - link "Вопрос-ответ" [ref=f8e95] [cursor=pointer]:
+              - /url: /press_centr/faq/
+          - listitem [ref=f8e96]: Обязательное страхование гражданской ...
+        - heading "Обязательное страхование гражданской ответственнности" [level=1] [ref=f8e97]
+        - generic [ref=f8e98]:
+          - generic [ref=f8e101]:
+            - link " Как получить справку об отсутствии (наличии) страховых случаев и выплат страхового возмещения по договорам обязательного страхования гражданской ответственности владельцев транспортных средств" [ref=f8e104] [cursor=pointer]:
+              - /url: "#accordion-171618"
+            - link " При заключении договора комплексного внутреннего страхования будут ли учитываться все мои скидки, которые были мне предоставлены по ранее заключенным договорам внутреннего страхования?" [ref=f8e107] [cursor=pointer]:
+              - /url: "#accordion-1187"
+            - link " Компенсирует ли компания моральный ущерб?" [ref=f8e110] [cursor=pointer]:
+              - /url: "#accordion-1188"
+            - link " Если на моем авто другой водитель попал в ДТП( признан виновным), имею ли я право на скидку за отсутствие ДТП при оформлении страховки на этот автомобиль ?" [ref=f8e113] [cursor=pointer]:
+              - /url: "#accordion-1189"
+            - link " Я утерял полис. Могу ли я восстановить его?" [ref=f8e116] [cursor=pointer]:
+              - /url: "#accordion-1190"
+            - link " Я продал машину. Как мне поступить со страховкой ?" [ref=f8e119] [cursor=pointer]:
+              - /url: "#accordion-1191"
+            - link " Я приобрел машину, однако страховку со старого владельца на себя я не переоформлял. Могу ли я ездить по этой страховке до окончания срока ее действия?" [ref=f8e122] [cursor=pointer]:
+              - /url: "#accordion-1192"
+            - link " Просрочил уплату второй части взноса по страховке, какие последствия это влечет?" [ref=f8e125] [cursor=pointer]:
+              - /url: "#accordion-1193"
+            - link " Существует ли система скидок при страховании гражданской ответственности владельцев транспортных средств ?" [ref=f8e128] [cursor=pointer]:
+              - /url: "#accordion-1194"
+            - link " По моей вине произошло ДТП. Я получил телеграмму от страховой компании с вызовом на осмотр поврежденного мною автомобиля. Почему меня вызывают ?" [ref=f8e131] [cursor=pointer]:
+              - /url: "#accordion-1195"
+          - button "Задать вопрос" [ref=f8e133] [cursor=pointer]
+  - contentinfo [ref=f8e134]:
+    - generic [ref=f8e136]:
+      - generic [ref=f8e137]:
+        - list [ref=f8e139]:
+          - listitem [ref=f8e140]:
+            - link "О компании" [ref=f8e141] [cursor=pointer]:
+              - /url: /about/
+            - list [ref=f8e142]:
+              - listitem [ref=f8e143]:
+                - link "Наша история" [ref=f8e144] [cursor=pointer]:
+                  - /url: /about/nasha_istorija/
+              - listitem [ref=f8e145]:
+                - link "Первые лица" [ref=f8e146] [cursor=pointer]:
+                  - /url: /about/pervie_lica/
+              - listitem [ref=f8e147]:
+                - link "Свидетельство о гос. регистрации" [ref=f8e148] [cursor=pointer]:
+                  - /url: /about/svidetel_stvo_o_gos_registracii/
+              - listitem [ref=f8e149]:
+                - link "Лицензия" [ref=f8e150] [cursor=pointer]:
+                  - /url: /about/licence/
+              - listitem [ref=f8e151]:
+                - link "Подразделения компании" [ref=f8e152] [cursor=pointer]:
+                  - /url: /contact/adresa_i_telefoni/
+              - listitem [ref=f8e153]:
+                - link "Банковские реквизиты" [ref=f8e154] [cursor=pointer]:
+                  - /url: /about/bankovskie_rekviziti/
+              - listitem [ref=f8e155]:
+                - link "Финансовые показатели" [ref=f8e156] [cursor=pointer]:
+                  - /url: /about/finance/
+              - listitem [ref=f8e157]:
+                - link "График приема граждан" [ref=f8e158] [cursor=pointer]:
+                  - /url: /about/grafik-priema-grazhdan
+              - listitem [ref=f8e159]:
+                - link "Перечень административных процедур" [ref=f8e160] [cursor=pointer]:
+                  - /url: /about/perechen-administrativnykh-protsedur
+              - listitem [ref=f8e161]:
+                - link "Положение по закупкам" [ref=f8e162] [cursor=pointer]:
+                  - /url: /about/polozhenie-po-zakupkam
+          - listitem [ref=f8e163]:
+            - link "Страхование в «ТАСК»" [ref=f8e164] [cursor=pointer]:
+              - /url: /strahovanie/
+          - listitem [ref=f8e165]:
+            - link "Частным лицам" [ref=f8e166] [cursor=pointer]:
+              - /url: /person/
+            - list [ref=f8e167]:
+              - listitem [ref=f8e168]:
+                - link "Имущество" [ref=f8e169] [cursor=pointer]:
+                  - /url: /person/property/
+              - listitem [ref=f8e170]:
+                - link "Автострахование" [ref=f8e171] [cursor=pointer]:
+                  - /url: /person/auto/
+              - listitem [ref=f8e172]:
+                - link "Здоровье" [ref=f8e173] [cursor=pointer]:
+                  - /url: /person/health/
+          - listitem [ref=f8e174]:
+            - link "Корпоративным клиентам" [ref=f8e175] [cursor=pointer]:
+              - /url: /corporate/
+            - list [ref=f8e176]:
+              - listitem [ref=f8e177]:
+                - link "Транспорт" [ref=f8e178] [cursor=pointer]:
+                  - /url: /corporate/transport/
+              - listitem [ref=f8e179]:
+                - link "Здоровье" [ref=f8e180] [cursor=pointer]:
+                  - /url: /corporate/health/
+              - listitem [ref=f8e181]:
+                - link "Финансы" [ref=f8e182] [cursor=pointer]:
+                  - /url: /corporate/finance/
+              - listitem [ref=f8e183]:
+                - link "Имущество" [ref=f8e184] [cursor=pointer]:
+                  - /url: /corporate/property/
+              - listitem [ref=f8e185]:
+                - link "Ответственность" [ref=f8e186] [cursor=pointer]:
+                  - /url: /corporate/responsibility/
+          - listitem [ref=f8e187]:
+            - link "Пресс-центр" [ref=f8e188] [cursor=pointer]:
+              - /url: /press_centr/
+            - list [ref=f8e189]:
+              - listitem [ref=f8e190]:
+                - link "Новости" [ref=f8e191] [cursor=pointer]:
+                  - /url: /press_centr/news/
+              - listitem [ref=f8e192]:
+                - link "Страховые термины" [ref=f8e193] [cursor=pointer]:
+                  - /url: /press_centr/strahovie_termini/
+              - listitem [ref=f8e194]:
+                - link "Вопрос-ответ" [ref=f8e195] [cursor=pointer]:
+                  - /url: /press_centr/faq/
+              - listitem [ref=f8e196]:
+                - link "Пресс-кит" [ref=f8e197] [cursor=pointer]:
+                  - /url: /press_centr/press_kit/
+              - listitem [ref=f8e198]:
+                - link "Финансовая и цифровая грамотность" [ref=f8e199] [cursor=pointer]:
+                  - /url: /press_centr/finansovaja_gramotnost/
+              - listitem [ref=f8e200]:
+                - link "Раскрытие информации" [ref=f8e201] [cursor=pointer]:
+                  - /url: /press_centr/disclosure-of-information
+              - listitem [ref=f8e202]:
+                - link "Информация об утраченных БСО 1-СУ" [ref=f8e203] [cursor=pointer]:
+                  - /url: /press_centr/information-about-the-lost-forms-of-receipts-1-su
+              - listitem [ref=f8e204]:
+                - link "О порядке обработки персональных данных" [ref=f8e205] [cursor=pointer]:
+                  - /url: /press_centr/o-poryadke-obrabotki-personalnykh-dannykh
+          - listitem [ref=f8e206]:
+            - link "Сотрудничество" [ref=f8e207] [cursor=pointer]:
+              - /url: /sotrudnichestvo/
+            - list [ref=f8e208]:
+              - listitem [ref=f8e209]:
+                - link "Вакансии" [ref=f8e210] [cursor=pointer]:
+                  - /url: /sotrudnichestvo/vakansii/
+              - listitem [ref=f8e211]:
+                - link "АРМ агента" [ref=f8e212] [cursor=pointer]:
+                  - /url: https://arm.task.by:8443
+              - listitem [ref=f8e213]:
+                - link "Удаленное администрирование" [ref=f8e214] [cursor=pointer]:
+                  - /url: https://lk2.мойассистент.рф/WebApi/Platforms/Download/1371
+              - listitem [ref=f8e215]:
+                - link "ДМС приложение" [ref=f8e216] [cursor=pointer]:
+                  - /url: https://arm.task.by:8443/mobile
+          - listitem [ref=f8e217]:
+            - link "Контактная информация" [ref=f8e218] [cursor=pointer]:
+              - /url: /contact/
+            - list [ref=f8e219]:
+              - listitem [ref=f8e220]:
+                - link "Адреса и телефоны" [ref=f8e221] [cursor=pointer]:
+                  - /url: /contact/adresa_i_telefoni/
+              - listitem [ref=f8e222]:
+                - link "Точки продаж" [ref=f8e223] [cursor=pointer]:
+                  - /url: /contact/offices/
+              - listitem [ref=f8e224]:
+                - link "Отзывы о работе" [ref=f8e225] [cursor=pointer]:
+                  - /url: /contact/otzyvy/
+              - listitem [ref=f8e226]:
+                - link "Вопрос-ответ" [ref=f8e227] [cursor=pointer]:
+                  - /url: /press_centr/faq/
+              - listitem [ref=f8e228]:
+                - link "Госорганы" [ref=f8e229] [cursor=pointer]:
+                  - /url: /contact/gosorgani/
+              - listitem [ref=f8e230]:
+                - link "Официальное обращение" [ref=f8e231] [cursor=pointer]:
+                  - /url: /contact/official_appeal/
+              - listitem [ref=f8e232]:
+                - link "Справка об отсутствии страховых случаев" [ref=f8e233] [cursor=pointer]:
+                  - /url: /press_centr/faq/
+        - generic [ref=f8e235]:
+          - link [ref=f8e237] [cursor=pointer]:
+            - /url: https://www.visa.com.ru/
+            - img "visa" [ref=f8e238]
+          - link [ref=f8e240] [cursor=pointer]:
+            - /url: https://www.visa.com.ru/
+            - img "assist" [ref=f8e241]
+          - link [ref=f8e243] [cursor=pointer]:
+            - /url: https://www.mastercard.ru/
+            - img "mastercard" [ref=f8e244]
+          - link [ref=f8e246] [cursor=pointer]:
+            - /url: https://www.mastercard.ru/
+            - img "assist" [ref=f8e247]
+          - link [ref=f8e249] [cursor=pointer]:
+            - /url: https://belkart.by/
+            - img "belcart" [ref=f8e250]
+          - link [ref=f8e252] [cursor=pointer]:
+            - /url: https://belkart.by/
+            - img "assist" [ref=f8e253]
+          - link [ref=f8e255] [cursor=pointer]:
+            - /url: https://www.raschet.by/
+            - img "raschet" [ref=f8e256]
+          - link [ref=f8e258] [cursor=pointer]:
+            - /url: https://www.belassist.by/
+            - img "assist" [ref=f8e259]
+      - generic [ref=f8e261]:
+        - generic [ref=f8e262]: © 2002 — 2026
+        - generic [ref=f8e263]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f8e264]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f8e265]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f8e266] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f8e270]:
+        - textbox "Поиск по сайту" [ref=f8e271]
+        - button "Submit" [ref=f8e272] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f8e276] [cursor=pointer]:
+        - /url: "#"

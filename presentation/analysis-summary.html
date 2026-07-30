@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>task.by — краткий анализ и что можно улучшить</title>
+<style>
+  :root{
+    --red:#C41230; --red-dark:#9E0E26; --ink:#232019; --ink-soft:#4A4740;
+    --muted:#6B675F; --line:#E4E1DC; --bg:#FAFAF9; --card:#ffffff; --panel:#16140F;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px;}
+  header.hero{background:var(--panel);color:#fff;padding:56px 0 44px;}
+  .eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#9A968D;margin-bottom:14px;}
+  h1{font-size:32px;line-height:1.2;margin:0 0 14px;font-weight:700;}
+  .lead{font-size:17px;line-height:1.6;color:#C7C3BA;max-width:640px;margin:0;}
+  .score-row{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap;}
+  .score-chip{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:14px 18px;min-width:140px;}
+  .score-chip .n{font-size:26px;font-weight:700;color:#fff;}
+  .score-chip .n small{font-size:14px;font-weight:500;color:#9A968D;}
+  .score-chip .l{font-size:12.5px;color:#9A968D;margin-top:2px;}
+  section{padding:40px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-size:22px;margin:0 0 8px;}
+  .muted{color:var(--muted);font-size:15px;line-height:1.6;}
+  .problem{display:grid;grid-template-columns:120px 1fr;gap:20px;margin-top:28px;align-items:start;}
+  .problem .tag{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:5px 10px;border-radius:5px;display:inline-block;white-space:nowrap;}
+  .tag.critical{background:#FCE8E8;color:#B3261E;}
+  .tag.high{background:#FCEFD9;color:#8A5A00;}
+  .tag.medium{background:#EAF1FB;color:#2454A3;}
+  .p-title{font-size:17px;font-weight:700;margin:0 0 6px;}
+  .p-body{font-size:15px;line-height:1.6;color:var(--ink-soft);margin:0 0 10px;}
+  .p-fix{font-size:14.5px;line-height:1.6;background:#F3F1EC;border-left:3px solid var(--red);padding:10px 14px;border-radius:0 6px 6px 0;color:var(--ink-soft);}
+  .p-fix b{color:var(--ink);}
+  .shot{margin-top:10px;border:1px solid var(--line);border-radius:8px;overflow:hidden;max-width:340px;}
+  .shot img{display:block;width:100%;height:auto;}
+  .shot figcaption{font-size:12px;color:var(--muted);padding:6px 10px;background:#fff;border-top:1px solid var(--line);}
+  @media (max-width:640px){
+    .problem{grid-template-columns:1fr;}
+  }
+  .whatworks{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 28px;margin-top:8px;}
+  .whatworks h3{font-size:15px;margin:0 0 10px;}
+  .whatworks p{font-size:14.5px;line-height:1.7;color:var(--muted);margin:0;}
+  footer{padding:44px 0 60px;}
+  .cta{background:var(--red);color:#fff;border-radius:10px;padding:28px 32px;}
+  .cta h3{margin:0 0 8px;font-size:19px;}
+  .cta p{margin:0;font-size:14.5px;line-height:1.6;color:#FBD7DD;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">task.by · ЗАСО «ТАСК» · краткий разбор сайта</div>
+    <h1>Сайт работает, но почти не продаёт</h1>
+    <p class="lead">Я посмотрел task.by как обычный посетитель и как специалист по сайтам. Ниже — коротко, без терминов: что сейчас мешает сайту приносить больше заявок и звонков, и что с этим можно сделать.</p>
+    <div class="score-row">
+      <div class="score-chip"><div class="n">4.5<small>/10</small></div><div class="l">общая оценка сайта</div></div>
+      <div class="score-chip"><div class="n">3.1<small>/10</small></div><div class="l">способность приводить к покупке</div></div>
+      <div class="score-chip"><div class="n">0</div><div class="l">кликабельных номеров телефона на сайте</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<section>
+  <h2>Главная проблема</h2>
+  <p class="muted">Сайт хорошо справляется с ролью справочника: тарифы, лицензии, реквизиты — всё на месте и достоверно. Но у человека, который дочитал условия страхования и готов оформить полис, <b>нет кнопки "купить" или "рассчитать стоимость"</b> почти нигде на сайте. Единственный шаг, который ему остаётся, — искать номер телефона самому. На мобильном телефоне — а это большинство посетителей — даже номера телефона нигде не видно.</p>
+</section>
+
+<section>
+  <h2>Что конкретно нашлось</h2>
+
+  <div class="problem">
+    <span class="tag critical">Критично</span>
+    <div>
+      <p class="p-title">На странице продукта нет кнопки "купить"</p>
+      <p class="p-body">Страница КАСКО подробно рассказывает про тарифы и покрытие, но единственная кнопка на ней — для тех, кто уже страхуется и попал в ДТП, а не для тех, кто хочет купить полис.</p>
+      <div class="p-fix"><b>Решение:</b> добавить понятную кнопку «Рассчитать стоимость» / «Оформить полис онлайн» — такая кнопка уже есть на странице ОСАГО, её нужно просто повторить на остальных продуктах.</div>
+      <figure class="shot"><img src="issues/no-purchase-cta.png" alt="Нет кнопки покупки"><figcaption>Страница КАСКО — 4000px контента, ни одной кнопки покупки</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="problem">
+    <span class="tag critical">Критично</span>
+    <div>
+      <p class="p-title">На телефоне нигде не видно номера компании</p>
+      <p class="p-body">На компьютере номер телефона показан в шапке сайта. На телефоне — нет: ни в шапке, ни в меню, ни в футере. Для страховой компании, которую часто выбирают по телефону, это прямая потеря клиентов.</p>
+      <div class="p-fix"><b>Решение:</b> закреплённая кнопка «Позвонить» в шапке мобильной версии и на ключевых страницах — нажал и сразу звонок.</div>
+      <figure class="shot"><img src="issues/mobile-no-phone-header.png" alt="Нет телефона на мобильной версии"><figcaption>Мобильная шапка сайта — только логотип и меню</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="problem">
+    <span class="tag critical">Критично</span>
+    <div>
+      <p class="p-title">Таблица тарифов КАСКО обрезана на телефоне</p>
+      <p class="p-body">На мобильном экране таблица с ценами почти вдвое шире экрана, видно только 2 колонки из 5, текст обрывается на середине слова, и ничто не намекает, что таблицу можно прокрутить в сторону. Выглядит как сломанный сайт.</p>
+      <div class="p-fix"><b>Решение:</b> перестроить таблицу для телефона — либо карточками по одной строке, либо горизонтальной прокруткой с явной подсказкой «листайте вправо».</div>
+      <figure class="shot"><img src="issues/mobile-pricing-table-overflow.png" alt="Таблица тарифов обрезана"><figcaption>Таблица тарифов на экране 390px</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="problem">
+    <span class="tag high">Важно</span>
+    <div>
+      <p class="p-title">Страница «О компании» не вызывает доверия</p>
+      <p class="p-body">Вся страница — это юридические реквизиты и один email. Ни истории, ни цифр, ни фото руководства, ни наград — хотя компании 35 лет, и это стоит показать.</p>
+      <div class="p-fix"><b>Решение:</b> короткая история компании, цифры (35 лет на рынке, 11 представительств), фото первых лиц, которые уже есть на сайте, но никак не связаны с этой страницей.</div>
+      <figure class="shot"><img src="issues/about-page-no-trust-signals.png" alt="Страница о компании без доверия"><figcaption>Текущая страница «О компании» — только реквизиты</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="problem">
+    <span class="tag high">Важно</span>
+    <div>
+      <p class="p-title">Контакты — это сплошная простыня текста</p>
+      <p class="p-body">Все 11 представительств по стране перечислены одним текстовым потоком без карты, без фильтра по городу и без карточек. Чтобы найти свой офис, нужно вручную читать весь список.</p>
+      <div class="p-fix"><b>Решение:</b> карточки офисов + карта + выбор города, номера телефонов — кликабельные.</div>
+      <figure class="shot"><img src="issues/contacts-wall-of-text-no-map.png" alt="Контакты сплошным текстом"><figcaption>Страница контактов — список без структуры</figcaption></figure>
+    </div>
+  </div>
+
+  <div class="problem">
+    <span class="tag medium">Средне</span>
+    <div>
+      <p class="p-title">Устаревшее оформление главной страницы</p>
+      <p class="p-body">Клипарт-машина, силуэты людей и «облачко» со ссылками в самом заметном месте страницы — и ни одной кнопки действия. Такой стиль ассоциируется с сайтами 2012–2015 годов.</p>
+      <div class="p-fix"><b>Решение:</b> современная, спокойная композиция с одной понятной кнопкой действия — в духе крупных европейских страховых и финансовых сайтов.</div>
+      <figure class="shot"><img src="issues/hero-outdated-illustration.png" alt="Устаревшая иллюстрация на главной"><figcaption>Текущий блок на главной странице</figcaption></figure>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Что уже хорошо и трогать не нужно</h2>
+  <div class="whatworks">
+    <h3>Это не «сайт слабый», это «сайт недоделанный»</h3>
+    <p>Структура разделов понятная и одинаковая на всех страницах, юридической и справочной информации достаточно (лицензии, реквизиты, тарифы, документы), онлайн-сервисы уже существуют (личный кабинет, онлайн-ОСАГО, оплата ЕРИП), а форма входа в личный кабинет сделана аккуратно и правильно. Всё это нужно сохранить — переделывать нужно оформление и путь к покупке, а не саму структуру сайта.</p>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="cta">
+      <h3>Дальше — в приложенной презентации</h3>
+      <p>К этому письму приложен пример нового оформления пяти ключевых страниц (главная, КАСКО, «Частным лицам», «О компании», «Контакты») — как сайт может выглядеть и работать при сохранении всей текущей структуры и содержания.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+- generic [ref=f17e2]:
+  - generic [ref=f17e3]:
+    - navigation [ref=f17e4]:
+      - list [ref=f17e6]:
+        - listitem [ref=f17e7]:
+          - link "Вход" [ref=f17e8] [cursor=pointer]:
+            - /url: /personal/
+      - list [ref=f17e10]:
+        - listitem [ref=f17e11]:
+          - link "Частным лицам" [ref=f17e12] [cursor=pointer]:
+            - /url: /person/
+          - link "+" [ref=f17e13] [cursor=pointer]:
+            - /url: "#accordion-0"
+        - listitem [ref=f17e15]:
+          - link "Корпоративным клиентам" [ref=f17e16] [cursor=pointer]:
+            - /url: /corporate/
+          - link "+" [ref=f17e17] [cursor=pointer]:
+            - /url: "#accordion-22"
+        - listitem [ref=f17e19]:
+          - link "O компании" [ref=f17e20] [cursor=pointer]:
+            - /url: /about/
+          - link "+" [ref=f17e21] [cursor=pointer]:
+            - /url: "#accordion-59"
+        - listitem [ref=f17e23]:
+          - link "Страхование в «ТАСК»" [ref=f17e24] [cursor=pointer]:
+            - /url: /strahovanie/
+        - listitem [ref=f17e25]:
+          - link "Онлайн страхование ОСГО" [ref=f17e26] [cursor=pointer]:
+            - /url: https://e-insurance.btib.org/task?from=02mobile
+        - listitem [ref=f17e27]:
+          - link "Пресс-центр" [ref=f17e28] [cursor=pointer]:
+            - /url: /press_centr/
+          - link "+" [ref=f17e29] [cursor=pointer]:
+            - /url: "#accordion-72"
+        - listitem [ref=f17e31]:
+          - link "Сотрудничество" [ref=f17e32] [cursor=pointer]:
+            - /url: /sotrudnichestvo/
+          - link "+" [ref=f17e33] [cursor=pointer]:
+            - /url: "#accordion-81"
+        - listitem [ref=f17e35]:
+          - link "Контактная информация" [ref=f17e36] [cursor=pointer]:
+            - /url: /contact/
+          - link "+" [ref=f17e37] [cursor=pointer]:
+            - /url: "#accordion-86"
+        - listitem [ref=f17e39]:
+          - link "Страховой случай" [ref=f17e40] [cursor=pointer]:
+            - /url: /strahovoj_sluchaj/
+          - link "+" [ref=f17e41] [cursor=pointer]:
+            - /url: "#accordion-94"
+        - listitem [ref=f17e43]:
+          - link "Заявка на медобслуживание" [ref=f17e44] [cursor=pointer]:
+            - /url: /health_insurance/
+        - listitem [ref=f17e45]:
+          - link "Точки продаж" [ref=f17e46] [cursor=pointer]:
+            - /url: /contact/offices/
+        - listitem [ref=f17e47]:
+          - link "Заказать полис" [ref=f17e48] [cursor=pointer]:
+            - /url: /policy/
+        - listitem [ref=f17e49]:
+          - link "Способы оплаты" [ref=f17e50] [cursor=pointer]:
+            - /url: /online_payment/
+      - generic [ref=f17e51]:
+        - link "Задать вопрос" [ref=f17e52] [cursor=pointer]:
+          - /url: /press_centr/faq/
+        - link "Карта сайта" [ref=f17e53] [cursor=pointer]:
+          - /url: /sitemap/
+    - generic [ref=f17e54]:
+      - banner [ref=f17e55]:
+        - link [ref=f17e65] [cursor=pointer]:
+          - /url: https://task.by/
+          - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f17e66]
+      - generic [ref=f17e71]:
+        - complementary [ref=f17e72]
+        - article [ref=f17e73]:
+          - generic [ref=f17e74]:
+            - link "Дирекция ЗАСО «ТАСК»" [ref=f17e75] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/direkcija_zaso_task/
+            - link "Отдел урегулирования убытков по г.Минску" [ref=f17e76] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/otdel_uregulirovanija_ubitkov_po_g_minsk/
+            - link "Минское №1 представительство" [ref=f17e77] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/minskoe_1_predstavitel_stvo/
+            - link "Минское №2 представительство" [ref=f17e78] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/minskoe_2_predstavitel_stvo/
+            - link "Минское №3 представительство" [ref=f17e79] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/minskoe_3_predstavitel_stvo/
+            - link "Барановичское представительство" [ref=f17e80] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/baranovichskoe_predstavitel_stvo/
+            - link "Брестское представительство" [ref=f17e81] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/task_brest/
+            - link "Витебское представительство" [ref=f17e82] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/task_vitebsk/
+            - link "Гомельское представительство" [ref=f17e83] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/gomel_skoe_predstavitel_stvo/
+            - link "Гродненское представительство" [ref=f17e84] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/grodnenskoe_predstavitel_stvo/
+            - link "Могилевское представительство" [ref=f17e85] [cursor=pointer]:
+              - /url: /contact/adresa_i_telefoni/mogilevskoe_predstavitel_stvo/
+          - list [ref=f17e87]:
+            - listitem [ref=f17e88]:
+              - link "Главная" [ref=f17e89] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f17e90]:
+              - link "Контактная информация" [ref=f17e91] [cursor=pointer]:
+                - /url: /contact/
+            - listitem [ref=f17e92]: Адреса и телефоны
+          - heading "Адреса и телефоны" [level=1] [ref=f17e93]
+          - generic [ref=f17e94]:
+            - heading [level=2] [ref=f17e95]:
+              - link "Дирекция закрытого акционерного страхового общества «ТАСК»" [ref=f17e96] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/direkcija_zaso_task/
+            - paragraph [ref=f17e97]: ул. Червякова, 46, г. Минск, 220068
+            - paragraph [ref=f17e98]: +375 (17) 363-24-02 Телефон +375 (17) 365-10-47 Факс
+            - paragraph [ref=f17e99]:
+              - text: "e-mail:"
+              - link "office@task.by" [ref=f17e100] [cursor=pointer]:
+                - /url: mailto:office@task.by
+            - paragraph [ref=f17e101]: "Телефоны отделов страхования:"
+            - generic [ref=f17e102]:
+              - generic [ref=f17e103]:
+                - generic [ref=f17e104]: Отдел обязательного страхования гражданской ответственности (по работе с юридическими и физическими лицами)
+                - generic [ref=f17e106]: +375 (17) 365-10-66 +375 (17) 365-10-63 +375 (29) 112-21-13
+              - generic [ref=f17e107]:
+                - generic [ref=f17e108]: Отдел розничного страхования (имущество граждан, каско)
+                - generic [ref=f17e109]: +375 (17) 247-12-91 +375 (29) 119-29-76
+              - generic [ref=f17e110]:
+                - generic [ref=f17e111]: Отдел корпоративного страхования (обслуживание юридических лиц по добровольному страхованию)
+                - generic [ref=f17e112]: +375 (17) 358-10-86 +375 (17) 365-15-52 +375 (29) 195-95-98
+              - generic [ref=f17e113]:
+                - generic [ref=f17e114]: Отдел личного страхования (выезжающих за границу, несчастные случаи и болезни)
+                - generic [ref=f17e115]: +375 (17) 365-11-66 +375 (17) 373-11-75 +375 (29) 641-44-47
+              - generic [ref=f17e116]:
+                - generic [ref=f17e117]: Сектор добровольного страхования медицинских расходов (ДСМР)
+                - generic [ref=f17e119]: +375 (17) 236-11-41
+            - heading [level=2] [ref=f17e120]:
+              - link "Отдел урегулирования убытков по ОСГО и Автокаско по г.Минску" [ref=f17e121] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/otdel_uregulirovanija_ubitkov_po_g_minsk/
+            - paragraph [ref=f17e122]: Минский р-н, д. Боровая, д. 2, 3 этаж
+            - paragraph [ref=f17e123]: +375 (17) 365-12-04 +375 (29) 693-04-05 A1 +375 (29) 275-31-26 МТС
+            - paragraph [ref=f17e124]:
+              - text: "e-mail:"
+              - link "autoloss@task.by" [ref=f17e125] [cursor=pointer]:
+                - /url: mailto:autoloss@task.by
+            - heading [level=2] [ref=f17e126]:
+              - link "Представительство №1 в г. Минске" [ref=f17e127] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/minskoe_1_predstavitel_stvo/
+            - paragraph [ref=f17e128]: ул. Свердлова, 22-2, г. Минск, 220006
+            - paragraph [ref=f17e129]: +375 (17) 225-24-15, 379-69-34 +375 (17) 379-65-16 Факс
+            - paragraph [ref=f17e130]:
+              - text: "e-mail:"
+              - link "minskdep@task.by" [ref=f17e131] [cursor=pointer]:
+                - /url: mailto:minskdep@task.by
+            - heading [level=2] [ref=f17e132]:
+              - link "Представительство №2 в г. Минске" [ref=f17e133] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/minskoe_2_predstavitel_stvo/
+            - paragraph [ref=f17e134]: ул. Пионерская, 36, г. Минск, 220020
+            - paragraph [ref=f17e135]: +375 (17) 318-55-97, 318-16-37 +375 (17) 318-99-21 Факс
+            - paragraph [ref=f17e136]:
+              - text: "e-mail:"
+              - link "minskdep2@task.by" [ref=f17e137] [cursor=pointer]:
+                - /url: mailto:minskdep2@task.by
+            - heading [level=2] [ref=f17e138]:
+              - link "Представительство №3 в г. Минске" [ref=f17e139] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/minskoe_3_predstavitel_stvo/
+            - paragraph [ref=f17e140]: ул. Притыцкого 39-8Н, г. Минск, 220121
+            - paragraph [ref=f17e141]: +375 (17) 270-47-76, +375 (17) 270-64-64 +375 (17) 270-68-21 Факс
+            - paragraph [ref=f17e142]:
+              - text: "e-mail:"
+              - link "minskdep3@task.by" [ref=f17e143] [cursor=pointer]:
+                - /url: mailto:minskdep3@task.by
+            - heading [level=2] [ref=f17e144]:
+              - link "Представительство в г. Брест" [ref=f17e145] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/task_brest/
+            - paragraph [ref=f17e146]: ул. Комсомольская, 3, г. Брест, 224005
+            - paragraph [ref=f17e147]: +375 (162) 26-39-18 +375 (162) 26-39-20 Факс
+            - paragraph [ref=f17e148]:
+              - text: "e-mail:"
+              - link "brest@task.by" [ref=f17e149] [cursor=pointer]:
+                - /url: mailto:brest@task.by
+            - heading [level=2] [ref=f17e150]:
+              - link "Представительство в г. Барановичи" [ref=f17e151] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/baranovichskoe_predstavitel_stvo/
+            - paragraph [ref=f17e152]: ул. Тельмана, 58, г. Барановичи, 225417
+            - paragraph [ref=f17e153]: +375 (163) 66-45-30 +375 (163) 66-45-29 Факс
+            - paragraph [ref=f17e154]:
+              - text: "e-mail:"
+              - link "baranovichi@task.by" [ref=f17e155] [cursor=pointer]:
+                - /url: mailto:baranovichi@task.by
+            - heading [level=2] [ref=f17e156]:
+              - link "Представительство в г. Гомеле" [ref=f17e157] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/gomel_skoe_predstavitel_stvo/
+            - paragraph [ref=f17e158]: пр. Ленина, 59, г. Гомель, 246017
+            - paragraph [ref=f17e159]: +375 (232) 31-14-59 Тел / Факс +375 (232) 31-18-36
+            - paragraph [ref=f17e160]:
+              - text: "e-mail:"
+              - link "gomel@task.by" [ref=f17e161] [cursor=pointer]:
+                - /url: mailto:gomel@task.by
+            - heading [level=2] [ref=f17e162]:
+              - link "Представительство в г. Витебске" [ref=f17e163] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/task_vitebsk/
+            - paragraph [ref=f17e164]: ул. Димитрова, 6, г. Витебск, 210001
+            - paragraph [ref=f17e165]: +375 (212) 66-90-09 +375 (212) 66-90-02 Факс
+            - paragraph [ref=f17e166]:
+              - text: "e-mail:"
+              - link "vitebsk@task.by" [ref=f17e167] [cursor=pointer]:
+                - /url: mailto:vitebsk@task.by
+            - heading [level=2] [ref=f17e168]:
+              - link "Представительство в г. Могилеве" [ref=f17e169] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/mogilevskoe_predstavitel_stvo/
+            - paragraph [ref=f17e170]: ул. Дзержинского, 9, г. Могилев, 212030
+            - paragraph [ref=f17e171]: +375 (222) 769-135 +375 (222) 769-145 Тел / Факс
+            - paragraph [ref=f17e172]:
+              - text: "e-mail:"
+              - link "mogilev@task.by" [ref=f17e173] [cursor=pointer]:
+                - /url: mailto:mogilev@task.by
+            - heading [level=2] [ref=f17e174]:
+              - link "Представительство в г. Гродно" [ref=f17e175] [cursor=pointer]:
+                - /url: /contact/adresa_i_telefoni/grodnenskoe_predstavitel_stvo/
+            - paragraph [ref=f17e176]: ул. Славинского, 11-130, г. Гродно, 230026
+            - paragraph [ref=f17e177]: +375 (152) 31-55-02 Тел / Факс
+            - paragraph [ref=f17e178]:
+              - text: "e-mail:"
+              - link "grodno@task.by" [ref=f17e179] [cursor=pointer]:
+                - /url: mailto:grodno@task.by
+            - generic [ref=f17e180]:
+              - link "Задать вопрос" [ref=f17e181] [cursor=pointer]:
+                - /url: "#"
+              - link "Словарь терминов" [ref=f17e182] [cursor=pointer]:
+                - /url: /press_centr/strahovie_termini/
+  - contentinfo [ref=f17e183]:
+    - generic [ref=f17e185]:
+      - generic [ref=f17e189]:
+        - link [ref=f17e191] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "visa" [ref=f17e192]
+        - link [ref=f17e194] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "assist" [ref=f17e195]
+        - link [ref=f17e197] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "mastercard" [ref=f17e198]
+        - link [ref=f17e200] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "assist" [ref=f17e201]
+        - link [ref=f17e203] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "belcart" [ref=f17e204]
+        - link [ref=f17e206] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "assist" [ref=f17e207]
+        - link [ref=f17e209] [cursor=pointer]:
+          - /url: https://www.raschet.by/
+          - img "raschet" [ref=f17e210]
+        - link [ref=f17e212] [cursor=pointer]:
+          - /url: https://www.belassist.by/
+          - img "assist" [ref=f17e213]
+      - generic [ref=f17e215]:
+        - generic [ref=f17e216]: © 2002 — 2026
+        - generic [ref=f17e217]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f17e218]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f17e219]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f17e220] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f17e224]:
+        - textbox "Поиск по сайту" [ref=f17e225]
+        - button "Submit" [ref=f17e226] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f17e229] [cursor=pointer]:
+        - /url: "#"

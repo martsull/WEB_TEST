@@ -1,0 +1,183 @@
+- generic [ref=f3e4]:
+  - generic [ref=f3e5]: О КОМПАНИИ · DESKTOP · 1440px
+  - generic [ref=f3e6]:
+    - generic [ref=f3e7]:
+      - generic [ref=f3e8]:
+        - generic [ref=f3e9]: Т
+        - generic [ref=f3e11]: ТАСК
+      - generic [ref=f3e12]:
+        - generic [ref=f3e13] [cursor=pointer]: Частным лицам
+        - generic [ref=f3e14] [cursor=pointer]: Корпоративным клиентам
+        - generic [ref=f3e15] [cursor=pointer]: О компании
+        - generic [ref=f3e16] [cursor=pointer]: Контакты
+      - generic [ref=f3e17]:
+        - link "+375 17 363-24-02" [ref=f3e21] [cursor=pointer]:
+          - /url: tel:+375173632402
+        - button "Вход" [ref=f3e22] [cursor=pointer]
+    - generic [ref=f3e23]: Главная/О компании
+    - generic [ref=f3e24]:
+      - generic [ref=f3e25]: С 1991 года
+      - heading "Гарантия защиты Ваших интересов — не лозунг, а 35 лет практики" [level=1] [ref=f3e26]
+      - paragraph [ref=f3e27]: ЗАСО «ТАСК» — одна из старейших частных страховых компаний Беларуси. Мы работаем с 1991 года, сопровождая клиентов через все изменения рынка и продолжая нести обязательства по каждому действующему полису.
+    - generic [ref=f3e28]:
+      - generic [ref=f3e29]:
+        - generic [ref=f3e30]: "1991"
+        - generic [ref=f3e31]: год основания
+      - generic [ref=f3e32]:
+        - generic [ref=f3e33]: "11"
+        - generic [ref=f3e34]: представительств в Беларуси
+      - generic [ref=f3e35]:
+        - generic [ref=f3e36]: "[X] тыс."
+        - generic [ref=f3e37]: клиентов
+        - generic [ref=f3e38]: placeholder — уточнить у клиента
+      - generic [ref=f3e39]:
+        - generic [ref=f3e40]: Лицензирована
+        - generic [ref=f3e41]: Минфином Республики Беларусь
+    - generic [ref=f3e42]:
+      - heading "История" [level=2] [ref=f3e43]
+      - generic [ref=f3e44]:
+        - generic [ref=f3e45]:
+          - generic [ref=f3e46]: "1991"
+          - generic [ref=f3e48]: Регистрация компании — одна из первых частных страховых организаций в Беларуси.
+        - generic [ref=f3e49]:
+          - generic [ref=f3e50]: "1990"
+          - generic [ref=f3e52]: "Формирование продуктовой линейки: автострахование, имущество, ответственность."
+        - generic [ref=f3e53]:
+          - generic [ref=f3e54]: 2000—2010
+          - generic [ref=f3e56]: Открытие сети региональных представительств — сегодня их 11 по всей стране.
+        - generic [ref=f3e57]:
+          - generic [ref=f3e58]: "2020"
+          - generic [ref=f3e60]: Запуск личного кабинета, онлайн-оформления ОСАГО и оплаты через ЕРИП.
+    - generic [ref=f3e61]:
+      - heading "Первые лица" [level=2] [ref=f3e62]
+      - paragraph [ref=f3e63]: Иллюстративные данные для концепта — уточняются у клиента перед производством
+      - generic [ref=f3e64]:
+        - generic [ref=f3e65]:
+          - generic [ref=f3e70]: "[ФИО]"
+          - generic [ref=f3e71]: Генеральный директор
+        - generic [ref=f3e72]:
+          - generic [ref=f3e77]: "[ФИО]"
+          - generic [ref=f3e78]: Заместитель директора
+        - generic [ref=f3e79]:
+          - generic [ref=f3e84]: "[ФИО]"
+          - generic [ref=f3e85]: Финансовый директор
+        - generic [ref=f3e86]:
+          - generic [ref=f3e91]: "[ФИО]"
+          - generic [ref=f3e92]: Директор по урегулированию
+    - generic [ref=f3e93]:
+      - heading "Документы и лицензии" [level=2] [ref=f3e94]
+      - generic [ref=f3e95]:
+        - generic [ref=f3e100]:
+          - generic [ref=f3e101]: Лицензия на осуществление страховой деятельности
+          - generic [ref=f3e102]: PDF · скачать
+        - generic [ref=f3e107]:
+          - generic [ref=f3e108]: Свидетельство о государственной регистрации
+          - generic [ref=f3e109]: PDF · скачать
+        - generic [ref=f3e114]:
+          - generic [ref=f3e115]: Банковские реквизиты и раскрытие информации
+          - generic [ref=f3e116]: PDF · скачать
+    - generic [ref=f3e117]:
+      - generic [ref=f3e118]:
+        - generic [ref=f3e119]:
+          - generic [ref=f3e120]: О компании
+          - generic [ref=f3e121]: История
+          - generic [ref=f3e122]: Лицензии
+          - generic [ref=f3e123]: Реквизиты
+          - generic [ref=f3e124]: Раскрытие информации
+        - generic [ref=f3e125]:
+          - generic [ref=f3e126]: Страхование в «ТАСК»
+          - generic [ref=f3e127]: Все продукты
+          - generic [ref=f3e128]: Тарифы
+          - generic [ref=f3e129]: Правила страхования
+        - generic [ref=f3e130]:
+          - generic [ref=f3e131]: Частным лицам
+          - generic [ref=f3e132]: Автострахование
+          - generic [ref=f3e133]: Имущество
+          - generic [ref=f3e134]: Здоровье
+        - generic [ref=f3e135]:
+          - generic [ref=f3e136]: Корпоративным клиентам
+          - generic [ref=f3e137]: Транспорт
+          - generic [ref=f3e138]: Имущество
+          - generic [ref=f3e139]: Ответственность
+        - generic [ref=f3e140]:
+          - generic [ref=f3e141]: Пресс-центр
+          - generic [ref=f3e142]: Новости
+          - generic [ref=f3e143]: Публикации
+        - generic [ref=f3e144]:
+          - generic [ref=f3e145]: Сотрудничество
+          - generic [ref=f3e146]: Агентам
+          - generic [ref=f3e147]: Партнёрам
+        - generic [ref=f3e148]:
+          - generic [ref=f3e149]: Контактная информация
+          - generic [ref=f3e150]: Адреса и телефоны
+          - generic [ref=f3e151]: Заказать звонок
+      - generic [ref=f3e152]:
+        - generic [ref=f3e153]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691. г. Минск, ул. Червякова, 46.
+        - generic [ref=f3e154]:
+          - generic [ref=f3e155]: ЕРИП
+          - generic [ref=f3e156]: VISA
+          - generic [ref=f3e157]: Mastercard
+          - generic [ref=f3e158]: Настройки cookie
+  - generic [ref=f3e159]: О КОМПАНИИ · MOBILE · 390px
+  - generic [ref=f3e161]:
+    - generic [ref=f3e162]:
+      - button "Меню" [ref=f3e163]
+      - generic [ref=f3e165]: О компании
+      - link "Позвонить" [ref=f3e166] [cursor=pointer]:
+        - /url: tel:+375173632402
+    - generic [ref=f3e169]:
+      - generic [ref=f3e170]: С 1991 года
+      - heading "35 лет гарантии защиты Ваших интересов" [level=1] [ref=f3e171]
+      - paragraph [ref=f3e172]: Одна из старейших частных страховых компаний Беларуси.
+    - generic [ref=f3e173]:
+      - generic [ref=f3e174]:
+        - generic [ref=f3e175]: "1991"
+        - generic [ref=f3e176]: год основания
+      - generic [ref=f3e177]:
+        - generic [ref=f3e178]: "11"
+        - generic [ref=f3e179]: представительств в Беларуси
+      - generic [ref=f3e180]:
+        - generic [ref=f3e181]: "[X] тыс."
+        - generic [ref=f3e182]: клиентов
+      - generic [ref=f3e183]:
+        - generic [ref=f3e184]: Лицензирована
+        - generic [ref=f3e185]: Минфином Республики Беларусь
+    - generic [ref=f3e186]:
+      - heading "История" [level=2] [ref=f3e187]
+      - generic [ref=f3e188]:
+        - generic [ref=f3e189]: "1991"
+        - generic [ref=f3e190]: Регистрация компании — одна из первых частных страховых организаций в Беларуси.
+      - generic [ref=f3e191]:
+        - generic [ref=f3e192]: "1990"
+        - generic [ref=f3e193]: "Формирование продуктовой линейки: автострахование, имущество, ответственность."
+      - generic [ref=f3e194]:
+        - generic [ref=f3e195]: 2000—2010
+        - generic [ref=f3e196]: Открытие сети региональных представительств — сегодня их 11 по всей стране.
+      - generic [ref=f3e197]:
+        - generic [ref=f3e198]: "2020"
+        - generic [ref=f3e199]: Запуск личного кабинета, онлайн-оформления ОСАГО и оплаты через ЕРИП.
+    - generic [ref=f3e200]:
+      - heading "Первые лица" [level=2] [ref=f3e201]
+      - paragraph [ref=f3e202]: Иллюстративно для концепта
+      - generic [ref=f3e203]:
+        - generic [ref=f3e204]:
+          - generic [ref=f3e209]: "[ФИО]"
+          - generic [ref=f3e210]: Генеральный директор
+        - generic [ref=f3e211]:
+          - generic [ref=f3e216]: "[ФИО]"
+          - generic [ref=f3e217]: Заместитель директора
+        - generic [ref=f3e218]:
+          - generic [ref=f3e223]: "[ФИО]"
+          - generic [ref=f3e224]: Финансовый директор
+        - generic [ref=f3e225]:
+          - generic [ref=f3e230]: "[ФИО]"
+          - generic [ref=f3e231]: Директор по урегулированию
+    - generic [ref=f3e232]:
+      - heading "Документы" [level=2] [ref=f3e233]
+      - generic [ref=f3e234]: Лицензия на осуществление страховой деятельности
+      - generic [ref=f3e239]: Свидетельство о государственной регистрации
+      - generic [ref=f3e244]: Банковские реквизиты и раскрытие информации
+    - generic [ref=f3e249]:
+      - link "Позвонить" [ref=f3e250] [cursor=pointer]:
+        - /url: tel:+375173632402
+      - button "Заказать звонок" [ref=f3e251]

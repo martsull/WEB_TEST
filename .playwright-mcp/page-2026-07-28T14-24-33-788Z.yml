@@ -1,0 +1,162 @@
+- generic [ref=f13e2]:
+  - generic [ref=f13e3]:
+    - navigation [ref=f13e4]:
+      - list [ref=f13e6]:
+        - listitem [ref=f13e7]:
+          - link "Вход" [ref=f13e8] [cursor=pointer]:
+            - /url: /personal/
+      - list [ref=f13e10]:
+        - listitem [ref=f13e11]:
+          - link "Частным лицам" [ref=f13e12] [cursor=pointer]:
+            - /url: /person/
+          - link "+" [ref=f13e13] [cursor=pointer]:
+            - /url: "#accordion-0"
+        - listitem [ref=f13e15]:
+          - link "Корпоративным клиентам" [ref=f13e16] [cursor=pointer]:
+            - /url: /corporate/
+          - link "+" [ref=f13e17] [cursor=pointer]:
+            - /url: "#accordion-22"
+        - listitem [ref=f13e19]:
+          - link "O компании" [ref=f13e20] [cursor=pointer]:
+            - /url: /about/
+          - link "+" [ref=f13e21] [cursor=pointer]:
+            - /url: "#accordion-59"
+        - listitem [ref=f13e23]:
+          - link "Страхование в «ТАСК»" [ref=f13e24] [cursor=pointer]:
+            - /url: /strahovanie/
+        - listitem [ref=f13e25]:
+          - link "Онлайн страхование ОСГО" [ref=f13e26] [cursor=pointer]:
+            - /url: https://e-insurance.btib.org/task?from=02mobile
+        - listitem [ref=f13e27]:
+          - link "Пресс-центр" [ref=f13e28] [cursor=pointer]:
+            - /url: /press_centr/
+          - link "+" [ref=f13e29] [cursor=pointer]:
+            - /url: "#accordion-72"
+        - listitem [ref=f13e31]:
+          - link "Сотрудничество" [ref=f13e32] [cursor=pointer]:
+            - /url: /sotrudnichestvo/
+          - link "+" [ref=f13e33] [cursor=pointer]:
+            - /url: "#accordion-81"
+        - listitem [ref=f13e35]:
+          - link "Контактная информация" [ref=f13e36] [cursor=pointer]:
+            - /url: /contact/
+          - link "+" [ref=f13e37] [cursor=pointer]:
+            - /url: "#accordion-86"
+        - listitem [ref=f13e39]:
+          - link "Страховой случай" [ref=f13e40] [cursor=pointer]:
+            - /url: /strahovoj_sluchaj/
+          - link "+" [ref=f13e41] [cursor=pointer]:
+            - /url: "#accordion-94"
+        - listitem [ref=f13e43]:
+          - link "Заявка на медобслуживание" [ref=f13e44] [cursor=pointer]:
+            - /url: /health_insurance/
+        - listitem [ref=f13e45]:
+          - link "Точки продаж" [ref=f13e46] [cursor=pointer]:
+            - /url: /contact/offices/
+        - listitem [ref=f13e47]:
+          - link "Заказать полис" [ref=f13e48] [cursor=pointer]:
+            - /url: /policy/
+        - listitem [ref=f13e49]:
+          - link "Способы оплаты" [ref=f13e50] [cursor=pointer]:
+            - /url: /online_payment/
+      - generic [ref=f13e51]:
+        - link "Задать вопрос" [ref=f13e52] [cursor=pointer]:
+          - /url: /press_centr/faq/
+        - link "Карта сайта" [ref=f13e53] [cursor=pointer]:
+          - /url: /sitemap/
+    - generic [ref=f13e54]:
+      - banner [ref=f13e55]:
+        - link [ref=f13e65] [cursor=pointer]:
+          - /url: https://task.by/
+          - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=f13e66]
+      - generic [ref=f13e71]:
+        - complementary [ref=f13e72]
+        - article [ref=f13e73]:
+          - list [ref=f13e75]:
+            - listitem [ref=f13e76]:
+              - link "Главная" [ref=f13e77] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f13e78]:
+              - link "Частным лицам" [ref=f13e79] [cursor=pointer]:
+                - /url: /person/
+            - listitem [ref=f13e80]: Имущество
+          - heading "Имущество" [level=1] [ref=f13e81]
+          - generic [ref=f13e82]:
+            - paragraph [ref=f13e83]: Забота о сохранности дома, квартиры, дачи, своего имущества и финансовых сбережений лежит на плечах каждого из нас невидимым грузом.
+            - paragraph [ref=f13e84]: Замки и решетки, охранная и пожарная сигнализации уменьшают вероятность утраты имущества, но если несчастье все-таки произошло, мы остаемся наедине с постигшей нас бедой.
+            - paragraph [ref=f13e85]: Страхование — самый надежный и недорогой способ защиты имущественных интересов.
+            - navigation [ref=f13e86]:
+              - list [ref=f13e87]:
+                - listitem [ref=f13e88]:
+                  - link "Страхование строений" [ref=f13e89] [cursor=pointer]:
+                    - /url: /person/property/buildings/
+                - listitem [ref=f13e90]:
+                  - link "Комплексное страхование помещений и ГО его владельцев" [ref=f13e91] [cursor=pointer]:
+                    - /url: /person/property/komplex/
+                - listitem [ref=f13e92]:
+                  - link "Комплексное страхование домовладения и гражданской ответственности его владельца" [ref=f13e93] [cursor=pointer]:
+                    - /url: /person/property/household
+                - listitem [ref=f13e94]:
+                  - link "Страхование домашнего имущества" [ref=f13e95] [cursor=pointer]:
+                    - /url: /person/property/house/
+                - listitem [ref=f13e96]:
+                  - link "Страхование рисков держателей банковских карточек" [ref=f13e97] [cursor=pointer]:
+                    - /url: /corporate/property/insurance-of-risks-of-holders-of-bank-cards
+                - listitem [ref=f13e98]:
+                  - link "Страхование водных судов" [ref=f13e99] [cursor=pointer]:
+                    - /url: /corporate/transport/strahovanie_vodnih_sudov/
+                - listitem [ref=f13e100]:
+                  - link "Страхование расходов в связи с отменой или изменением сроков поездки" [ref=f13e101] [cursor=pointer]:
+                    - /url: /person/property/escape/
+                - listitem [ref=f13e102]:
+                  - link "Страхование багажа" [ref=f13e103] [cursor=pointer]:
+                    - /url: /person/property/luggage-insurance
+                - listitem [ref=f13e104]:
+                  - link "Страхование ГО выезжающих за границу" [ref=f13e105] [cursor=pointer]:
+                    - /url: /person/property/insurance
+            - generic [ref=f13e106]:
+              - link "Задать вопрос" [ref=f13e107] [cursor=pointer]:
+                - /url: "#"
+              - link "Словарь терминов" [ref=f13e108] [cursor=pointer]:
+                - /url: /press_centr/strahovie_termini/
+  - contentinfo [ref=f13e109]:
+    - generic [ref=f13e111]:
+      - generic [ref=f13e115]:
+        - link [ref=f13e117] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "visa" [ref=f13e118]
+        - link [ref=f13e120] [cursor=pointer]:
+          - /url: https://www.visa.com.ru/
+          - img "assist" [ref=f13e121]
+        - link [ref=f13e123] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "mastercard" [ref=f13e124]
+        - link [ref=f13e126] [cursor=pointer]:
+          - /url: https://www.mastercard.ru/
+          - img "assist" [ref=f13e127]
+        - link [ref=f13e129] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "belcart" [ref=f13e130]
+        - link [ref=f13e132] [cursor=pointer]:
+          - /url: https://belkart.by/
+          - img "assist" [ref=f13e133]
+        - link [ref=f13e135] [cursor=pointer]:
+          - /url: https://www.raschet.by/
+          - img "raschet" [ref=f13e136]
+        - link [ref=f13e138] [cursor=pointer]:
+          - /url: https://www.belassist.by/
+          - img "assist" [ref=f13e139]
+      - generic [ref=f13e141]:
+        - generic [ref=f13e142]: © 2002 — 2026
+        - generic [ref=f13e143]:
+          - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+          - generic [ref=f13e144]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+        - generic [ref=f13e145]:
+          - text: "E-mail:"
+          - link "info@task.by" [ref=f13e146] [cursor=pointer]:
+            - /url: mailto:info@task.by
+      - group [ref=f13e150]:
+        - textbox "Поиск по сайту" [ref=f13e151]
+        - button "Submit" [ref=f13e152] [cursor=pointer]
+      - link "Выбор настроек Cookie" [ref=f13e155] [cursor=pointer]:
+        - /url: "#"

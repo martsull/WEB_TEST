@@ -1,0 +1,601 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - banner [ref=e5]:
+        - generic [ref=e7]:
+          - generic [ref=e8]:
+            - generic [ref=e9]:
+              - link "Задать вопрос" [ref=e11] [cursor=pointer]:
+                - /url: "#"
+              - link "Карта сайта" [ref=e12] [cursor=pointer]:
+                - /url: /sitemap/
+            - list [ref=e14]:
+              - listitem [ref=e15]:
+                - link "Вход" [ref=e16] [cursor=pointer]:
+                  - /url: /personal/
+          - generic [ref=e18]:
+            - img "ОСАГО, страхование рисков, автомобиля (Каско, «зеленая карта»), имущества, гражданской ответственности, грузов, медицинское и любая другая страховка" [ref=e20]
+            - generic [ref=e21]:
+              - generic [ref=e22]: — Гарантия защиты
+              - text: Ваших интересов!
+          - generic [ref=e25]:
+            - generic [ref=e26]: (+375 17) 363-24-02
+            - link "Все контакты" [ref=e28] [cursor=pointer]:
+              - /url: https://task.by/contact/adresa_i_telefoni/
+      - article [ref=e33]:
+        - heading "ЗАСО «ТАСК»" [level=1] [ref=e34]
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - list [ref=e40]:
+              - listitem [ref=e41]:
+                - link [ref=e43] [cursor=pointer]:
+                  - /url: /person/property/
+                  - img "Имущество" [ref=e44]
+                  - text: Имущество
+                - generic:
+                  - generic [ref=e45]:
+                    - generic [ref=e46]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Имущество»" [ref=e47] [cursor=pointer]:
+                        - /url: /person/property/
+                    - link:
+                      - /url: /person/property/
+                  - generic [ref=e48]:
+                    - list:
+                      - listitem [ref=e49]:
+                        - link "Страхование строений" [ref=e50] [cursor=pointer]:
+                          - /url: /person/property/buildings/
+                      - listitem [ref=e51]:
+                        - link "Комплексное страхование помещений и ГО его владельцев" [ref=e52] [cursor=pointer]:
+                          - /url: /person/property/komplex/
+                      - listitem [ref=e53]:
+                        - link "Комплексное страхование домовладения и гражданской ответственности его владельца" [ref=e54] [cursor=pointer]:
+                          - /url: /person/property/household
+                      - listitem [ref=e55]:
+                        - link "Страхование домашнего имущества" [ref=e56] [cursor=pointer]:
+                          - /url: /person/property/house/
+                      - listitem [ref=e57]:
+                        - link "Страхование рисков держателей банковских карточек" [ref=e58] [cursor=pointer]:
+                          - /url: /corporate/property/insurance-of-risks-of-holders-of-bank-cards
+                      - listitem [ref=e59]:
+                        - link "Страхование водных судов" [ref=e60] [cursor=pointer]:
+                          - /url: /corporate/transport/strahovanie_vodnih_sudov/
+                      - listitem [ref=e61]:
+                        - link "Страхование расходов в связи с отменой или изменением сроков поездки" [ref=e62] [cursor=pointer]:
+                          - /url: /person/property/escape/
+                      - listitem [ref=e63]:
+                        - link "Страхование багажа" [ref=e64] [cursor=pointer]:
+                          - /url: /person/property/luggage-insurance
+                      - listitem [ref=e65]:
+                        - link "Страхование ГО выезжающих за границу" [ref=e66] [cursor=pointer]:
+                          - /url: /person/property/insurance
+              - listitem [ref=e67]:
+                - link [ref=e69] [cursor=pointer]:
+                  - /url: /person/auto/
+                  - img "Автострахование" [ref=e70]
+                  - text: Автострахование
+                - generic:
+                  - generic [ref=e71]:
+                    - generic [ref=e72]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Автострахование»" [ref=e73] [cursor=pointer]:
+                        - /url: /person/auto/
+                    - link:
+                      - /url: /person/auto/
+                  - generic [ref=e74]:
+                    - list:
+                      - listitem [ref=e75]:
+                        - link "АвтоКаско" [ref=e76] [cursor=pointer]:
+                          - /url: /person/auto/kasko/
+                      - listitem [ref=e77]:
+                        - link "Внутреннее страхование ОСГО" [ref=e78] [cursor=pointer]:
+                          - /url: /person/auto/osago/
+                      - listitem [ref=e79]:
+                        - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=e80] [cursor=pointer]:
+                          - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+                      - listitem [ref=e81]:
+                        - link "Союзное страхование ОСГО" [ref=e82] [cursor=pointer]:
+                          - /url: /person/auto/union/
+                      - listitem [ref=e83]:
+                        - link "Комплексное ОСГО" [ref=e84] [cursor=pointer]:
+                          - /url: /person/auto/komplex/
+                      - listitem [ref=e85]:
+                        - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=e86] [cursor=pointer]:
+                          - /url: /person/auto/greencard/
+              - listitem [ref=e87]:
+                - link [ref=e89] [cursor=pointer]:
+                  - /url: /person/health/
+                  - img "Здоровье" [ref=e90]
+                  - text: Здоровье
+                - generic:
+                  - generic [ref=e91]:
+                    - generic [ref=e92]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Здоровье»" [ref=e93] [cursor=pointer]:
+                        - /url: /person/health/
+                    - link:
+                      - /url: /person/health/
+                  - generic [ref=e94]:
+                    - list:
+                      - listitem [ref=e95]:
+                        - link "Страхование от внезапных заболеваний и несчастных случаев на время поездки за границу" [ref=e96] [cursor=pointer]:
+                          - /url: /person/health/abroad/
+                      - listitem [ref=e97]:
+                        - link "Страхование от несчастных случаев и болезней" [ref=e98] [cursor=pointer]:
+                          - /url: /person/health/accidents/
+                      - listitem [ref=e99]:
+                        - link "Страхование от несчастных случаев пассажиров железнодорожного транспорта" [ref=e100] [cursor=pointer]:
+                          - /url: /person/health/the-accident-insurance-of-passengers-of-railway-transport
+              - listitem [ref=e101]:
+                - link [ref=e103] [cursor=pointer]:
+                  - /url: /person/property/
+                  - img "Имущество" [ref=e104]
+                  - text: Имущество
+                - generic:
+                  - generic [ref=e105]:
+                    - generic [ref=e106]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Имущество»" [ref=e107] [cursor=pointer]:
+                        - /url: /person/property/
+                    - link:
+                      - /url: /person/property/
+                  - generic [ref=e108]:
+                    - list:
+                      - listitem [ref=e109]:
+                        - link "Страхование строений" [ref=e110] [cursor=pointer]:
+                          - /url: /person/property/buildings/
+                      - listitem [ref=e111]:
+                        - link "Комплексное страхование помещений и ГО его владельцев" [ref=e112] [cursor=pointer]:
+                          - /url: /person/property/komplex/
+                      - listitem [ref=e113]:
+                        - link "Комплексное страхование домовладения и гражданской ответственности его владельца" [ref=e114] [cursor=pointer]:
+                          - /url: /person/property/household
+                      - listitem [ref=e115]:
+                        - link "Страхование домашнего имущества" [ref=e116] [cursor=pointer]:
+                          - /url: /person/property/house/
+                      - listitem [ref=e117]:
+                        - link "Страхование рисков держателей банковских карточек" [ref=e118] [cursor=pointer]:
+                          - /url: /corporate/property/insurance-of-risks-of-holders-of-bank-cards
+                      - listitem [ref=e119]:
+                        - link "Страхование водных судов" [ref=e120] [cursor=pointer]:
+                          - /url: /corporate/transport/strahovanie_vodnih_sudov/
+                      - listitem [ref=e121]:
+                        - link "Страхование расходов в связи с отменой или изменением сроков поездки" [ref=e122] [cursor=pointer]:
+                          - /url: /person/property/escape/
+                      - listitem [ref=e123]:
+                        - link "Страхование багажа" [ref=e124] [cursor=pointer]:
+                          - /url: /person/property/luggage-insurance
+                      - listitem [ref=e125]:
+                        - link "Страхование ГО выезжающих за границу" [ref=e126] [cursor=pointer]:
+                          - /url: /person/property/insurance
+              - listitem [ref=e127]:
+                - link "Автострахование Автострахование" [ref=e129] [cursor=pointer]:
+                  - /url: /person/auto/
+                  - img "Автострахование" [ref=e130]
+                  - generic [ref=e131]: Автострахование
+                - generic:
+                  - generic [ref=e132]:
+                    - generic [ref=e133]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Автострахование»" [ref=e134] [cursor=pointer]:
+                        - /url: /person/auto/
+                    - link:
+                      - /url: /person/auto/
+                  - generic [ref=e135]:
+                    - list:
+                      - listitem [ref=e136]:
+                        - link "АвтоКаско" [ref=e137] [cursor=pointer]:
+                          - /url: /person/auto/kasko/
+                      - listitem [ref=e138]:
+                        - link "Внутреннее страхование ОСГО" [ref=e139] [cursor=pointer]:
+                          - /url: /person/auto/osago/
+                      - listitem [ref=e140]:
+                        - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=e141] [cursor=pointer]:
+                          - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+                      - listitem [ref=e142]:
+                        - link "Союзное страхование ОСГО" [ref=e143] [cursor=pointer]:
+                          - /url: /person/auto/union/
+                      - listitem [ref=e144]:
+                        - link "Комплексное ОСГО" [ref=e145] [cursor=pointer]:
+                          - /url: /person/auto/komplex/
+                      - listitem [ref=e146]:
+                        - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=e147] [cursor=pointer]:
+                          - /url: /person/auto/greencard/
+              - listitem [ref=e148]:
+                - link [ref=e150] [cursor=pointer]:
+                  - /url: /person/health/
+                  - img "Здоровье" [ref=e151]
+                  - text: Здоровье
+                - generic:
+                  - generic [ref=e152]:
+                    - generic [ref=e153]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Здоровье»" [ref=e154] [cursor=pointer]:
+                        - /url: /person/health/
+                    - link:
+                      - /url: /person/health/
+                  - generic [ref=e155]:
+                    - list:
+                      - listitem [ref=e156]:
+                        - link "Страхование от внезапных заболеваний и несчастных случаев на время поездки за границу" [ref=e157] [cursor=pointer]:
+                          - /url: /person/health/abroad/
+                      - listitem [ref=e158]:
+                        - link "Страхование от несчастных случаев и болезней" [ref=e159] [cursor=pointer]:
+                          - /url: /person/health/accidents/
+                      - listitem [ref=e160]:
+                        - link "Страхование от несчастных случаев пассажиров железнодорожного транспорта" [ref=e161] [cursor=pointer]:
+                          - /url: /person/health/the-accident-insurance-of-passengers-of-railway-transport
+              - listitem [ref=e162]:
+                - link [ref=e164] [cursor=pointer]:
+                  - /url: /person/property/
+                  - img "Имущество" [ref=e165]
+                  - text: Имущество
+                - generic:
+                  - generic [ref=e166]:
+                    - generic [ref=e167]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Имущество»" [ref=e168] [cursor=pointer]:
+                        - /url: /person/property/
+                    - link:
+                      - /url: /person/property/
+                  - generic [ref=e169]:
+                    - list:
+                      - listitem [ref=e170]:
+                        - link "Страхование строений" [ref=e171] [cursor=pointer]:
+                          - /url: /person/property/buildings/
+                      - listitem [ref=e172]:
+                        - link "Комплексное страхование помещений и ГО его владельцев" [ref=e173] [cursor=pointer]:
+                          - /url: /person/property/komplex/
+                      - listitem [ref=e174]:
+                        - link "Комплексное страхование домовладения и гражданской ответственности его владельца" [ref=e175] [cursor=pointer]:
+                          - /url: /person/property/household
+                      - listitem [ref=e176]:
+                        - link "Страхование домашнего имущества" [ref=e177] [cursor=pointer]:
+                          - /url: /person/property/house/
+                      - listitem [ref=e178]:
+                        - link "Страхование рисков держателей банковских карточек" [ref=e179] [cursor=pointer]:
+                          - /url: /corporate/property/insurance-of-risks-of-holders-of-bank-cards
+                      - listitem [ref=e180]:
+                        - link "Страхование водных судов" [ref=e181] [cursor=pointer]:
+                          - /url: /corporate/transport/strahovanie_vodnih_sudov/
+                      - listitem [ref=e182]:
+                        - link "Страхование расходов в связи с отменой или изменением сроков поездки" [ref=e183] [cursor=pointer]:
+                          - /url: /person/property/escape/
+                      - listitem [ref=e184]:
+                        - link "Страхование багажа" [ref=e185] [cursor=pointer]:
+                          - /url: /person/property/luggage-insurance
+                      - listitem [ref=e186]:
+                        - link "Страхование ГО выезжающих за границу" [ref=e187] [cursor=pointer]:
+                          - /url: /person/property/insurance
+              - listitem [ref=e188]:
+                - link [ref=e190] [cursor=pointer]:
+                  - /url: /person/auto/
+                  - img "Автострахование" [ref=e191]
+                  - text: Автострахование
+                - generic:
+                  - generic [ref=e192]:
+                    - generic [ref=e193]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Автострахование»" [ref=e194] [cursor=pointer]:
+                        - /url: /person/auto/
+                    - link:
+                      - /url: /person/auto/
+                  - generic [ref=e195]:
+                    - list:
+                      - listitem [ref=e196]:
+                        - link "АвтоКаско" [ref=e197] [cursor=pointer]:
+                          - /url: /person/auto/kasko/
+                      - listitem [ref=e198]:
+                        - link "Внутреннее страхование ОСГО" [ref=e199] [cursor=pointer]:
+                          - /url: /person/auto/osago/
+                      - listitem [ref=e200]:
+                        - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=e201] [cursor=pointer]:
+                          - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+                      - listitem [ref=e202]:
+                        - link "Союзное страхование ОСГО" [ref=e203] [cursor=pointer]:
+                          - /url: /person/auto/union/
+                      - listitem [ref=e204]:
+                        - link "Комплексное ОСГО" [ref=e205] [cursor=pointer]:
+                          - /url: /person/auto/komplex/
+                      - listitem [ref=e206]:
+                        - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=e207] [cursor=pointer]:
+                          - /url: /person/auto/greencard/
+              - listitem [ref=e208]:
+                - link [ref=e210] [cursor=pointer]:
+                  - /url: /person/health/
+                  - img "Здоровье" [ref=e211]
+                  - text: Здоровье
+                - generic:
+                  - generic [ref=e212]:
+                    - generic [ref=e213]:
+                      - text: Подробнее о данных видах страхования в разделе
+                      - link "«Здоровье»" [ref=e214] [cursor=pointer]:
+                        - /url: /person/health/
+                    - link:
+                      - /url: /person/health/
+                  - generic [ref=e215]:
+                    - list:
+                      - listitem [ref=e216]:
+                        - link "Страхование от внезапных заболеваний и несчастных случаев на время поездки за границу" [ref=e217] [cursor=pointer]:
+                          - /url: /person/health/abroad/
+                      - listitem [ref=e218]:
+                        - link "Страхование от несчастных случаев и болезней" [ref=e219] [cursor=pointer]:
+                          - /url: /person/health/accidents/
+                      - listitem [ref=e220]:
+                        - link "Страхование от несчастных случаев пассажиров железнодорожного транспорта" [ref=e221] [cursor=pointer]:
+                          - /url: /person/health/the-accident-insurance-of-passengers-of-railway-transport
+            - list [ref=e227]:
+              - listitem [ref=e228]:
+                - link "АвтоКаско" [ref=e229] [cursor=pointer]:
+                  - /url: /person/auto/kasko/
+              - listitem [ref=e230]:
+                - link "Внутреннее страхование ОСГО" [ref=e231] [cursor=pointer]:
+                  - /url: /person/auto/osago/
+              - listitem [ref=e232]:
+                - link "Добровольное страхование ответственности владельцев транспортных средств" [ref=e233] [cursor=pointer]:
+                  - /url: /corporate/transport/liability-insurance-of-owners-of-vehicles/
+              - listitem [ref=e234]:
+                - link "Союзное страхование ОСГО" [ref=e235] [cursor=pointer]:
+                  - /url: /person/auto/union/
+              - listitem [ref=e236]:
+                - link "Комплексное ОСГО" [ref=e237] [cursor=pointer]:
+                  - /url: /person/auto/komplex/
+              - listitem [ref=e238]:
+                - link "ОСГО владельцев транспортных средств, выезжающих за пределы Республики Беларусь" [ref=e239] [cursor=pointer]:
+                  - /url: /person/auto/greencard/
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - text: Подробнее о данных видах страхования в разделе
+                - link "«Автострахование»" [ref=e245] [cursor=pointer]:
+                  - /url: /person/auto/
+              - link [ref=e246] [cursor=pointer]:
+                - /url: /person/auto/
+          - generic [ref=e247]:
+            - list [ref=e249]:
+              - listitem [ref=e250]:
+                - link "Частным лицам" [ref=e251] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e252]:
+                - link "Корпоративным клиентам" [ref=e253] [cursor=pointer]:
+                  - /url: "#"
+            - list [ref=e255]:
+              - listitem [ref=e256]:
+                - link "O компании" [ref=e257] [cursor=pointer]:
+                  - /url: /about/
+              - listitem [ref=e258]:
+                - link "Страхование в «ТАСК»" [ref=e259] [cursor=pointer]:
+                  - /url: /strahovanie/
+              - listitem [ref=e260]:
+                - link "Пресс-центр" [ref=e261] [cursor=pointer]:
+                  - /url: /press_centr/
+              - listitem [ref=e262]:
+                - link "Сотрудничество" [ref=e263] [cursor=pointer]:
+                  - /url: /sotrudnichestvo/
+              - listitem [ref=e264]:
+                - link "Контактная информация" [ref=e265] [cursor=pointer]:
+                  - /url: /contact/adresa_i_telefoni/
+        - generic [ref=e267]:
+          - list [ref=e270]:
+            - listitem [ref=e271]:
+              - link "ОНЛАЙН страхование" [ref=e272] [cursor=pointer]:
+                - /url: /electronic_services/
+            - listitem [ref=e273]:
+              - link "Оплата через ЕРИП" [ref=e274] [cursor=pointer]:
+                - /url: /online_payment/
+            - listitem [ref=e275]:
+              - link "Личный кабинет" [ref=e276] [cursor=pointer]:
+                - /url: /personal/
+            - listitem [ref=e277]:
+              - link "Страховой случай" [ref=e278] [cursor=pointer]:
+                - /url: /strahovoj_sluchaj/
+            - listitem [ref=e279]:
+              - link "Заявка на медобслуживание" [ref=e280] [cursor=pointer]:
+                - /url: /health_insurance/
+            - listitem [ref=e281]:
+              - link "Точки продаж" [ref=e282] [cursor=pointer]:
+                - /url: /contact/offices/
+          - generic [ref=e284]:
+            - generic [ref=e286]:
+              - img "Отпуск, животные и страховка" [ref=e288]
+              - generic [ref=e289]:
+                - time [ref=e291]: 26 июня 2026
+                - link "Отпуск, животные и страховка" [ref=e293] [cursor=pointer]:
+                  - /url: /press_centr/news/2026/otpusk-zhivotnye-i-strakhovka/
+                - generic [ref=e294]: Укус животного за границей может обойтись очень дорого
+            - generic [ref=e296]:
+              - img "Добавьте безопасности к вашему билету!" [ref=e298]
+              - generic [ref=e299]:
+                - time [ref=e301]: 25 июня 2026
+                - link "Добавьте безопасности к вашему билету!" [ref=e303] [cursor=pointer]:
+                  - /url: /press_centr/news/2026/predyavite-bilet-i-polis/
+                - generic [ref=e304]: Планируете летнюю поездку на юг, к морю или в санаторий? Добавьте страхование пассажиров при покупке билета на pass.rw.by и путешествуйте спокойнее.
+            - link "Остальные хорошие новости" [ref=e307] [cursor=pointer]:
+              - /url: /press_centr/news/
+    - contentinfo [ref=e308]:
+      - generic [ref=e310]:
+        - generic [ref=e311]:
+          - list [ref=e313]:
+            - listitem [ref=e314]:
+              - link "О компании" [ref=e315] [cursor=pointer]:
+                - /url: /about/
+              - list [ref=e316]:
+                - listitem [ref=e317]:
+                  - link "Наша история" [ref=e318] [cursor=pointer]:
+                    - /url: /about/nasha_istorija/
+                - listitem [ref=e319]:
+                  - link "Первые лица" [ref=e320] [cursor=pointer]:
+                    - /url: /about/pervie_lica/
+                - listitem [ref=e321]:
+                  - link "Свидетельство о гос. регистрации" [ref=e322] [cursor=pointer]:
+                    - /url: /about/svidetel_stvo_o_gos_registracii/
+                - listitem [ref=e323]:
+                  - link "Лицензия" [ref=e324] [cursor=pointer]:
+                    - /url: /about/licence/
+                - listitem [ref=e325]:
+                  - link "Подразделения компании" [ref=e326] [cursor=pointer]:
+                    - /url: /contact/adresa_i_telefoni/
+                - listitem [ref=e327]:
+                  - link "Банковские реквизиты" [ref=e328] [cursor=pointer]:
+                    - /url: /about/bankovskie_rekviziti/
+                - listitem [ref=e329]:
+                  - link "Финансовые показатели" [ref=e330] [cursor=pointer]:
+                    - /url: /about/finance/
+                - listitem [ref=e331]:
+                  - link "График приема граждан" [ref=e332] [cursor=pointer]:
+                    - /url: /about/grafik-priema-grazhdan
+                - listitem [ref=e333]:
+                  - link "Перечень административных процедур" [ref=e334] [cursor=pointer]:
+                    - /url: /about/perechen-administrativnykh-protsedur
+                - listitem [ref=e335]:
+                  - link "Положение по закупкам" [ref=e336] [cursor=pointer]:
+                    - /url: /about/polozhenie-po-zakupkam
+            - listitem [ref=e337]:
+              - link "Страхование в «ТАСК»" [ref=e338] [cursor=pointer]:
+                - /url: /strahovanie/
+            - listitem [ref=e339]:
+              - link "Частным лицам" [ref=e340] [cursor=pointer]:
+                - /url: /person/
+              - list [ref=e341]:
+                - listitem [ref=e342]:
+                  - link "Имущество" [ref=e343] [cursor=pointer]:
+                    - /url: /person/property/
+                - listitem [ref=e344]:
+                  - link "Автострахование" [ref=e345] [cursor=pointer]:
+                    - /url: /person/auto/
+                - listitem [ref=e346]:
+                  - link "Здоровье" [ref=e347] [cursor=pointer]:
+                    - /url: /person/health/
+            - listitem [ref=e348]:
+              - link "Корпоративным клиентам" [ref=e349] [cursor=pointer]:
+                - /url: /corporate/
+              - list [ref=e350]:
+                - listitem [ref=e351]:
+                  - link "Транспорт" [ref=e352] [cursor=pointer]:
+                    - /url: /corporate/transport/
+                - listitem [ref=e353]:
+                  - link "Здоровье" [ref=e354] [cursor=pointer]:
+                    - /url: /corporate/health/
+                - listitem [ref=e355]:
+                  - link "Финансы" [ref=e356] [cursor=pointer]:
+                    - /url: /corporate/finance/
+                - listitem [ref=e357]:
+                  - link "Имущество" [ref=e358] [cursor=pointer]:
+                    - /url: /corporate/property/
+                - listitem [ref=e359]:
+                  - link "Ответственность" [ref=e360] [cursor=pointer]:
+                    - /url: /corporate/responsibility/
+            - listitem [ref=e361]:
+              - link "Пресс-центр" [ref=e362] [cursor=pointer]:
+                - /url: /press_centr/
+              - list [ref=e363]:
+                - listitem [ref=e364]:
+                  - link "Новости" [ref=e365] [cursor=pointer]:
+                    - /url: /press_centr/news/
+                - listitem [ref=e366]:
+                  - link "Страховые термины" [ref=e367] [cursor=pointer]:
+                    - /url: /press_centr/strahovie_termini/
+                - listitem [ref=e368]:
+                  - link "Вопрос-ответ" [ref=e369] [cursor=pointer]:
+                    - /url: /press_centr/faq/
+                - listitem [ref=e370]:
+                  - link "Пресс-кит" [ref=e371] [cursor=pointer]:
+                    - /url: /press_centr/press_kit/
+                - listitem [ref=e372]:
+                  - link "Финансовая и цифровая грамотность" [ref=e373] [cursor=pointer]:
+                    - /url: /press_centr/finansovaja_gramotnost/
+                - listitem [ref=e374]:
+                  - link "Раскрытие информации" [ref=e375] [cursor=pointer]:
+                    - /url: /press_centr/disclosure-of-information
+                - listitem [ref=e376]:
+                  - link "Информация об утраченных БСО 1-СУ" [ref=e377] [cursor=pointer]:
+                    - /url: /press_centr/information-about-the-lost-forms-of-receipts-1-su
+                - listitem [ref=e378]:
+                  - link "О порядке обработки персональных данных" [ref=e379] [cursor=pointer]:
+                    - /url: /press_centr/o-poryadke-obrabotki-personalnykh-dannykh
+            - listitem [ref=e380]:
+              - link "Сотрудничество" [ref=e381] [cursor=pointer]:
+                - /url: /sotrudnichestvo/
+              - list [ref=e382]:
+                - listitem [ref=e383]:
+                  - link "Вакансии" [ref=e384] [cursor=pointer]:
+                    - /url: /sotrudnichestvo/vakansii/
+                - listitem [ref=e385]:
+                  - link "АРМ агента" [ref=e386] [cursor=pointer]:
+                    - /url: https://arm.task.by:8443
+                - listitem [ref=e387]:
+                  - link "Удаленное администрирование" [ref=e388] [cursor=pointer]:
+                    - /url: https://lk2.мойассистент.рф/WebApi/Platforms/Download/1371
+                - listitem [ref=e389]:
+                  - link "ДМС приложение" [ref=e390] [cursor=pointer]:
+                    - /url: https://arm.task.by:8443/mobile
+            - listitem [ref=e391]:
+              - link "Контактная информация" [ref=e392] [cursor=pointer]:
+                - /url: /contact/
+              - list [ref=e393]:
+                - listitem [ref=e394]:
+                  - link "Адреса и телефоны" [ref=e395] [cursor=pointer]:
+                    - /url: /contact/adresa_i_telefoni/
+                - listitem [ref=e396]:
+                  - link "Точки продаж" [ref=e397] [cursor=pointer]:
+                    - /url: /contact/offices/
+                - listitem [ref=e398]:
+                  - link "Отзывы о работе" [ref=e399] [cursor=pointer]:
+                    - /url: /contact/otzyvy/
+                - listitem [ref=e400]:
+                  - link "Вопрос-ответ" [ref=e401] [cursor=pointer]:
+                    - /url: /press_centr/faq/
+                - listitem [ref=e402]:
+                  - link "Госорганы" [ref=e403] [cursor=pointer]:
+                    - /url: /contact/gosorgani/
+                - listitem [ref=e404]:
+                  - link "Официальное обращение" [ref=e405] [cursor=pointer]:
+                    - /url: /contact/official_appeal/
+                - listitem [ref=e406]:
+                  - link "Справка об отсутствии страховых случаев" [ref=e407] [cursor=pointer]:
+                    - /url: /press_centr/faq/
+          - generic [ref=e409]:
+            - link [ref=e411] [cursor=pointer]:
+              - /url: https://www.visa.com.ru/
+              - img "visa" [ref=e412]
+            - link [ref=e414] [cursor=pointer]:
+              - /url: https://www.visa.com.ru/
+              - img "assist" [ref=e415]
+            - link [ref=e417] [cursor=pointer]:
+              - /url: https://www.mastercard.ru/
+              - img "mastercard" [ref=e418]
+            - link [ref=e420] [cursor=pointer]:
+              - /url: https://www.mastercard.ru/
+              - img "assist" [ref=e421]
+            - link [ref=e423] [cursor=pointer]:
+              - /url: https://belkart.by/
+              - img "belcart" [ref=e424]
+            - link [ref=e426] [cursor=pointer]:
+              - /url: https://belkart.by/
+              - img "assist" [ref=e427]
+            - link [ref=e429] [cursor=pointer]:
+              - /url: https://www.raschet.by/
+              - img "raschet" [ref=e430]
+            - link [ref=e432] [cursor=pointer]:
+              - /url: https://www.belassist.by/
+              - img "assist" [ref=e433]
+        - generic [ref=e435]:
+          - generic [ref=e436]: © 2002 — 2026
+          - generic [ref=e437]:
+            - text: ЗАСО «ТАСК», УНП 100003006, зарегистрирован 29.10.1991 г. Минфином РБ,
+            - generic [ref=e438]: "Адрес: г. Минск, ул. Червякова, 46, 220068"
+          - generic [ref=e439]:
+            - text: "E-mail:"
+            - link "info@task.by" [ref=e440] [cursor=pointer]:
+              - /url: mailto:info@task.by
+        - group [ref=e444]:
+          - textbox "Поиск по сайту" [ref=e445]
+          - button "Submit" [ref=e446] [cursor=pointer]
+        - link "Выбор настроек Cookie" [ref=e450] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e452]:
+    - generic [ref=e453]: Сайт task.by использует cookies-файлы, чтобы оказывать услуги с высокой степенью качества.
+    - generic [ref=e454]:
+      - button "Принять" [ref=e455] [cursor=pointer]
+      - button "Отклонить" [ref=e456] [cursor=pointer]
+      - link "Подробнее о настройках файлов Cookie" [ref=e457] [cursor=pointer]:
+        - /url: "#"

@@ -1,0 +1,19 @@
+{
+  "name": "site-lighthouse-audit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Crawl a website and run Lighthouse (mobile + desktop) on every discovered page",
+  "main": "crawl.js",
+  "scripts": {
+    "crawl": "node crawl.js",
+    "lighthouse": "node lighthouse.js",
+    "pagespeed": "node pagespeed.js",
+    "gtmetrix": "node gtmetrix.js"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.1.2",
+    "cheerio": "^1.0.0",
+    "lighthouse": "^12.2.1"
+  }
+}

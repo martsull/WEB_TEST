@@ -1,0 +1,5 @@
+[     108ms] [WARNING] [dc-runtime] product-kasko: {{ row.label }} never resolved — rendered as empty @ http://localhost:8934/support.js:566
+[     108ms] [WARNING] [dc-runtime] product-kasko: {{ row.basic }} never resolved — rendered as empty @ http://localhost:8934/support.js:566
+[     109ms] [WARNING] [dc-runtime] product-kasko: {{ row.standard }} never resolved — rendered as empty @ http://localhost:8934/support.js:566
+[     109ms] [WARNING] [dc-runtime] product-kasko: {{ row.premium }} never resolved — rendered as empty @ http://localhost:8934/support.js:566
+[     109ms] [WARNING] [dc-runtime] product-kasko: {{ row.max }} never resolved — rendered as empty @ http://localhost:8934/support.js:566

@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>UX/UI аудит сайта task.by</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{
+    --bg:#0f1216; --panel:#161b22; --panel-2:#1c222b; --border:#2a323d;
+    --text:#e6e9ee; --text-dim:#9aa5b1; --accent:#4f8cff; --accent-soft:#25314a;
+    --crit:#e5484d; --crit-bg:#3a1418; --high:#f5a524; --high-bg:#3a2a0d;
+    --med:#f2c94c; --med-bg:#3a3410; --low:#5eb3ff; --low-bg:#132437;
+    --good:#2ecc71;
+    --radius:12px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg:#f5f6f8; --panel:#ffffff; --panel-2:#f0f2f5; --border:#e2e5ea;
+      --text:#1a1f27; --text-dim:#5b6572; --accent:#2f6fed; --accent-soft:#e8f0ff;
+      --crit-bg:#fde8e8; --high-bg:#fef3e0; --med-bg:#fdf7dd; --low-bg:#e8f4ff;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  img{max-width:100%;display:block;border-radius:8px;border:1px solid var(--border);}
+  .layout{display:flex;min-height:100vh;}
+  nav.sidebar{
+    width:280px;flex:0 0 280px;background:var(--panel);border-right:1px solid var(--border);
+    padding:24px 18px;position:sticky;top:0;height:100vh;overflow-y:auto;
+  }
+  nav.sidebar h1{font-size:16px;margin:0 0 4px;}
+  nav.sidebar .sub{font-size:12px;color:var(--text-dim);margin-bottom:20px;}
+  nav.sidebar ul{list-style:none;margin:0;padding:0;}
+  nav.sidebar li{margin:0;}
+  nav.sidebar a{
+    display:block;padding:7px 10px;border-radius:8px;color:var(--text-dim);font-size:13.5px;
+  }
+  nav.sidebar a:hover{background:var(--panel-2);color:var(--text);text-decoration:none;}
+  nav.sidebar .grp-title{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--text-dim);margin:18px 0 6px;padding:0 10px;}
+  main{flex:1;min-width:0;padding:40px 48px 120px;max-width:1180px;}
+  .hero-title{font-size:32px;margin:0 0 6px;}
+  .hero-meta{color:var(--text-dim);font-size:14px;margin-bottom:36px;}
+  section{margin-bottom:64px;scroll-margin-top:24px;}
+  h2{font-size:24px;border-bottom:1px solid var(--border);padding-bottom:12px;margin-top:0;}
+  h3{font-size:19px;}
+  .panel{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:24px;}
+  .grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:18px;}
+  .score-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center;}
+  .score-card .num{font-size:30px;font-weight:700;color:var(--accent);}
+  .score-card.overall .num{color:var(--good);}
+  .score-card .label{font-size:12.5px;color:var(--text-dim);margin-top:4px;}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);}
+  th{color:var(--text-dim);font-weight:600;font-size:12px;text-transform:uppercase;letter-spacing:.03em;}
+  .badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:.02em;}
+  .badge.crit{background:var(--crit-bg);color:var(--crit);}
+  .badge.high{background:var(--high-bg);color:var(--high);}
+  .badge.med{background:var(--med-bg);color:#b8860b;}
+  .badge.low{background:var(--low-bg);color:var(--low);}
+  .badge.cat{background:var(--panel-2);color:var(--text-dim);border:1px solid var(--border);}
+  .page-card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:28px;}
+  .page-card .shot{max-height:520px;overflow:auto;border-bottom:1px solid var(--border);background:var(--panel-2);}
+  .page-card .shot img{border-radius:0;border:0;width:100%;}
+  .page-card .body{padding:20px 24px;}
+  .page-card .scores{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .mini-score{background:var(--panel-2);border:1px solid var(--border);border-radius:8px;padding:6px 10px;font-size:12px;}
+  .mini-score b{color:var(--accent);}
+  .issue{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-bottom:22px;}
+  .issue-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:12px;}
+  .issue-head h3{margin:0;font-size:18px;flex:1 1 auto;min-width:220px;}
+  .issue img{margin:14px 0;}
+  .issue dl{display:grid;grid-template-columns:180px 1fr;gap:8px 16px;margin:14px 0 0;font-size:14px;}
+  .issue dt{color:var(--text-dim);font-weight:600;}
+  .issue dd{margin:0;}
+  .top10{counter-reset:top10;}
+  .top10-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--border);}
+  .top10-item:last-child{border-bottom:0;}
+  .top10-num{flex:0 0 auto;width:36px;height:36px;border-radius:50%;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700;}
+  .imp-list{padding-left:0;list-style:none;}
+  .imp-list li{padding:10px 0 10px 26px;border-bottom:1px solid var(--border);position:relative;}
+  .imp-list li:last-child{border-bottom:0;}
+  .imp-list li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700;}
+  .callout{background:var(--accent-soft);border:1px solid var(--border);border-radius:10px;padding:16px 20px;margin:16px 0;font-size:14px;}
+  .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;}
+  code{background:var(--panel-2);padding:1px 6px;border-radius:5px;font-size:.9em;}
+  footer.report-footer{color:var(--text-dim);font-size:12.5px;border-top:1px solid var(--border);padding-top:20px;margin-top:60px;}
+  @media (max-width: 900px){
+    .layout{flex-direction:column;}
+    nav.sidebar{position:relative;width:100%;flex:none;height:auto;border-right:0;border-bottom:1px solid var(--border);}
+    main{padding:28px 20px 80px;}
+    .issue dl{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <h1>UX/UI аудит task.by</h1>
+    <div class="sub">Страховая компания ЗАСО «ТАСК» · 27.07.2026</div>
+    <ul>
+      <li><a href="#summary">Краткое резюме</a></li>
+      <li><a href="#scores">Общая оценка</a></li>
+      <li><a href="#pages">Анализированные страницы</a></li>
+      <li><a href="#issues">Найденные проблемы</a></li>
+      <li><a href="#top10">ТОП-10 проблем</a></li>
+      <li><a href="#quick">Быстрые улучшения</a></li>
+      <li><a href="#mid">Среднесрочные</a></li>
+      <li><a href="#long">Долгосрочные</a></li>
+      <li><a href="#conclusion">Общий вывод</a></li>
+    </ul>
+    <div class="grp-title">Проблемы по номерам</div>
+    <ul>
+      <li><a href="#issue-1">1. Нет CTA покупки</a></li>
+      <li><a href="#issue-2">2. Нет телефона (моб.)</a></li>
+      <li><a href="#issue-3">3. Обрезана таблица тарифов</a></li>
+      <li><a href="#issue-4">4. «О компании» без доверия</a></li>
+      <li><a href="#issue-5">5. Контакты без карты</a></li>
+      <li><a href="#issue-6">6. Дублирование ссылок</a></li>
+      <li><a href="#issue-7">7. Сломан hero (моб.)</a></li>
+      <li><a href="#issue-8">8. Устаревший hero</a></li>
+      <li><a href="#issue-9">9. FAQ не аккордеон</a></li>
+      <li><a href="#issue-10">10. Поиск в футере</a></li>
+      <li><a href="#issue-11">11. Мелкий шрифт</a></li>
+      <li><a href="#issue-12">12. Тесные тапы (моб.)</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="hero-title">UX/UI аудит сайта task.by</div>
+    <div class="hero-meta">Комплексный аудит юзабилити, визуального дизайна, конверсии и доступности · Desktop 1440×900 + Mobile 390×844</div>
+
+    <section id="summary">
+      <h2>Краткое резюме</h2>
+      <p><b>Что за сайт.</b> task.by — корпоративный сайт страховой компании ЗАСО «ТАСК», работающей на рынке с 1991 года. Сайт выполняет три функции: витрина продуктов страхования (для частных лиц и юрлиц), справочный/юридический портал (лицензии, реквизиты, раскрытие информации) и точка входа в онлайн-сервисы (личный кабинет, онлайн-страхование ОСГО, оплата через ЕРИП). Целевая аудитория — от частных автовладельцев, оформляющих ОСАГО/КАСКО, до корпоративных клиентов и государственных органов, то есть аудитория широкая и в среднем возрастная.</p>
+      <p><b>Общее впечатление.</b> Сайт функционален и содержит большой объём достоверной информации, но визуально и по логике взаимодействия соответствует стандартам веб-дизайна 2012–2015 годов, а не 2026–2027. Структура страниц шаблонная и предсказуема — это плюс для навигации, но исполнение (типографика, иллюстрации, компоновка) выглядит устаревшим. Главная проблема — не в отсутствии контента, а в отсутствии пути к конверсии: почти нигде на сайте нет кнопки «оформить полис» или «рассчитать стоимость».</p>
+
+      <div class="callout">
+        <b>Сильные стороны:</b>
+        <ul>
+          <li>Глубокая, предсказуемая иерархия разделов, одинаковая на всех страницах</li>
+          <li>Большой объём достоверной юридической и справочной информации</li>
+          <li>Работающие онлайн-сервисы: личный кабинет, онлайн-ОСГО, оплата через ЕРИП</li>
+          <li>Понятная и рабочая форма авторизации</li>
+          <li>Сеть из 11 региональных представительств с полными контактами</li>
+        </ul>
+      </div>
+      <div class="callout" style="background:var(--crit-bg);">
+        <b>Слабые стороны:</b>
+        <ul>
+          <li>Почти полное отсутствие CTA на продуктовых страницах</li>
+          <li>Мобильная версия теряет номер телефона полностью</li>
+          <li>Таблица тарифов КАСКО обрезается на мобильном без индикатора прокрутки</li>
+          <li>«О компании» не формирует доверие — только юридические реквизиты</li>
+          <li>Устаревший визуальный язык, смешение шрифтов, мелкий текст (14px)</li>
+          <li>Системное дублирование блоков ссылок на уровне шаблона</li>
+        </ul>
+      </div>
+      <p><b>Общий вывод.</b> Сайт заслуживает оценки «крепкий справочный портал, но слабая продающая витрина». Рекомендуется не косметический редизайн, а пересмотр модели конверсии в сочетании с обновлением визуального языка и исправлением критических мобильных дефектов.</p>
+    </section>
+
+    <section id="scores">
+      <h2>Общая оценка</h2>
+      <p>Средние оценки по всем 8 проанализированным страницам, шкала 1–10.</p>
+      <div class="grid-cards">
+        <div class="score-card"><div class="num">4.6</div><div class="label">UI / визуальный дизайн</div></div>
+        <div class="score-card"><div class="num">4.9</div><div class="label">UX</div></div>
+        <div class="score-card"><div class="num">5.8</div><div class="label">Навигация</div></div>
+        <div class="score-card"><div class="num">5.7</div><div class="label">Доступность</div></div>
+        <div class="score-card"><div class="num">4.3</div><div class="label">Доверие</div></div>
+        <div class="score-card"><div class="num">3.9</div><div class="label">Современность дизайна</div></div>
+        <div class="score-card"><div class="num">3.1</div><div class="label">Конверсия (CRO)</div></div>
+        <div class="score-card"><div class="num">3.8</div><div class="label">Мобильная версия</div></div>
+        <div class="score-card overall"><div class="num">4.5</div><div class="label">Итоговая оценка сайта</div></div>
+      </div>
+    </section>
+
+    <section id="pages">
+      <h2>Анализированные страницы</h2>
+      <p>Страницы отобраны автоматически по итогам изучения структуры сайта как наиболее информативные для оценки IA, продуктовой линейки, точек конверсии и доверительного контента.</p>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/home.png" alt="Главная страница task.by"></div>
+        <div class="body">
+          <h3>1. Главная (/)</h3>
+          <p>Первая точка контакта с брендом; задаёт соотношение «частные лица / юрлица» и является витриной трёх продуктовых линеек.</p>
+          <div class="scores">
+            <div class="mini-score">UI <b>5</b></div><div class="mini-score">UX <b>5</b></div>
+            <div class="mini-score">Доверие <b>4</b></div><div class="mini-score">CRO <b>3</b></div>
+            <div class="mini-score">Mobile <b>4</b></div><div class="mini-score">Общая <b>4.5</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/person-property.png" alt="Раздел Имущество — частным лицам"></div>
+        <div class="body">
+          <h3>2. «Имущество» — landing раздела «Частным лицам» (/person/property/)</h3>
+          <p>Переход по пункту меню «Частным лицам» редиректит именно сюда — фактически это и есть страница «для частных лиц». Показательна для оценки IA категорий.</p>
+          <div class="scores">
+            <div class="mini-score">UI <b>5</b></div><div class="mini-score">UX <b>5</b></div>
+            <div class="mini-score">Доверие <b>4</b></div><div class="mini-score">CRO <b>3</b></div>
+            <div class="mini-score">Общая <b>4.5</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/product-kasko.png" alt="Продуктовая страница АвтоКаско"></div>
+        <div class="body">
+          <h3>3. Продуктовая страница «АвтоКаско» (/person/auto/kasko/)</h3>
+          <p>Образец самой конверсионно значимой страницы сайта — страницы конкретного продукта с тарифами.</p>
+          <div class="scores">
+            <div class="mini-score">UI <b>5</b></div><div class="mini-score">UX <b>5</b></div>
+            <div class="mini-score">CRO <b>2</b></div><div class="mini-score">Mobile <b>3</b></div>
+            <div class="mini-score">Общая <b>4</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/corporate-transport.png" alt="Раздел Транспорт — корпоративным клиентам"></div>
+        <div class="body">
+          <h3>4. «Транспорт» — landing раздела «Корпоративным клиентам» (/corporate/)</h3>
+          <p>Проверка, повторяется ли на B2B-стороне сайта тот же паттерн (редирект без landing-страницы, дублирование ссылок).</p>
+          <div class="scores">
+            <div class="mini-score">UI <b>5</b></div><div class="mini-score">UX <b>5</b></div>
+            <div class="mini-score">CRO <b>3</b></div><div class="mini-score">Общая <b>4.5</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/about.png" alt="Страница О компании"></div>
+        <div class="body">
+          <h3>5. «О компании» (/about/)</h3>
+          <p>Ключевая страница для доверия к финансовой организации — здесь пользователь ожидает историю, цифры, лица руководителей.</p>
+          <div class="scores">
+            <div class="mini-score">UI <b>3</b></div><div class="mini-score">Доверие <b>3</b></div>
+            <div class="mini-score">CRO <b>2</b></div><div class="mini-score">Общая <b>3.5</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/contacts.png" alt="Страница Адреса и телефоны"></div>
+        <div class="body">
+          <h3>6. «Адреса и телефоны» (/contact/adresa_i_telefoni/)</h3>
+          <p>Страница с самым высоким «намерением к действию» — критична для конверсии в офлайн-канал.</p>
+          <div class="scores">
+            <div class="mini-score">UX <b>4</b></div><div class="mini-score">Доверие <b>6</b></div>
+            <div class="mini-score">Mobile <b>3</b></div><div class="mini-score">Общая <b>4</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/personal-login.png" alt="Форма авторизации личного кабинета"></div>
+        <div class="body">
+          <h3>7. Авторизация в личном кабинете (/personal/)</h3>
+          <p>Единственная полноценная форма на сайте — эталон для оценки паттернов форм.</p>
+          <div class="scores">
+            <div class="mini-score">UI <b>6</b></div><div class="mini-score">UX <b>7</b></div>
+            <div class="mini-score">Общая <b>6</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-card">
+        <div class="shot"><img src="screenshots/faq.png" alt="Страница Вопрос-ответ"></div>
+        <div class="body">
+          <h3>8. «Вопрос-ответ / ОСГО» (/press_centr/faq/)</h3>
+          <p>Страница снятия возражений — важный элемент CRO-воронки перед покупкой полиса.</p>
+          <div class="scores">
+            <div class="mini-score">UX <b>4</b></div><div class="mini-score">Доверие <b>5</b></div>
+            <div class="mini-score">CRO <b>4</b></div><div class="mini-score">Общая <b>4.5</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <b>Мобильный аудит</b> проведён на 3 наиболее конверсионно значимых страницах при ширине вьюпорта 390px:
+        <div class="pill-row">
+          <span class="badge cat">Главная — screenshots/mobile-home-full.png</span>
+          <span class="badge cat">АвтоКаско — screenshots/mobile-product-kasko.png</span>
+          <span class="badge cat">Контакты — screenshots/mobile-contacts.png</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="issues">
+      <h2>Найденные проблемы</h2>
+
+      <div class="issue" id="issue-1">
+        <div class="issue-head">
+          <h3>1. Отсутствие кнопки оформления полиса на продуктовой странице</h3>
+          <span class="badge crit">Критический</span><span class="badge cat">CRO</span>
+        </div>
+        <p><b>Страница:</b> АвтоКаско (/person/auto/kasko/); паттерн типовой для всех продуктовых страниц</p>
+        <img src="issues/no-purchase-cta.png" alt="Отсутствие CTA на продуктовой странице">
+        <dl>
+          <dt>Описание</dt><dd>Страница объёмом ~4000px содержит подробное описание продукта и полную тарифную таблицу. Единственный интерактивный элемент — кнопка «Страховой случай», ведущая на оформление уже наступившего страхового случая, а не на покупку нового полиса.</dd>
+          <dt>Почему проблема</dt><dd>Пользователь, готовый купить полис после изучения тарифов, не находит ни одной кнопки «Купить» или «Рассчитать стоимость».</dd>
+          <dt>Влияние на пользователя</dt><dd>Разрыв воронки в точке максимальной готовности к покупке; нужно искать альтернативный канал связи.</dd>
+          <dt>Влияние на бизнес</dt><dd>Прямая потеря заявок; продажи зависят от исходящей активности пользователя, а не от сайта.</dd>
+          <dt>Влияние на конверсию</dt><dd>Критично — единственная точка сайта, где разрыв воронки максимален при максимальной готовности к покупке.</dd>
+          <dt>Как исправить</dt><dd>Добавить sticky/контекстную кнопку «Рассчитать стоимость КАСКО» сразу после тарифов, ведущую на калькулятор или форму заявки.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Рост онлайн-конверсии продуктовых страниц; снижение зависимости от телефонных обращений.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-2">
+        <div class="issue-head">
+          <h3>2. На мобильной версии полностью отсутствует номер телефона</h3>
+          <span class="badge crit">Критический</span><span class="badge cat">Mobile</span><span class="badge cat">CRO</span>
+        </div>
+        <p><b>Страница:</b> Главная (мобильная); паттерн сквозной для всего сайта</p>
+        <img src="issues/mobile-no-phone-header.png" alt="Отсутствие телефона в мобильной шапке">
+        <dl>
+          <dt>Описание</dt><dd>На десктопе телефон вынесен крупно в шапку. На мобильной версии (390px) в шапке и в открытом гамбургер-меню номера нет вовсе. Проверка DOM подтвердила 0 ссылок вида <code>tel:</code> на сайте.</dd>
+          <dt>Почему проблема</dt><dd>Телефон — основной канал оформления сложных страховых продуктов, особенно для возрастной аудитории.</dd>
+          <dt>Влияние на пользователя</dt><dd>3-4 лишних шага вместо одного тапа по номеру.</dd>
+          <dt>Влияние на бизнес</dt><dd>Основной поток звонков, вероятно, не генерируется мобильным сайтом, хотя это основной источник трафика.</dd>
+          <dt>Влияние на конверсию</dt><dd>Критично для мобильного трафика — фактическое отсутствие основного CTA-канала.</dd>
+          <dt>Как исправить</dt><dd>Добавить sticky-кнопку «Позвонить» с <code>tel:</code>-ссылкой в мобильную шапку; сделать все номера на сайте кликабельными.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Рост числа звонков с мобильного трафика.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-3">
+        <div class="issue-head">
+          <h3>3. Таблица тарифов обрезается на мобильном экране без индикатора прокрутки</h3>
+          <span class="badge crit">Критический</span><span class="badge cat">Mobile</span><span class="badge cat">CRO</span>
+        </div>
+        <p><b>Страница:</b> АвтоКаско, мобильная версия</p>
+        <img src="issues/mobile-pricing-table-overflow.png" alt="Обрезанная таблица тарифов на мобильном">
+        <dl>
+          <dt>Описание</dt><dd>Таблица тарифов имеет фактическую ширину 760px внутри контейнера 370px на экране 390px (проверено через <code>getBoundingClientRect</code>). Видны только 2 из 5 колонок, текст обрывается на середине слова.</dd>
+          <dt>Почему проблема</dt><dd>Ключевая коммерческая информация — цена — физически недоступна без случайного обнаружения свайпа.</dd>
+          <dt>Влияние на пользователя</dt><dd>Видит только 2 диапазона из 5, может решить, что нужного тарифа нет.</dd>
+          <dt>Влияние на бизнес</dt><dd>Потеря доверия к сайту, потеря части тарифной информации, закрывающей возражение по цене.</dd>
+          <dt>Влияние на конверсию</dt><dd>Критично для мобильного сегмента продуктовых страниц.</dd>
+          <dt>Как исправить</dt><dd>Переверстать таблицу в вертикальные карточки на мобильном или добавить явный индикатор прокрутки.</dd>
+          <dt>Ожидаемый эффект</dt><dd>100% тарифной информации доступно на любом экране.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-4">
+        <div class="issue-head">
+          <h3>4. Раздел «О компании» не формирует доверие</h3>
+          <span class="badge high">Высокий</span><span class="badge cat">Trust</span><span class="badge cat">Content</span>
+        </div>
+        <p><b>Страница:</b> О компании (/about/)</p>
+        <img src="issues/about-page-no-trust-signals.png" alt="Раздел О компании без доверительного контента">
+        <dl>
+          <dt>Описание</dt><dd>Вся страница — юридический адрес, регистрационный номер, банковские реквизиты, УНП/ОКПО и ссылка на e-mail. Нет истории, миссии, цифр, фото, наград.</dd>
+          <dt>Почему проблема</dt><dd>Для страховой организации страница «О компании» — инструмент эмоционального доверия, а не только юридическая справка.</dd>
+          <dt>Влияние на пользователя</dt><dd>Не получает эмоционального подтверждения надёжности компании.</dd>
+          <dt>Влияние на бизнес</dt><dd>Упущена возможность отработать возражение «а вдруг не выплатят» прямо на сайте.</dd>
+          <dt>Влияние на конверсию</dt><dd>Высокое — раздел часто посещают перед принятием решения о покупке.</dd>
+          <dt>Как исправить</dt><dd>Добавить историю (компания с 1991 года), ключевые цифры, фото первых лиц, награды/партнёров.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Рост конверсии на этапе рассмотрения; снижение отказов на стадии «проверяю компанию».</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-5">
+        <div class="issue-head">
+          <h3>5. Страница контактов — сплошной текст без карты и фильтра</h3>
+          <span class="badge high">Высокий</span><span class="badge cat">UX</span><span class="badge cat">Content</span>
+        </div>
+        <p><b>Страница:</b> Адреса и телефоны</p>
+        <img src="issues/contacts-wall-of-text-no-map.png" alt="Контакты без карты и фильтра">
+        <dl>
+          <dt>Описание</dt><dd>11 представительств перечислены единым текстовым потоком (~3850px на десктопе, ~4580px на мобильном). Нет карты, фильтра по городу, карточек.</dd>
+          <dt>Почему проблема</dt><dd>Чтобы найти ближайший офис, нужно вручную сканировать весь список.</dd>
+          <dt>Влияние на пользователя</dt><dd>Высокая когнитивная нагрузка, долгий скролл.</dd>
+          <dt>Влияние на бизнес</dt><dd>Пользователи могут не найти нужный офис и уйти.</dd>
+          <dt>Влияние на конверсию</dt><dd>Высокое для сегмента, предпочитающего личное обращение.</dd>
+          <dt>Как исправить</dt><dd>Добавить карту с метками офисов, фильтр по городу, карточную вёрстку.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Сокращение времени поиска офиса, снижение отказов на странице.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-6">
+        <div class="issue-head">
+          <h3>6. Системное дублирование блоков ссылок на одной странице</h3>
+          <span class="badge high">Высокий</span><span class="badge cat">UI</span><span class="badge cat">Content</span>
+        </div>
+        <p><b>Страница:</b> Имущество; тот же паттерн на «Транспорт» и «АвтоКаско»</p>
+        <img src="issues/duplicate-content-links.png" alt="Дублирование блоков ссылок">
+        <dl>
+          <dt>Описание</dt><dd>Один и тот же список видов страхования выводится дважды: в карточке-виджете и повторно простым списком ссылок ниже.</dd>
+          <dt>Почему проблема</dt><dd>Шаблонная (не разовая) ошибка, размывающая информационную плотность страницы.</dd>
+          <dt>Влияние на пользователя</dt><dd>Увеличивает длину страницы и «шум» без пользы.</dd>
+          <dt>Влияние на бизнес</dt><dd>Снижает воспринимаемое техническое качество сайта; усложняет SEO.</dd>
+          <dt>Влияние на конверсию</dt><dd>Средне-высокое — отвлекает от полезного контента.</dd>
+          <dt>Как исправить</dt><dd>Убрать дублирующий блок на уровне шаблона категории (системная правка).</dd>
+          <dt>Ожидаемый эффект</dt><dd>Более короткие, чистые страницы категорий.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-7">
+        <div class="issue-head">
+          <h3>7. Hero-блок на мобильной версии визуально «ломается»</h3>
+          <span class="badge high">Высокий</span><span class="badge cat">Mobile</span><span class="badge cat">Visual Design</span>
+        </div>
+        <p><b>Страница:</b> Главная, мобильная версия</p>
+        <img src="issues/mobile-hero-broken-layout.png" alt="Сломанный hero-блок на мобильной версии">
+        <dl>
+          <dt>Описание</dt><dd>Десктопный слайдер сжат в мобильный вьюпорт без отдельной раскладки: заголовки, список ссылок и иллюстрация идут единым потоком без карточек и иерархии.</dd>
+          <dt>Почему проблема</dt><dd>Первый экран для большинства посетителей выглядит как незавершённая вёрстка.</dd>
+          <dt>Влияние на пользователя</dt><dd>Снижает доверие с первых секунд визита.</dd>
+          <dt>Влияние на бизнес</dt><dd>Прямой удар по первому впечатлению.</dd>
+          <dt>Влияние на конверсию</dt><dd>Высокое — повышает показатель отказов на входе.</dd>
+          <dt>Как исправить</dt><dd>Спроектировать отдельный мобильный hero: короткий заголовок, один CTA, компактная иллюстрация.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Снижение отказов на мобильном трафике.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-8">
+        <div class="issue-head">
+          <h3>8. Устаревшая hero-иллюстрация на главной без чёткого CTA</h3>
+          <span class="badge high">Высокий</span><span class="badge cat">Visual Design</span><span class="badge cat">CRO</span>
+        </div>
+        <p><b>Страница:</b> Главная</p>
+        <img src="issues/hero-outdated-illustration.png" alt="Устаревшая hero-иллюстрация">
+        <dl>
+          <dt>Описание</dt><dd>Центральный визуальный элемент — коллаж из клипарт-автомобиля, силуэтов людей, речевого «пузыря» и круглой кнопки-стрелки, без единого стиля.</dd>
+          <dt>Почему проблема</dt><dd>Визуальный язык — сигнал надёжности; клипарт ассоциируется с шаблонными сайтами 2010-х.</dd>
+          <dt>Влияние на пользователя</dt><dd>Ощущение, что компания не инвестирует в цифровые каналы.</dd>
+          <dt>Влияние на бизнес</dt><dd>Снижает конкурентоспособность бренда на фоне современных страховых сайтов.</dd>
+          <dt>Влияние на конверсию</dt><dd>Высокое — hero получает наибольшее внимание, но не содержит CTA.</dd>
+          <dt>Как исправить</dt><dd>Заменить на современную композицию: фото/минималистичная иллюстрация + заголовок с ценностным предложением + один CTA.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Современное первое впечатление, точка входа в воронку с первого экрана.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-9">
+        <div class="issue-head">
+          <h3>9. FAQ реализован как список переходов, а не аккордеон</h3>
+          <span class="badge med">Средний</span><span class="badge cat">UX</span><span class="badge cat">Content</span>
+        </div>
+        <p><b>Страница:</b> Вопрос-ответ</p>
+        <img src="issues/faq-links-not-accordion.png" alt="FAQ без аккордеона">
+        <dl>
+          <dt>Описание</dt><dd>Все вопросы — подчёркнутые гиперссылки. Чтобы увидеть ответ, нужно покинуть страницу и вернуться назад для следующего вопроса.</dd>
+          <dt>Почему проблема</dt><dd>Стандарт для FAQ — разворачивание ответа на месте без перезагрузки страницы.</dd>
+          <dt>Влияние на пользователя</dt><dd>Больше кликов и времени на снятие возражений перед покупкой.</dd>
+          <dt>Влияние на бизнес</dt><dd>FAQ менее эффективно снижает нагрузку на колл-центр, чем мог бы.</dd>
+          <dt>Влияние на конверсию</dt><dd>Среднее — снижает шанс самостоятельного закрытия возражений.</dd>
+          <dt>Как исправить</dt><dd>Переверстать в аккордеон с разворачиванием ответа по клику, добавить поиск по вопросам.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Более быстрое закрытие возражений, снижение нагрузки на поддержку.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-10">
+        <div class="issue-head">
+          <h3>10. Поиск по сайту спрятан в самом низу футера</h3>
+          <span class="badge med">Средний</span><span class="badge cat">Navigation</span>
+        </div>
+        <p><b>Страница:</b> сквозной элемент, присутствует на всех страницах</p>
+        <img src="issues/footer-search-hidden.png" alt="Поиск по сайту в футере">
+        <dl>
+          <dt>Описание</dt><dd>Единственное поле поиска расположено в подвале, ниже платёжных логотипов и ссылки на cookie.</dd>
+          <dt>Почему проблема</dt><dd>Поиск — базовый инструмент навигации на сайте с десятками подстраниц; расположение противоречит ожиданиям пользователей.</dd>
+          <dt>Влияние на пользователя</dt><dd>Пользователи, предпочитающие поиск меню, скорее всего не найдут эту возможность.</dd>
+          <dt>Влияние на бизнес</dt><dd>Снижение эффективности навигации по каталогу из 20+ видов страхования.</dd>
+          <dt>Влияние на конверсию</dt><dd>Среднее — теряется часть трафика, ищущего продукт по названию.</dd>
+          <dt>Как исправить</dt><dd>Перенести поиск в шапку сайта (десктоп и мобильная версия).</dd>
+          <dt>Ожидаемый эффект</dt><dd>Рост использования встроенного поиска.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-11">
+        <div class="issue-head">
+          <h3>11. Мелкий шрифт и избыточная длина строки в основном тексте</h3>
+          <span class="badge med">Средний</span><span class="badge cat">Accessibility</span>
+        </div>
+        <p><b>Страница:</b> Имущество (типовой пример для контентных страниц)</p>
+        <img src="issues/body-text-readability.png" alt="Мелкий шрифт и длинная строка">
+        <dl>
+          <dt>Описание</dt><dd>Основной текст — 14px, line-height 18px (коэффициент 1.29), ширина блока не ограничена (<code>max-width: none</code>) — строка растягивается на 100+ символов.</dd>
+          <dt>Почему проблема</dt><dd>Рекомендации 2026–2027 годов: минимум 16px, line-height ≥1.5, длина строки 50–75 символов.</dd>
+          <dt>Влияние на пользователя</dt><dd>Быстрая усталость глаз, особенно для возрастной аудитории страхового рынка.</dd>
+          <dt>Влияние на бизнес</dt><dd>Снижение вероятности дочитывания условий страхования, рост уточняющих звонков.</dd>
+          <dt>Влияние на конверсию</dt><dd>Среднее, но накопительное — влияет на весь контент сайта.</dd>
+          <dt>Как исправить</dt><dd>Увеличить шрифт до 16px, line-height до 1.5, ограничить ширину текстового блока.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Более комфортное чтение, рост показателя дочитывания.</dd>
+        </dl>
+      </div>
+
+      <div class="issue" id="issue-12">
+        <div class="issue-head">
+          <h3>12. Мелкие области нажатия в блоке быстрых ссылок на мобильных «Контактах»</h3>
+          <span class="badge med">Средний</span><span class="badge cat">Mobile</span><span class="badge cat">Accessibility</span>
+        </div>
+        <p><b>Страница:</b> Адреса и телефоны, мобильная версия</p>
+        <img src="issues/mobile-contacts-cramped-links.png" alt="Тесные области нажатия на мобильных контактах">
+        <dl>
+          <dt>Описание</dt><dd>Блок из 10+ ссылок на представительства сверстан плотным списком с минимальными отступами.</dd>
+          <dt>Почему проблема</dt><dd>Рекомендованная минимальная область нажатия — 44×44px; ссылки идут почти вплотную.</dd>
+          <dt>Влияние на пользователя</dt><dd>Промахи при нажатии, необходимость увеличивать масштаб.</dd>
+          <dt>Влияние на бизнес</dt><dd>Незначительно повышает отказы на мобильной странице контактов.</dd>
+          <dt>Влияние на конверсию</dt><dd>Низко-среднее.</dd>
+          <dt>Как исправить</dt><dd>Увеличить отступы между пунктами; рассмотреть выпадающий селектор города.</dd>
+          <dt>Ожидаемый эффект</dt><dd>Снижение числа ошибочных нажатий.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section id="top10">
+      <h2>ТОП-10 самых критичных проблем</h2>
+      <p>Ранжировано по влиянию на бизнес, от самого критичного:</p>
+      <div class="panel top10">
+        <div class="top10-item"><div class="top10-num">1</div><div><b>Отсутствие кнопки оформления полиса</b> — центральная проблема сайта: продуктовые страницы информируют, но не продают. <a href="#issue-1">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">2</div><div><b>Нет номера телефона на мобильной версии</b> — обрыв основного канала связи для большей части трафика. <a href="#issue-2">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">3</div><div><b>Обрезанная таблица тарифов на мобильном</b> — ключевая коммерческая информация недоступна. <a href="#issue-3">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">4</div><div><b>«О компании» без доверительного контента</b> — упущена возможность закрыть главное возражение. <a href="#issue-4">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">5</div><div><b>Контакты без карты и фильтра</b> — усложняет поиск офиса готовому к покупке пользователю. <a href="#issue-5">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">6</div><div><b>Системное дублирование блоков ссылок</b> — дефект шаблона, влияющий на все страницы категорий. <a href="#issue-6">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">7</div><div><b>Сломанный hero на мобильной главной</b> — портит первое впечатление у большинства посетителей. <a href="#issue-7">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">8</div><div><b>Устаревшая hero-иллюстрация на десктопе</b> — снижает восприятие современности бренда. <a href="#issue-8">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">9</div><div><b>FAQ без аккордеона</b> — снижает эффективность инструмента снятия возражений. <a href="#issue-9">→ подробнее</a></div></div>
+        <div class="top10-item"><div class="top10-num">10</div><div><b>Поиск спрятан в футере</b> — теряется альтернативный путь к продукту. <a href="#issue-10">→ подробнее</a></div></div>
+      </div>
+    </section>
+
+    <section id="quick">
+      <h2>Быстрые улучшения</h2>
+      <p>Низкие трудозатраты, высокий эффект — внедрить в первую очередь.</p>
+      <ul class="imp-list">
+        <li>Сделать все номера телефонов кликабельными (<code>tel:</code>-ссылки), особенно в шапке и мобильном меню</li>
+        <li>Добавить номер телефона / кнопку «Позвонить» в мобильную шапку и меню</li>
+        <li>Убрать задвоенные блоки ссылок на страницах категорий</li>
+        <li>Перенести поле поиска из футера в шапку сайта</li>
+        <li>Добавить на все продуктовые страницы кнопку «Рассчитать стоимость» рядом с тарифной таблицей</li>
+        <li>Добавить визуальный индикатор прокрутки для таблиц, не помещающихся в мобильный экран</li>
+      </ul>
+    </section>
+
+    <section id="mid">
+      <h2>Среднесрочные улучшения</h2>
+      <p>Требуют дизайна и разработки в рамках 1–2 спринтов.</p>
+      <ul class="imp-list">
+        <li>Переверстать таблицы тарифов под мобильные экраны (карточки вместо горизонтальной таблицы)</li>
+        <li>Спроектировать отдельный мобильный hero-блок для главной страницы</li>
+        <li>Добавить интерактивную карту с фильтром по городу на странице контактов</li>
+        <li>Перевести FAQ на компонент-аккордеон с поиском по вопросам</li>
+        <li>Увеличить базовый размер шрифта до 16px и line-height до 1.5</li>
+        <li>Переработать раздел «О компании»: история, цифры, фотографии</li>
+      </ul>
+    </section>
+
+    <section id="long">
+      <h2>Долгосрочные рекомендации</h2>
+      <p>Стратегические инициативы, 1–2+ квартала.</p>
+      <ul class="imp-list">
+        <li>Разработать полноценный онлайн-калькулятор стоимости полиса с оформлением и оплатой</li>
+        <li>Обновить визуальный язык бренда целиком под стандарты 2026–2027</li>
+        <li>Собрать и внедрить систему социальных доказательств (отзывы, кейсы, партнёры, рейтинги)</li>
+        <li>Спроектировать полноценные landing-страницы для «Частным лицам» и «Корпоративным клиентам»</li>
+        <li>Внедрить единую дизайн-систему с переиспользуемыми компонентами</li>
+      </ul>
+    </section>
+
+    <section id="conclusion">
+      <h2>Общий вывод</h2>
+      <p>task.by — типичный пример сайта страховой компании, который долгое время развивался как склад информации, а не как продающий цифровой канал. Информационная полнота, юридическая прозрачность и стабильность навигации — реальные сильные стороны, которые не стоит разрушать при доработке. Но с точки зрения современных enterprise UX-стандартов сайт проигрывает по всем направлениям, напрямую влияющим на бизнес-результат: отсутствие CTA на продуктовых страницах, критичные мобильные дефекты и визуальный язык полтора десятилетия давности.</p>
+      <p>Наибольший ROI даст не полный редизайн, а точечное устранение конверсионных разрывов (пункты 1–3 в ТОП-10) в сочетании с исправлением системных дефектов шаблонов. Обновление визуального языка и построение доверительной истории компании — следующий по приоритету, но более капиталоёмкий этап, который стоит проводить как часть общей стратегии цифровизации бренда.</p>
+    </section>
+
+    <footer class="report-footer">
+      Аудит подготовлен с использованием автоматизированного браузерного тестирования (desktop 1440×900, mobile 390×844), анализа DOM/CSS-свойств для проверки контраста, размеров шрифта и адаптивности, а также визуального разбора полноразмерных скриншотов каждой из 8 проанализированных страниц.
+    </footer>
+  </main>
+</div>
+</body>
+</html>

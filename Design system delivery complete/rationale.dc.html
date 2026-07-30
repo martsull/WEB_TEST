@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;background:#FAFAF9;}
+  * { box-sizing: border-box; }
+  a { color:#C41230; }
+  a:hover { color:#9E0E26; }
+</style>
+</helmet>
+
+<div style="font-family:'IBM Plex Sans',sans-serif;color:#232019;background:#FAFAF9;min-height:100vh;">
+  <div style="background:#16140F;color:#fff;padding:72px 64px 56px;">
+    <div style="max-width:900px;margin:0 auto;">
+      <div style="font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:#9A968D;margin-bottom:16px;">ЗАСО «ТАСК» &middot; Redesign concept</div>
+      <h1 style="font-size:40px;font-weight:700;margin:0 0 16px;line-height:1.15;">Rationale &mdash; audit findings resolved per page</h1>
+      <p style="font-size:17px;line-height:1.6;color:#C7C3BA;max-width:680px;margin:0;">Every layout decision in this concept traces back to a specific finding in the UX/accessibility/technical audit. This page is the defensibility summary: what each mockup fixes, and why.</p>
+    </div>
+  </div>
+
+  <div style="max-width:900px;margin:0 auto;padding:64px;">
+    <sc-for list="{{ pages }}" as="p" hint-placeholder-count="5">
+      <div style="border-bottom:1px solid #E4E1DC;padding:36px 0;">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px;">
+          <h2 style="font-size:22px;font-weight:700;margin:0;">{{ p.title }}</h2>
+          <a href="{{ p.href }}" style="font-size:14px;font-weight:600;text-decoration:none;">Открыть макет &rarr;</a>
+        </div>
+        <p style="font-size:16px;line-height:1.6;color:#4A4740;margin:0 0 16px;max-width:760px;">{{ p.rationale }}</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <sc-for list="{{ p.findings }}" as="f" hint-placeholder-count="3">
+            <span style="background:#F3F1EC;border:1px solid #E4E1DC;border-radius:4px;padding:6px 12px;font-size:12px;color:#6B675F;">{{ f }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </sc-for>
+
+    <div style="margin-top:40px;padding:28px 32px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;">
+      <div style="font-size:14px;font-weight:700;margin-bottom:10px;">What was deliberately preserved, not touched</div>
+      <p style="font-size:14px;line-height:1.7;color:#6B675F;margin:0;">The section hierarchy (Частным лицам / Корпоративным клиентам / О компании / Пресс-центр / Контакты), the full depth of legal/reference content, the existing online-services concept (личный кабинет, ОСАГО, ЕРИП), the login form's structural pattern, and the OSAGO "Оформить полис онлайн" CTA &mdash; all audit-confirmed as already working, and extended rather than reinvented.</p>
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    const pages = [
+      {
+        title: 'Style system', href: 'style-guide.dc.html',
+        rationale: 'A single reference sheet applied with zero deviation across all five pages, so the client can extrapolate the visual language to the ~20 unmocked pages.',
+        findings: ['14px body / 1.29 line-height', 'breadcrumb contrast 2.77:1', 'outline:0 sitewide', 'label-association bug']
+      },
+      {
+        title: '1. Homepage', href: 'home.dc.html',
+        rationale: 'Retires the clip-art hero for a geometric brand motif with a real CTA in the F-pattern zone, and gives mobile a purpose-built hero, sticky click-to-call, and header search — instead of the current compressed, phone-less mobile stack.',
+        findings: ['outdated hero, no CTA', 'mobile hero breakdown', 'no tel: links on mobile', 'hidden footer search']
+      },
+      {
+        title: '2. Product — АвтоКаско', href: 'product-kasko.dc.html',
+        rationale: 'Adds the quote estimator + application wizard the page has never had, extending the OSAGO CTA pattern site-wide, and gives the mobile tariff table an explicit stacked-card + swipe-indicator behavior instead of silent 760px-in-370px clipping.',
+        findings: ['no buy/quote CTA', 'clipped mobile tariff table', 'dense uninterrupted text', '14px body copy']
+      },
+      {
+        title: '3. Audience hub — Частным лицам', href: 'person-hub.dc.html',
+        rationale: 'Fills the missing landing-page node (today a silent redirect to /person/property/, byte-identical duplicate) with a real overview page, and shows each category link list exactly once.',
+        findings: ['/person/ has no dedicated page', 'duplicate link blocks', 'poor catalog scannability']
+      },
+      {
+        title: '4. О компании', href: 'about.dc.html',
+        rationale: 'Replaces one screen of pure legal boilerplate with a structured trust narrative — history, numbers, leadership connected visually to the existing "Первые лица" content, and licensing/documents — using facts already in the source material.',
+        findings: ['zero trust content', 'leadership content disconnected', 'no history/numbers/people']
+      },
+      {
+        title: '5. Контакты — Адреса и телефоны', href: 'contacts.dc.html',
+        rationale: 'Replaces the ~4000px undifferentiated text stream of 11 offices with a city filter, map, and tappable office cards — resolving both the wall-of-text layout and the sitewide absence of tel: links.',
+        findings: ['11 offices as one text block', 'no map/filter', 'non-clickable phone numbers', 'small mobile tap targets']
+      },
+    ];
+    return { pages };
+  }
+}
+</script>
+</body>
+</html>

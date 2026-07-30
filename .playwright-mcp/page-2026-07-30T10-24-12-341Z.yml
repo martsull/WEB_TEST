@@ -1,0 +1,232 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e4]:
+    - generic [ref=f1e5]: HOME — DESKTOP · 1440px
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]:
+        - generic [ref=f1e8]:
+          - generic [ref=f1e9]: Т
+          - generic [ref=f1e11]: ТАСК
+        - generic [ref=f1e12]:
+          - generic [ref=f1e13] [cursor=pointer]: Частным лицам
+          - generic [ref=f1e14] [cursor=pointer]: Корпоративным клиентам
+          - generic [ref=f1e15] [cursor=pointer]: О компании
+          - generic [ref=f1e16] [cursor=pointer]: Контакты
+        - generic [ref=f1e17]:
+          - link "+375 17 363-24-02" [ref=f1e22] [cursor=pointer]:
+            - /url: tel:+375173632402
+          - button "Вход" [ref=f1e23] [cursor=pointer]
+      - generic [ref=f1e24]:
+        - generic [ref=f1e25]:
+          - heading "Гарантия защиты Ваших интересов" [level=1] [ref=f1e26]
+          - paragraph [ref=f1e27]: Страховая компания «ТАСК» — на рынке Беларуси с 1991 года. Автострахование, имущество, здоровье и корпоративные риски.
+          - generic [ref=f1e28]:
+            - generic [ref=f1e29]: "Рассчитать стоимость для:"
+            - generic [ref=f1e30]:
+              - button "Авто" [ref=f1e31] [cursor=pointer]
+              - button "Имущество" [ref=f1e32] [cursor=pointer]
+              - button "Здоровье" [ref=f1e33] [cursor=pointer]
+              - button "Для бизнеса" [ref=f1e34] [cursor=pointer]
+            - button "Рассчитать стоимость" [ref=f1e35] [cursor=pointer]
+          - generic [ref=f1e36]:
+            - button "Частным лицам" [ref=f1e37] [cursor=pointer]
+            - button "Корпоративным клиентам" [ref=f1e38] [cursor=pointer]
+          - generic [ref=f1e39]:
+            - generic [ref=f1e40]:
+              - generic [ref=f1e41]: 35 лет
+              - generic [ref=f1e42]: на рынке с 1991 года
+            - generic [ref=f1e43]:
+              - generic [ref=f1e44]: "11"
+              - generic [ref=f1e45]: представительств в Беларуси
+            - generic [ref=f1e46]:
+              - generic [ref=f1e47]: ✓
+              - generic [ref=f1e48]: Лицензия Минфина РБ
+        - generic [ref=f1e49]:
+          - generic [ref=f1e58]:
+            - generic [ref=f1e59]: Оформлено полисов сегодня
+            - generic [ref=f1e61]:
+              - generic [ref=f1e62]: "128"
+              - generic [ref=f1e63]: ▲ 12%
+          - generic [ref=f1e66]: Лицензия подтверждена
+          - generic [ref=f1e70]:
+            - generic [ref=f1e71]: Среднее время оформления
+            - generic [ref=f1e72]: 4 мин
+          - generic [ref=f1e73]: Поддержка 24/7
+      - generic [ref=f1e78]:
+        - generic [ref=f1e79]:
+          - generic [ref=f1e80]: Частным лицам
+          - generic [ref=f1e81]: Страхование для вас и вашей семьи
+          - generic [ref=f1e82]:
+            - generic [ref=f1e83]: Автострахование
+            - generic [ref=f1e84]: Имущество
+            - generic [ref=f1e85]: Здоровье и путешествия
+          - button "Перейти к продуктам →" [ref=f1e86] [cursor=pointer]
+        - generic [ref=f1e87]:
+          - generic [ref=f1e88]: Корпоративным клиентам
+          - generic [ref=f1e89]: Управление рисками для бизнеса
+          - generic [ref=f1e90]:
+            - generic [ref=f1e91]: Транспорт
+            - generic [ref=f1e92]: Имущество
+            - generic [ref=f1e93]: Ответственность
+            - generic [ref=f1e94]: Финансы
+          - button "Перейти к продуктам →" [ref=f1e95] [cursor=pointer]
+      - generic [ref=f1e96]:
+        - generic [ref=f1e97]:
+          - generic [ref=f1e98]: Пресс-центр
+          - generic [ref=f1e99] [cursor=pointer]: Все новости →
+        - generic [ref=f1e100]:
+          - generic [ref=f1e101] [cursor=pointer]:
+            - generic [ref=f1e102]: 14.07.2026
+            - generic [ref=f1e103]: Обновлены тарифы по АвтоКаско на 2026 год
+          - generic [ref=f1e104] [cursor=pointer]:
+            - generic [ref=f1e105]: 02.07.2026
+            - generic [ref=f1e106]: Запущено онлайн-оформление ОСАГО через личный кабинет
+          - generic [ref=f1e107] [cursor=pointer]:
+            - generic [ref=f1e108]: 19.06.2026
+            - generic [ref=f1e109]: ТАСК расширяет сеть представительств в регионах
+      - generic [ref=f1e110]:
+        - generic [ref=f1e111]:
+          - generic [ref=f1e112]:
+            - generic [ref=f1e113]: О компании
+            - generic [ref=f1e114] [cursor=pointer]: История
+            - generic [ref=f1e115] [cursor=pointer]: Лицензии
+            - generic [ref=f1e116] [cursor=pointer]: Реквизиты
+            - generic [ref=f1e117] [cursor=pointer]: Раскрытие информации
+          - generic [ref=f1e118]:
+            - generic [ref=f1e119]: Страхование в «ТАСК»
+            - generic [ref=f1e120] [cursor=pointer]: Все продукты
+            - generic [ref=f1e121] [cursor=pointer]: Тарифы
+            - generic [ref=f1e122] [cursor=pointer]: Правила страхования
+          - generic [ref=f1e123]:
+            - generic [ref=f1e124]: Частным лицам
+            - generic [ref=f1e125] [cursor=pointer]: Автострахование
+            - generic [ref=f1e126] [cursor=pointer]: Имущество
+            - generic [ref=f1e127] [cursor=pointer]: Здоровье
+          - generic [ref=f1e128]:
+            - generic [ref=f1e129]: Корпоративным клиентам
+            - generic [ref=f1e130] [cursor=pointer]: Транспорт
+            - generic [ref=f1e131] [cursor=pointer]: Имущество
+            - generic [ref=f1e132] [cursor=pointer]: Ответственность
+          - generic [ref=f1e133]:
+            - generic [ref=f1e134]: Пресс-центр
+            - generic [ref=f1e135] [cursor=pointer]: Новости
+            - generic [ref=f1e136] [cursor=pointer]: Публикации
+          - generic [ref=f1e137]:
+            - generic [ref=f1e138]: Сотрудничество
+            - generic [ref=f1e139] [cursor=pointer]: Агентам
+            - generic [ref=f1e140] [cursor=pointer]: Партнёрам
+          - generic [ref=f1e141]:
+            - generic [ref=f1e142]: Контактная информация
+            - generic [ref=f1e143] [cursor=pointer]: Адреса и телефоны
+            - generic [ref=f1e144] [cursor=pointer]: Заказать звонок
+        - generic [ref=f1e145]:
+          - generic [ref=f1e146]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691. г. Минск, ул. Червякова, 46.
+          - generic [ref=f1e147]:
+            - generic [ref=f1e148]: ЕРИП
+            - generic [ref=f1e149]: VISA
+            - generic [ref=f1e150]: Mastercard
+            - generic [ref=f1e151] [cursor=pointer]: Настройки cookie
+    - generic [ref=f1e152]: HOME — MOBILE · 390px
+    - generic [ref=f1e154]:
+      - generic [ref=f1e155]:
+        - button "Открыть меню" [ref=f1e156] [cursor=pointer]
+        - generic [ref=f1e158]:
+          - generic [ref=f1e159]: Т
+          - generic [ref=f1e161]: ТАСК
+        - link "Позвонить" [ref=f1e162] [cursor=pointer]:
+          - /url: tel:+375173632402
+      - generic [ref=f1e165]:
+        - heading "Гарантия защиты Ваших интересов" [level=1] [ref=f1e173]
+        - paragraph [ref=f1e174]: На рынке Беларуси с 1991 года
+        - generic [ref=f1e176]:
+          - button "Авто" [ref=f1e177] [cursor=pointer]
+          - button "Имущество" [ref=f1e178] [cursor=pointer]
+          - button "Здоровье" [ref=f1e179] [cursor=pointer]
+          - button "Для бизнеса" [ref=f1e180] [cursor=pointer]
+        - button "Рассчитать стоимость" [ref=f1e181]
+      - generic [ref=f1e182]:
+        - generic [ref=f1e183]:
+          - generic [ref=f1e184]: 35 лет
+          - generic [ref=f1e185]: на рынке
+        - generic [ref=f1e186]:
+          - generic [ref=f1e187]: "11"
+          - generic [ref=f1e188]: офисов
+        - generic [ref=f1e189]:
+          - generic [ref=f1e190]: ✓
+          - generic [ref=f1e191]: лицензия РБ
+      - generic [ref=f1e192]:
+        - generic [ref=f1e193]:
+          - generic [ref=f1e194]: Частным лицам
+          - generic [ref=f1e195]: Страхование для вас и вашей семьи
+          - generic [ref=f1e196]:
+            - generic [ref=f1e197]: Автострахование
+            - generic [ref=f1e198]: Имущество
+            - generic [ref=f1e199]: Здоровье и путешествия
+          - button "Перейти к продуктам →" [ref=f1e200] [cursor=pointer]
+        - generic [ref=f1e201]:
+          - generic [ref=f1e202]: Корпоративным клиентам
+          - generic [ref=f1e203]: Управление рисками для бизнеса
+          - generic [ref=f1e204]:
+            - generic [ref=f1e205]: Транспорт
+            - generic [ref=f1e206]: Имущество
+            - generic [ref=f1e207]: Ответственность
+            - generic [ref=f1e208]: Финансы
+          - button "Перейти к продуктам →" [ref=f1e209] [cursor=pointer]
+      - generic [ref=f1e210]:
+        - generic [ref=f1e211]:
+          - generic [ref=f1e212]: Пресс-центр
+          - generic [ref=f1e213] [cursor=pointer]: Все новости →
+        - generic [ref=f1e214]:
+          - generic [ref=f1e215] [cursor=pointer]:
+            - generic [ref=f1e216]: 14.07.2026
+            - generic [ref=f1e217]: Обновлены тарифы по АвтоКаско на 2026 год
+          - generic [ref=f1e218] [cursor=pointer]:
+            - generic [ref=f1e219]: 02.07.2026
+            - generic [ref=f1e220]: Запущено онлайн-оформление ОСАГО через личный кабинет
+          - generic [ref=f1e221] [cursor=pointer]:
+            - generic [ref=f1e222]: 19.06.2026
+            - generic [ref=f1e223]: ТАСК расширяет сеть представительств в регионах
+      - generic [ref=f1e224]:
+        - generic [ref=f1e225]:
+          - generic [ref=f1e226]:
+            - generic [ref=f1e227]: О компании
+            - generic [ref=f1e228]: История
+            - generic [ref=f1e229]: Лицензии
+            - generic [ref=f1e230]: Реквизиты
+            - generic [ref=f1e231]: Раскрытие информации
+          - generic [ref=f1e232]:
+            - generic [ref=f1e233]: Страхование в «ТАСК»
+            - generic [ref=f1e234]: Все продукты
+            - generic [ref=f1e235]: Тарифы
+            - generic [ref=f1e236]: Правила страхования
+          - generic [ref=f1e237]:
+            - generic [ref=f1e238]: Частным лицам
+            - generic [ref=f1e239]: Автострахование
+            - generic [ref=f1e240]: Имущество
+            - generic [ref=f1e241]: Здоровье
+          - generic [ref=f1e242]:
+            - generic [ref=f1e243]: Корпоративным клиентам
+            - generic [ref=f1e244]: Транспорт
+            - generic [ref=f1e245]: Имущество
+            - generic [ref=f1e246]: Ответственность
+          - generic [ref=f1e247]:
+            - generic [ref=f1e248]: Пресс-центр
+            - generic [ref=f1e249]: Новости
+            - generic [ref=f1e250]: Публикации
+          - generic [ref=f1e251]:
+            - generic [ref=f1e252]: Сотрудничество
+            - generic [ref=f1e253]: Агентам
+            - generic [ref=f1e254]: Партнёрам
+          - generic [ref=f1e255]:
+            - generic [ref=f1e256]: Контактная информация
+            - generic [ref=f1e257]: Адреса и телефоны
+            - generic [ref=f1e258]: Заказать звонок
+        - generic [ref=f1e259]: © 1991–2026 ЗАСО «ТАСК». УНП 100039691.
+      - generic [ref=f1e260]:
+        - link "Позвонить" [ref=f1e261] [cursor=pointer]:
+          - /url: tel:+375173632402
+        - button "Рассчитать полис" [ref=f1e264]
+  - text: <
+  - group [ref=f1e266]:
+    - generic "☰ Макеты концепции" [ref=f1e267] [cursor=pointer]:
+      - generic [ref=f1e268]: ☰
+      - text: Макеты концепции
