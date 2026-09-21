@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ЗАСО «ТАСК» — Redesign concept 3</title>
+<title>Новый сайт ТАСК — пробная версия</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -12,79 +12,98 @@
   body{margin:0;font-family:'IBM Plex Sans',-apple-system,BlinkMacSystemFont,sans-serif;background:#FAFAF9;color:#232019;}
   a{color:#C41230;}
   a:hover{color:#9E0E26;}
-  .hero{background:#16140F;color:#fff;padding:72px 24px 56px;}
-  .hero-inner{max-width:960px;margin:0 auto;}
+  .hero{background:#16140F;color:#fff;padding:72px 0 56px;}
+  .hero-inner{max-width:960px;margin:0 auto;padding:0 24px;}
   .eyebrow{font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:#9A968D;margin-bottom:16px;}
   h1{font-size:40px;font-weight:700;margin:0 0 16px;line-height:1.15;}
-  .lead{font-size:17px;line-height:1.6;color:#C7C3BA;max-width:680px;margin:0;}
+  .lead{font-size:18px;line-height:1.6;color:#C7C3BA;max-width:680px;margin:0;}
   .wrap{max-width:960px;margin:0 auto;padding:56px 24px 80px;}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
   .card{background:#fff;border:1px solid #E4E1DC;border-radius:10px;padding:24px;display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;transition:box-shadow .15s ease, transform .15s ease;}
   .card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);transform:translateY(-2px);}
   .card .num{font-size:12px;font-weight:700;letter-spacing:.04em;color:#C41230;text-transform:uppercase;}
   .card h2{font-size:19px;font-weight:700;margin:0;color:#232019;}
-  .card p{font-size:14px;line-height:1.55;color:#6B675F;margin:0;}
+  .card p{font-size:15px;line-height:1.55;color:#4A4740;margin:0;}
   .card .go{margin-top:auto;font-size:13px;font-weight:600;color:#C41230;}
   .section-label{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#9A968D;margin:40px 0 16px;}
-  .footer-note{margin-top:48px;padding:20px 24px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;font-size:13px;line-height:1.6;color:#6B675F;}
+  .footer-note{margin-top:48px;padding:20px 24px;background:#fff;border:1px solid #E4E1DC;border-radius:8px;font-size:15px;line-height:1.6;color:#4A4740;}
+  .benefits{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px;}
+  .benefit{padding:4px 0;}
+  .benefit-icon{width:32px;height:32px;border-radius:50%;background:#C41230;color:#fff;font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
+  .benefit h3{font-size:17px;font-weight:700;margin:0 0 6px;}
+  .benefit p{font-size:15px;line-height:1.55;color:#4A4740;margin:0;}
+  .pro-note{margin-top:20px;font-size:13px;line-height:1.6;color:#6B675F;}
 </style>
 </head>
 <body>
   <div class="hero">
     <div class="hero-inner">
-      <div class="eyebrow">ЗАСО «ТАСК» &middot; Redesign concept 3</div>
-      <h1>Демонстрация макетов</h1>
-      <p class="lead">Концепция редизайна сайта страховой компании. Ниже — все страницы этой поставки: система стилей, пять ключевых макетов и обоснование решений по каждому из них.</p>
+      <div class="eyebrow">ЗАСО «ТАСК» &middot; Новый сайт</div>
+      <h1>Так может выглядеть новый сайт ТАСК</h1>
+      <p class="lead">Это пробная версия сайта: на ней видно, как страницы будут выглядеть для клиента — на компьютере и на телефоне. Выберите любую страницу ниже и откройте её. Это образец, а не рабочий сайт: полис здесь оформить нельзя, а адреса и карта на странице контактов — для примера.</p>
     </div>
   </div>
 
   <div class="wrap">
-    <div class="section-label">Основа</div>
-    <div class="grid">
-      <a class="card" href="style-guide.dc.html">
-        <div class="num">Style system</div>
-        <h2>Дизайн-система</h2>
-        <p>Единый эталон — цвета, типографика, компоненты, — применённый без отклонений на всех пяти макетах.</p>
-        <div class="go">Открыть →</div>
-      </a>
+    <div class="section-label">Что стало удобнее для посетителя</div>
+    <div class="benefits">
+      <div class="benefit">
+        <div class="benefit-icon">1</div>
+        <h3>Сразу понятно, что делать</h3>
+        <p>На первом экране — заметная кнопка «Рассчитать стоимость» и выбор главных страховок. Не нужно искать по меню.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">2</div>
+        <h3>Удобно с телефона</h3>
+        <p>Телефон и адреса можно нажать — и сразу позвонить или найти офис. Таблицы и кнопки не «уезжают» за край экрана.</p>
+      </div>
+      <div class="benefit">
+        <div class="benefit-icon">3</div>
+        <h3>Проще найти нужное</h3>
+        <p>Меньше сплошного текста: страховки разложены по группам, офисы — по городам, цены можно прикинуть сами.</p>
+      </div>
     </div>
 
-    <div class="section-label">Макеты страниц</div>
+    <div class="section-label">Какие страницы можно посмотреть</div>
     <div class="grid">
       <a class="card" href="home.dc.html">
-        <div class="num">01 · Главная</div>
-        <h2>Главная страница</h2>
-        <p>Новый герой без клипарта, реальный CTA, полноценная мобильная версия с click-to-call и поиском.</p>
-        <div class="go">Открыть →</div>
+        <div class="num">Главная</div>
+        <h2>С чего начинается сайт</h2>
+        <p>Первое, что видит человек: чем занимается компания, как оформить полис и как позвонить.</p>
+        <div class="go">Посмотреть →</div>
       </a>
       <a class="card" href="product-kasko.dc.html">
-        <div class="num">02 · Продукт</div>
+        <div class="num">Страховка</div>
         <h2>АвтоКаско</h2>
-        <p>Калькулятор и визард оформления, адаптивная тарифная таблица вместо горизонтального скролла.</p>
-        <div class="go">Открыть →</div>
+        <p>Можно прикинуть стоимость и пройти оформление по шагам. Тарифы удобно читать и на телефоне.</p>
+        <div class="go">Посмотреть →</div>
       </a>
       <a class="card" href="person-hub.dc.html">
-        <div class="num">03 · Раздел</div>
+        <div class="num">Для людей</div>
         <h2>Частным лицам</h2>
-        <p>Полноценная страница-хаб вместо редиректа-дубля, каждый список категорий показан один раз.</p>
-        <div class="go">Открыть →</div>
+        <p>Все страховки для физических лиц в одном месте, без повторов и путаницы.</p>
+        <div class="go">Посмотреть →</div>
       </a>
       <a class="card" href="about.dc.html">
-        <div class="num">04 · Компания</div>
+        <div class="num">О нас</div>
         <h2>О компании</h2>
-        <p>Структурированный рассказ о доверии — история, цифры, руководство, лицензии — вместо юридического текста.</p>
-        <div class="go">Открыть →</div>
+        <p>Почему ТАСК можно доверять: история, цифры, руководство и лицензии — понятным языком.</p>
+        <div class="go">Посмотреть →</div>
       </a>
       <a class="card" href="contacts.dc.html">
-        <div class="num">05 · Контакты</div>
+        <div class="num">Связь</div>
         <h2>Адреса и телефоны</h2>
-        <p>Фильтр по городам, карта и карточки офисов вместо сплошного текстового потока на 11 адресов.</p>
-        <div class="go">Открыть →</div>
+        <p>Выберите свой город — и увидите офисы этого города с телефонами и часами работы. Номер можно нажать и позвонить.</p>
+        <div class="go">Посмотреть →</div>
       </a>
     </div>
 
     <div class="footer-note">
-      На каждой странице макета внизу справа есть кнопка «☰ Макеты концепции» — быстрый переход между всеми страницами без возврата на этот экран.
+      <strong>Как переходить между страницами.</strong> На каждой странице внизу справа есть кнопка «☰ Макеты концепции» — с её помощью можно сразу открыть другую страницу, не возвращаясь сюда.
+    </div>
+
+    <div class="pro-note">
+      Для дизайнеров и разработчиков: <a href="style-guide.dc.html">правила оформления</a> (цвета, шрифты, кнопки) и <a href="rationale.dc.html">обоснование решений по каждой странице</a>.
     </div>
   </div>
 </body>
